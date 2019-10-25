@@ -1,0 +1,35 @@
+---
+title: "DB2.0"
+author: "Diego dos Santos Fernandes"
+date: "04/07/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+library(readxl)
+Historico_principal <- read_excel("C:/Users/diego.fernandes/Desktop/CADE TRABALHO/ATUAIS/INDICADORES DE COMPETICAO/BANCO MUNDIAL - DOING BUSINESS/DADOS/Dados Gerais/Historico_principal.xlsx")
+
+```
+
+
+
+
+
+
+```{r}
+
+Historico_principal$metodologia <- coalesce(Historico_principal$`(DB17-19)`,Historico_principal$`(DB16)`) 
+
+Historico_principal$metodologia2 <- coalesce(Historico_principal$metodologia,Historico_principal$`(DB15)`) 
+
+Historico_principal$pontuacao <- coalesce(Historico_principal$metodologia2,Historico_principal$`(DB10-14)`)
+
+historico <- Historico_principal
+
+#write.csv2(historico, "historico_modificado2.csv")
+
+```
+
