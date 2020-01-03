@@ -23,9 +23,34 @@ library(devtools)
 library(janitor)
 library(hablar)
 library(patchwork)
+
+#remotes::install_github("anthonynorth/rscodeio")
+#https://github.com/anthonynorth/rscodeio
+#rscodeio::install_theme()
 ```
 
 ```{r}
+library(readxl)
+DB2020 <- read_excel("DB2020.xlsx", sheet = "All data", 
+    skip = 3)
+
+```
+
+# dados da Pontuação EoDB
+## Unificar as metodologias mais atuais
+```{r}
+
+eodb <- DB2020[ ,1:9]
+eodb <- eodb[ ,-6]
+eodb <- eodb %>%  janitor::clean_names() %>% janitor::remove_empty(c("rows","cols"))
+
+eodb <- eodb %>% 
+  mutate( pontuacao = dplyr::coalesce(ease_of_doing_business_score_db17_20_methodology,ease_of_doing_business_score_db15_methodology,ease_of_doing_business_score_db10_14_methodology))
+eodb <- eodb[ , c(1:5,9)]
+
+
+eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
+
 
 ```
 
