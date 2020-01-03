@@ -1,0 +1,31 @@
+---
+title: "db-2020"
+author: "Diego dos Santos Fernandes"
+date: "03/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidyverse)
+library(ggrepel)
+library(readxl)
+library(stargazer)
+library(gghighlight)
+library(plotly)
+library(ggpubr)
+library(ggthemes)
+library(gridExtra)
+library(corrplot)
+library(GGally)
+library(devtools)
+library(janitor)
+library(hablar)
+library(patchwork)
+```
+
+```{r}
+
+```
+
