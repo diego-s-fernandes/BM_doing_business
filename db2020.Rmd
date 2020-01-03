@@ -60,13 +60,15 @@ eodb <- eodb %>% na.omit()
 eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
 eodb$economy[eodb$economy == "Russian Federation Moscow" & eodb$db_year <= 2013] <- "Russian Federation"
 eodb$economy[eodb$economy == "China Shanghai" & eodb$db_year <= 2013] <- "China"
-eodb$economy[eodb$economy == "Mexico Mexico City" & eodb$db_year <= 2013] <- "Mexico"
+eodb$economy[eodb$economy == "India Mumbai" & eodb$db_year <= 2013] <- "India"
+
+
 ```
 
 
 
 
-
+G
 
 
 
