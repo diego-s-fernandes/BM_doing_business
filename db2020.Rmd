@@ -46,11 +46,43 @@ eodb <- eodb %>%  janitor::clean_names() %>% janitor::remove_empty(c("rows","col
 
 eodb <- eodb %>% 
   mutate( pontuacao = dplyr::coalesce(ease_of_doing_business_score_db17_20_methodology,ease_of_doing_business_score_db15_methodology,ease_of_doing_business_score_db10_14_methodology))
-eodb <- eodb[ , c(1:5,9)]
+eodb <- eodb[ , c(1:5,9)] 
+eodb <- eodb %>% na.omit()
 
-
-eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
 
 
 ```
+
+## tratando as informações com países com coleta de dados em duas cidades
+
+```{r}
+
+eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
+eodb$economy[eodb$economy == "Russian Federation Moscow" & eodb$db_year <= 2013] <- "Russian Federation"
+eodb$economy[eodb$economy == "China Shanghai" & eodb$db_year <= 2013] <- "China"
+eodb$economy[eodb$economy == "Mexico Mexico City" & eodb$db_year <= 2013] <- "Mexico"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
