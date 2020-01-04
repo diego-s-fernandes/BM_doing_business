@@ -23,6 +23,8 @@ library(janitor)
 library(hablar)
 library(patchwork)
 library(dplyr)
+library(esquisse)
+
 
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
@@ -51,6 +53,7 @@ eodb <- eodb %>% na.omit()
 
 
 
+
 ```
 
 ## tratando as informações com países com coleta de dados em duas cidades
@@ -74,15 +77,57 @@ eodb <- eodb %>%
              
                 )
 
+eodb$db_year <- as_factor(eodb$db_year)
 
+#arredondando os valores da pontuação
+
+eodb <- eodb %>% 
+  mutate(pontuacao = round(pontuacao, 2))
 
 ```
 
 
+```{r}
+brasil_1 <- eodb %>% 
+  filter(economy == "Brazil")
+
+ggplot(brasil_1) +
+ aes(x = db_year, y = pontuacao) +
+ geom_bar(stat="identity", fill = "#31688e") +
+  scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = -0.2 )+
+ labs(x = "Ano", 
+      y = "pontuação", 
+      title = "Facilidade em se fazer negócios no Brasil", 
+      subtitle = "A pontuação mede de forma geral o aombiente de negócios de um país", 
+      caption = "Fonte: Banco Mundial") +
+ theme_minimal()+
+  theme(plot.caption=element_text(size=10, hjust=0))
 
 
 
 
+```
+
+## último relatório Brics
+```{r}
+brics_2020 <- eodb %>% 
+  filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa"), db_year == 2020)
+
+
+brics_2020 %>% 
+  ggplot(aes(x = economy, y = pontuacao)) +
+ geom_bar(stat="identity", fill = "#31688e") +
+  scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 5 )+
+ labs(x = "Ano", 
+      y = "pontuação", 
+      title = "Facilidade em se fazer negócios Brics", 
+      subtitle = "A pontuação mede de forma geral o aombiente de negócios de um país", 
+      caption = "Fonte: Banco Mundial") +
+ theme_minimal()+
+  theme(plot.caption=element_text(size=10, hjust=0))
+```
 
 
 
