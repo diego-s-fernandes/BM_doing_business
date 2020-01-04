@@ -67,10 +67,12 @@ eodb$economy[eodb$economy == "Mexico Mexico City" & eodb$db_year <= 2013] <- "Me
 # usando o dplyr para fazer a mesma coisa
 eodb <- eodb %>% 
     mutate( economy = if_else(economy == "United States New York City" & db_year <= 2013, "United States", economy),
-            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy)
-            
-            
-    )
+            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy),
+            economy = if_else(economy == "Bangladesh Dhaka" & db_year <= 2013, "Bangladesh", economy),
+            economy = if_else(economy == "Indonesia Jakarta" & db_year <= 2013, "Indonesia", economy),
+            economy = if_else(economy == "Nigeria Lagos" & db_year <= 2013, "Nigeria", economy),
+             
+                )
 
 
 
