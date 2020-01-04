@@ -13,7 +13,6 @@ library(ggrepel)
 library(readxl)
 library(stargazer)
 library(gghighlight)
-library(plotly)
 library(ggpubr)
 library(ggthemes)
 library(gridExtra)
@@ -23,6 +22,7 @@ library(devtools)
 library(janitor)
 library(hablar)
 library(patchwork)
+library(dplyr)
 
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
@@ -56,11 +56,18 @@ eodb <- eodb %>% na.omit()
 ## tratando as informações com países com coleta de dados em duas cidades
 
 ```{r}
-
+#usando o Rbase para renomear as linhas
 eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
 eodb$economy[eodb$economy == "Russian Federation Moscow" & eodb$db_year <= 2013] <- "Russian Federation"
 eodb$economy[eodb$economy == "China Shanghai" & eodb$db_year <= 2013] <- "China"
 eodb$economy[eodb$economy == "India Mumbai" & eodb$db_year <= 2013] <- "India"
+
+# usando o dplyr para fazer a mesma coisa
+eodb <- eodb %>% 
+    mutate( economy = if_else(economy == "United States New York City" & db_year <= 2013, "United States", economy ),
+            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy)
+    )
+
 
 
 ```
@@ -68,7 +75,7 @@ eodb$economy[eodb$economy == "India Mumbai" & eodb$db_year <= 2013] <- "India"
 
 
 
-G
+
 
 
 
