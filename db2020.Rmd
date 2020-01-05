@@ -2,7 +2,12 @@
 title: "db-2020"
 author: "Diego dos Santos Fernandes"
 date: "03/01/2020"
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -24,17 +29,34 @@ library(hablar)
 library(patchwork)
 library(dplyr)
 library(esquisse)
-
-
+library(rvest)
+library(openxlsx)
+library(gdata)
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
 #rscodeio::install_theme()
 ```
 
 ```{r}
-library(readxl)
-DB2020 <- read_excel("DB2020.xlsx", sheet = "All data", 
-    skip = 3)
+
+DB2020 <- read_excel("DB2020.xlsx", sheet = "All data", skip = 3)
+
+
+ url <- "https://www.doingbusiness.org/content/dam/doingBusiness/excel/db2020/Historical-data---COMPLETE-dataset-with-scores.xlsx"
+ destfile <- "DB.xlsx"
+ curl::curl_download(url, destfile)
+ DB <- read_excel(destfile, skip = 3)
+
+```
+
+
+```{r}
+
+
+path <- "https://www.doingbusiness.org/content/dam/doingBusiness/excel/db2020/Historical-data---COMPLETE-dataset-with-scores.xlsx"
+
+
+
 
 ```
 
@@ -57,6 +79,8 @@ eodb <- eodb %>% na.omit()
 ```
 
 ## tratando as informações com países com coleta de dados em duas cidades
+
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 
 ```{r}
 #usando o Rbase para renomear as linhas
@@ -81,13 +105,14 @@ eodb$db_year <- as_factor(eodb$db_year)
 
 #arredondando os valores da pontuação
 
+
 eodb <- eodb %>% 
   mutate(pontuacao = round(pontuacao, 2))
 
 ```
 
 
-```{r}
+```{r, fig.height=8, fig.width=12}
 brasil_1 <- eodb %>% 
   filter(economy == "Brazil")
 
@@ -110,28 +135,82 @@ ggplot(brasil_1) +
 ```
 
 ## último relatório Brics
-```{r}
+```{r, fig.height=6, fig.width=12}
 brics_2020 <- eodb %>% 
   filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa"), db_year == 2020)
 
 
-brics_2020 %>% 
+g_brics_1 <- brics_2020 %>% 
   ggplot(aes(x = economy, y = pontuacao)) +
  geom_bar(stat="identity", fill = "#31688e") +
   scale_y_continuous(limits = c(0,100))+
   geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 5 )+
- labs(x = "Ano", 
+ labs(x = "País", 
       y = "pontuação", 
       title = "Facilidade em se fazer negócios Brics", 
       subtitle = "A pontuação mede de forma geral o aombiente de negócios de um país", 
-      caption = "Fonte: Banco Mundial") +
+      caption = "Fonte: Banco Mundial\nElaboração: CADE/DEE") +
  theme_minimal()+
   theme(plot.caption=element_text(size=10, hjust=0))
 ```
+Analisando o Ranking dos Brics
+
+```{r,fig.height=6, fig.width=12}
+
+ranking <- DB2020[DB2020$`DB Year` == 2020, c(1:6) ] %>% clean_names()
+
+gbrics2 <- ranking %>% 
+  filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa")) %>% 
+  ggplot (aes(x = economy, y = ease_of_doing_business_rank, label  = ease_of_doing_business_rank))+
+  geom_point(stat= "identity", fill = "black", size = 10)+
+    geom_segment(aes( y = 0,
+                    x= economy,
+                    yend = ease_of_doing_business_rank,
+                    xend = economy),
+               color = "black")+
+  geom_text(color = "white", size = 4, fontface = "bold")+
+  labs( title = "Ranking Doing Business 2020",
+  x = "",
+  y = "Posição no Ranking",
+  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração: CADE/DEE"
+)+ scale_y_reverse()+
+  theme_cleveland()+
+   theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))
+
+  gbrics2
+
+```
 
 
+```{r,fig.height=6, fig.width=12}
+publicado <-  data.frame("ano"     = c(2010:2020),
+                         "posicao" = c(129,120,126,118,116,111,121,123,125,109,124))
+
+gpub <- publicado %>% 
+   ggplot (aes(x = ano, y = posicao, label  = posicao))+
+  geom_point(stat= "identity", fill = "black", size = 10)+
+    geom_segment(aes( y = 0,
+                    x= ano,
+                    yend = posicao,
+                    xend = ano),
+               color = "black")+
+  scale_x_continuous(breaks = c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))+
+  geom_text(color = "white", size = 4, fontface = "bold")+
+  labs( title = "Posição no Brasil no ranking de Facilidade em se fazer negócio",
+  x = "",
+  y = "Posição no Ranking",
+  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração: CADE/DEE"
+)+ scale_y_reverse()+
+  theme_cleveland()+
+   theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))
+
+  gpub
+```
 
 
+```{r, fig.height=7, fig.width=14}
+ g_brics_1 + gbrics2
+```
 
 
 
