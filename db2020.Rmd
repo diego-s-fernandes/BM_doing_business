@@ -71,7 +71,7 @@ eodb <- eodb %>%  janitor::clean_names() %>% janitor::remove_empty(c("rows","col
 eodb <- eodb %>% 
   mutate( pontuacao = dplyr::coalesce(ease_of_doing_business_score_db17_20_methodology,ease_of_doing_business_score_db15_methodology,ease_of_doing_business_score_db10_14_methodology))
 eodb <- eodb[ , c(1:5,9)] 
-eodb <- eodb %>% na.omit()
+eodb <- eodb %>% na.omit(pontuacao)
 
 
 
@@ -80,7 +80,7 @@ eodb <- eodb %>% na.omit()
 
 ## tratando as informações com países com coleta de dados em duas cidades
 
-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
 
 ```{r}
 #usando o Rbase para renomear as linhas
@@ -213,9 +213,52 @@ gpub <- publicado %>%
 ```
 
 
+# TRATAMENTO DOS INDICADORES INTERMEDIÁRIOS
+## rankings dos indicadores intermediários
+
+```{r}
+
+rank_ind <- DB2020 %>% 
+  filter(`DB Year` == 2020) %>% 
+  select(c(1:5), starts_with("Rank"))
+
+```
+
+## pontuação dos indicadores
+
+```{r}
+# fiz usando o regexx
+#https://stackoverflow.com/questions/45357806/dplyr-select-and-starts-with-on-multiple-values-in-a-variable-list
+nomesind <- c("Starting", "Score-Dealing", "Score-Getting",  "Score-Regis", "Score-Protect", "Score-Paying", "Score-Trading", "Score-Enfor", "Score-Resolving")
+ind <- DB2020 %>% 
+  select(c (1:5), matches (paste(nomesind, collapse = "|")))
+
+# fazer coalesce dos indicadores
+
+ind <- ind %>% clean_names()
+
+ind <- ind %>% 
+  mutate(score_dealing_with_construction =                                                                             coalesce(score_dealing_with_construction_permits_db16_20_methodology,score_dealing_with_construction_permits_db06_15_methodology),    
+         score_getting_electricity = coalesce(score_getting_electricity_db16_20_methodology,score_getting_electricity_db10_15_methodology),
+         score_registering_property = coalesce(score_registering_property_db17_20_methodology,score_registering_property_db05_15_methodology),
+         score_getting_credit = coalesce(score_getting_electricity_db16_20_methodology, score_getting_credit_db15_20_methodology),
+         score_protecting_minority = coalesce(score_protecting_minority_investors_db15_20_methodology, score_protecting_minority_investors_db06_14_methodology),
+         score_paying_taxes = coalesce(score_paying_taxes_db17_20_methodology,score_paying_taxes_db06_16_methodology),
+         score_trading_across_borders = coalesce(score_trading_across_borders_db16_20_methodology, score_trading_across_borders_db06_15_methodology),
+         score_enforcing_contracts = coalesce (score_enforcing_contracts_db17_20_methodology, score_enforcing_contracts_db04_15_methodology)
+         
+         )
+  
+ind <- ind %>%  select(-c(6,8:23)) %>% 
+  gather(6:15,key = "indicador",  value = "pontuacao") %>% 
+  mutate(pontuacao = round(pontuacao,2)) %>% 
+  na.omit(pontuacao)
 
 
+  
+ 
 
+```
 
 
 
