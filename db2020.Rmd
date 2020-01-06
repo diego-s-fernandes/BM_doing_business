@@ -260,6 +260,55 @@ ind <- ind %>%  select(-c(6,8:23)) %>%
 
 ```
 
+## refazendo o trabalho de mudar os países com duas cidades coletadas
+
+
+```{r}
+
+#usando o Rbase para renomear as linhas
+ind$economy[ind$economy == "Brazil São Paulo" & ind$db_year <= 2013] <- "Brazil"
+ind$economy[ind$economy == "Russian Federation Moscow" & ind$db_year <= 2013] <- "Russian Federation"
+ind$economy[ind$economy == "China Shanghai" & ind$db_year <= 2013] <- "China"
+ind$economy[ind$economy == "India Mumbai" & ind$db_year <= 2013] <- "India"
+ind$economy[ind$economy == "Japan Tokyo" & ind$db_year <= 2013] <- "Japan"
+ind$economy[ind$economy == "Mexico Mexico City" & ind$db_year <= 2013] <- "Mexico"
+
+# usando o dplyr para fazer a mesma coisa
+ind <- ind %>% 
+    mutate( economy = if_else(economy == "United States New York City" & db_year <= 2013, "United States", economy),
+            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy),
+            economy = if_else(economy == "Bangladesh Dhaka" & db_year <= 2013, "Bangladesh", economy),
+            economy = if_else(economy == "Indonesia Jakarta" & db_year <= 2013, "Indonesia", economy),
+            economy = if_else(economy == "Nigeria Lagos" & db_year <= 2013, "Nigeria", economy),
+             
+                )
+
+ind$db_year <- as_factor(ind$db_year)
+
+
+```
+
+
+# Gráficos indicadores
+
+```{r}
+
+g2 <- ind %>%
+  filter(indicador == "score_starting_a_business", economy == "Brazil") %>%
+  ggplot(aes(x = db_year, y = pontuacao))+
+  geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB") +
+  geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 4, color = "black")+
+   labs(
+    title = "pontuação start a business Brasil por Ano",
+    x = "Ano",
+    y = "Pontuação",
+    caption = "O gráfico apresenta um histórico de pontuação baseado nas modificações metodológicas dos seguintes anos:\nDB2004-2014, DB2015, DB2016, DB2017-2019."
+    ) +
+  theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+
+g2
+
+```
 
 
 
