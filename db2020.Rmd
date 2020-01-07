@@ -112,14 +112,35 @@ eodb <- eodb %>%
 
 # Criando uma categoria de grupo Brics e OCDE
 
-
 ```{r}
 eodb <- eodb %>% 
     mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa	") , "Brics", "Outros"),
             grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
 
 
+
 ```
+
+## Gráfico OCDE e BRICS
+
+```{r}
+bbo <- eodb %>% 
+  filter(grupo_eco %in% c("Brics", "OCDE"))
+
+bra <- eodb %>% 
+  filter(economy == "Brazil") %>% 
+  mutate( grupo_eco = if_else( economy == "Brazil", "Brazil", grupo_eco))
+  
+bbo <- bind_rows(bbo, bra)  
+
+  bbo <- bbo %>% 
+    group_by(economy,grupo_eco, db_year) %>% 
+    summarise(m_pontuacao = round(mean(pontuacao),2))
+  
+  rm(bra)
+
+```
+
 
 
 ```{r, fig.height=8, fig.width=12}
@@ -298,6 +319,30 @@ ind$db_year <- as_factor(ind$db_year)
 
 ```
 
+#Crinado a coluna Brics e OCDE
+
+```{r}
+ind <- ind %>% 
+    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa	") , "Brics", "Outros"),
+            grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
+
+bbo_ind <- ind %>% 
+  filter(grupo_eco %in% c("Brics", "OCDE"))
+
+bra_ind <- ind %>% 
+  filter(economy == "Brazil") %>% 
+  mutate( grupo_eco = if_else( economy == "Brazil", "Brazil", grupo_eco))
+  
+bbo_ind <- bind_rows(bbo_ind, bra_ind)
+
+bbo_ind <- bbo_ind %>% 
+    group_by(economy, indicador,grupo_eco, db_year) %>% 
+    summarise(m_pontuacao = round(mean(pontuacao),2))
+
+
+```
+
+
 
 # Gráficos indicadores
 
@@ -320,6 +365,29 @@ g2
 
 ```
 
+# teste para gerar multiplos gráficos
+
+```{r}
+
+bra_ind_list <- unique(bra_ind$indicador)
+
+for (i in seq_along(bra_ind_list))
+ plot10 <-  (ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
+                 aes(db_year,pontuacao,fill= "#00AFBB" ))+
+    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
+     geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 4, color = "black"))+  
+    ggtitle (paste("pontuação",bra_ind_list[i] ))
+
+print(plot10)
+    
+ 
+
+
+
+
+
+
+```
 
 
 
