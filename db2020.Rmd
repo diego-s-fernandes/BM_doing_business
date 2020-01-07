@@ -375,8 +375,9 @@ for (i in seq_along(bra_ind_list))
  print( (ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,fill= "#00AFBB" ))+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
+      ylim(0,100)+
       geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 4, color = "black")+
-         ggtitle (paste("pontuação",bra_ind_list[i] )))
+      ggtitle (paste("pontuação",bra_ind_list[i] )))
 
 
  )
