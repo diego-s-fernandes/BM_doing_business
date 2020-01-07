@@ -103,11 +103,21 @@ eodb <- eodb %>%
 
 eodb$db_year <- as_factor(eodb$db_year)
 
-#arredondando os valores da pontuação
-
 
 eodb <- eodb %>% 
   mutate(pontuacao = round(pontuacao, 2))
+
+```
+
+
+# Criando uma categoria de grupo Brics e OCDE
+
+
+```{r}
+eodb <- eodb %>% 
+    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa	") , "Brics", "Outros"),
+            grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
+
 
 ```
 
