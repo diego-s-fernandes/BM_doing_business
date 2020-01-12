@@ -32,6 +32,9 @@ library(esquisse)
 library(rvest)
 library(openxlsx)
 library(gdata)
+library(ggimage)
+library(ggflags)
+library(countrycode)
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
 #rscodeio::install_theme()
@@ -135,7 +138,7 @@ diego_theme <- theme(text = element_text(color = "gray20", size = 15),
 
 ```{r}
 eodb <- eodb %>% 
-    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa	") , "Brics", "Outros"),
+    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa") , "Brics", "Outros"),
             grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
 
 
@@ -192,19 +195,35 @@ brics_2020 <- eodb %>%
   filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa"), db_year == 2020)
 
 
+
 g_brics_1 <- brics_2020 %>% 
   ggplot(aes(x = economy, y = pontuacao)) +
- geom_bar(stat="identity", fill = "#31688e") +
-  scale_y_continuous(limits = c(0,100))+
-  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 5 )+
- labs(x = "País", 
+ geom_bar(stat="identity", fill = "#31688e", colour="black") +
+   scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 5 )+ 
+   labs(x = "País", 
       y = "pontuação", 
       title = "Facilidade em se fazer negócios Brics", 
       subtitle = "The ease of doing business score", 
       caption = "Fonte: Banco Mundial\nElaboração própria") +
  theme_minimal()+
   theme(plot.caption=element_text(size=10, hjust=0))
+
+
+
+g_brics_1
 ```
+
+
+#teste com as bandeiras
+
+```{r}
+
+listapaises <- countrycode::codelist_panel
+
+```
+
+
 Analisando o Ranking dos Brics
 
 ```{r,fig.height=6, fig.width=12}
@@ -262,7 +281,13 @@ gpub <- publicado %>%
 
 
 ```{r, fig.height=7, fig.width=14}
- g_brics_1 + gbrics2
+ ggbrics <- g_brics_1 + gbrics2
+ggbrics
+
+ggsave(filename = "ggbrics.pdf", width = 40, height = 20, units = "cm")
+ggsave
+
+#https://stackoverflow.com/questions/26495400/save-several-ggplots-to-files
 ```
 
 
