@@ -405,28 +405,24 @@ bbo_ind <- bbo_ind %>%
 
 # tentativa loop OCDE e Brics
 
-```{r eval=FALSE, include=FALSE}
-bbo_ind_list <- unique(bbo_ind$indicador) # criando a lista de nome dos indicadores
+```{r echo=TRUE}
 
-for (i in seq_along(bbo_ind_list)) {
-   print(ggplot(subset(bbo_ind,bbo_ind$indicador == bbo_ind_list[i]),
-                 aes(db_year,pontuacao, fill = grupo_eco, label = pontuacao ))+
+
+bbo_ind %>% ggplot(aes(db_year,pontuacao, fill = grupo_eco ))+
        geom_bar(stat="identity", position=position_dodge())   +
-        geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 6, color = "black")+
-     
-      ylim(0,100)+
-       ggtitle (paste("Pontuação em:",bbo_ind_list[i] ))+
+       ylim(0,100)+
       labs(
         x = "Ano",
         y = "Pontuação",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE",
         fill = "Grupo Econômico")+
-           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3)) 
+           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))+
+  facet_wrap(indicador ~.)
     
     
-    )
+
     
-}
+
 ```
 
 
@@ -495,9 +491,9 @@ bra_ind <- bra_ind %>%
 # criando o loop para gerar múltiplos gráficos
 
 bra_ind_list <- unique(bra_ind$indicador) # criando a lista de nome dos indicadores
-f_ind_bra <- function(...){
+f_ind_bra <- function(p){
 for (i in seq_along(bra_ind_list))
-   print(ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
+   p <- ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,))+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
       ylim(0,100)+
@@ -509,12 +505,13 @@ for (i in seq_along(bra_ind_list))
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
-    
-    )
+    print(p)
+
     
 
 
 }
+
 
 f_ind_bra()
 ```
