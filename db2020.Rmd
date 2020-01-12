@@ -493,7 +493,7 @@ bra_ind <- bra_ind %>%
 bra_ind_list <- unique(bra_ind$indicador) # criando a lista de nome dos indicadores
 f_ind_bra <- function(p){
 for (i in seq_along(bra_ind_list))
-   p <- ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
+   print(ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,))+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
       ylim(0,100)+
@@ -505,7 +505,7 @@ for (i in seq_along(bra_ind_list))
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
-    print(p)
+   )
 
     
 
