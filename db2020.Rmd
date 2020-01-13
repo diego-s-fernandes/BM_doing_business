@@ -407,32 +407,77 @@ bbo_ind <- bbo_ind %>%
 # tentativa loop OCDE e Brics
 
 ```{r echo=TRUE}
-teste <- bbo_ind %>% 
+bbo_ind_spread <- bbo_ind %>% 
   filter(db_year %in% c(2010:2020)) %>% 
   spread( indicador,pontuacao) %>% 
   clean_names()
   
-  t <- ggloop::ggloop(teste,aes_loop(x= db_year,y = c(abertura_de_empresa,comercio_entre_fronteiras), fill = grupo_eco))%L+%
-           geom_bar(stat="identity", position=position_dodge())%L+%
+  ind_loop <- ggloop::ggloop(bbo_ind_spread,aes_loop(x= db_year,y = c(abertura_de_empresa:resolucao_de_insolvencia), fill = grupo_eco))%L+%
+           geom_bar(stat="identity", position=position_dodge(), color = "black")%L+%
           ylim(0,100)%L+%
+    scale_fill_manual(values=c("#CC6666", "#9999CC", "#66CC99"))%L+%
         
       labs(
         x = "Ano",
         y = "Pontuação",
+        fill = "Grupo Econômico",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")%L+%
+    theme_minimal()%L+%
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
    
-empresa <- t[["fill.grupo_eco"]][["x.db_year_y.abertura_de_empresa"]]
- empresa <- empresa +
-   geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black")
-   
-    empresa
 
-    
 
 ```
 
+#Separando os gráficos
+
+```{r}
+
+empresa <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.abertura_de_empresa"]]
+empresa <- empresa + geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Abertura de Empresa")
+ 
+construcao <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_alvaras_de_construcao"]] 
+construcao <- construcao + geom_text(aes(label = obtencao_de_alvaras_de_construcao), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Alvará de Construção")
+ 
+comercio <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.comercio_entre_fronteiras"]] 
+comercio <- comercio + geom_text(aes(label = comercio_entre_fronteiras), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Comércio Entre fronteiras") 
+
+contratos <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.execucao_de_contratos"]]
+contratos <- contratos + geom_text(aes(label = execucao_de_contratos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") 
+
+credito <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_credito"]] 
+credito <- credito +geom_text(aes(label = obtencao_de_credito), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de crédito")
+
+eletri <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_eletricidade"]]
+eletri <- eletri + geom_text(aes(label = obtencao_de_eletricidade), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Eletricidade") 
+
+impostos <-  ind_loop[["fill.grupo_eco"]][["x.db_year_y.pagamento_de_impostos"]]
+impostos <- impostos + geom_text(aes(label = pagamento_de_impostos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Pagamento de Impostos")
+
+investidores <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.protecao_dos_investidores_minoritarios"]]
+investidores <- investidores  + geom_text(aes(label  = protecao_dos_investidores_minoritarios), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Proteção dos Investidores Minoritários")
+
+propriedades <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.registro_de_propriedades"]]
+propriedades <- propriedades +  geom_text(aes(label  = registro_de_propriedades), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Registro de Propriedades")
+
+insol <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.resolucao_de_insolvencia"]]
+insol <- insol + geom_text(aes(label  = resolucao_de_insolvencia), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Resolução de Insolvência")
+
+
+ggsave(filename = "empresa.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "construcao.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "comercio.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "contratos.pdf", width = 40, height = 20, units = "cm", dpi = "retina")  
+ggsave(filename = "credito.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "eletri.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "impostos.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "investidores.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "propriedades.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "insol.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+
+```
 
 
 
@@ -499,9 +544,9 @@ bra_ind <- bra_ind %>%
 # criando o loop para gerar múltiplos gráficos
 
 bra_ind_list <- unique(bra_ind$indicador) # criando a lista de nome dos indicadores
-f_ind_bra <- function(p){
-for (i in seq_along(bra_ind_list))
-   print(ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
+f_ind_bra <- function(data){
+for (i in seq_along(bra_ind_list)) {
+    a <- ggplot(subset(data,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,))+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB", color = "black")+
       ylim(0,100)+
@@ -514,15 +559,15 @@ for (i in seq_along(bra_ind_list))
       theme_minimal()+
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
-   )
-
-    
-
+   
+    print(a)
 
 }
+  
+  
+}
 
-
-f_ind_bra()
+f_ind_bra(bra_ind)
 ```
 
 # Fazendo múltiplos gráficos com indicadores OCDE
