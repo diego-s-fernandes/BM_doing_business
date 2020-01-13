@@ -35,6 +35,7 @@ library(gdata)
 library(ggimage)
 library(ggflags)
 library(countrycode)
+library(ggloop)
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
 #rscodeio::install_theme()
@@ -284,8 +285,8 @@ gpub <- publicado %>%
  ggbrics <- g_brics_1 + gbrics2
 ggbrics
 
-ggsave(filename = "ggbrics.pdf", width = 40, height = 20, units = "cm")
-ggsave
+ggsave(filename = "ggbrics.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "ggbrics.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 #https://stackoverflow.com/questions/26495400/save-several-ggplots-to-files
 ```
@@ -406,20 +407,27 @@ bbo_ind <- bbo_ind %>%
 # tentativa loop OCDE e Brics
 
 ```{r echo=TRUE}
-
-
-bbo_ind %>% ggplot(aes(db_year,pontuacao, fill = grupo_eco ))+
-       geom_bar(stat="identity", position=position_dodge())   +
-       ylim(0,100)+
+teste <- bbo_ind %>% 
+  filter(db_year %in% c(2010:2020)) %>% 
+  spread( indicador,pontuacao) %>% 
+  clean_names()
+  
+  t <- ggloop::ggloop(teste,aes_loop(x= db_year,y = c(abertura_de_empresa,comercio_entre_fronteiras), fill = grupo_eco))%L+%
+           geom_bar(stat="identity", position=position_dodge())%L+%
+          ylim(0,100)%L+%
+        
       labs(
         x = "Ano",
         y = "Pontuação",
-        caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE",
-        fill = "Grupo Econômico")+
-           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))+
-  facet_wrap(indicador ~.)
+        caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")%L+%
+           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
-    
+   
+empresa <- t[["fill.grupo_eco"]][["x.db_year_y.abertura_de_empresa"]]
+ empresa <- empresa +
+   geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black")
+   
+    empresa
 
     
 
@@ -495,14 +503,15 @@ f_ind_bra <- function(p){
 for (i in seq_along(bra_ind_list))
    print(ggplot(subset(bra_ind,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,))+
-    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
+    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB", color = "black")+
       ylim(0,100)+
-      geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 6, color = "black")+
+      geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 5, color = "black")+
       ggtitle (paste("Pontuação em:",bra_ind_list[i] ))+
       labs(
         x = "Ano",
         y = "Pontuação",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
+      theme_minimal()+
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
    )
@@ -519,5 +528,13 @@ f_ind_bra()
 # Fazendo múltiplos gráficos com indicadores OCDE
 
 
+```{r}
+
+
+
+
+
+
+```
 
 
