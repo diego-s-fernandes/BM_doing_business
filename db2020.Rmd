@@ -113,6 +113,8 @@ eodb$db_year <- as_factor(eodb$db_year)
 eodb <- eodb %>% 
   mutate(pontuacao = round(pontuacao, 2))
 
+
+
 ```
 
 ## estabelecendo um tema para os gráficos
@@ -455,7 +457,6 @@ bbo_ind_spread <- bbo_ind %>%
     theme_minimal_hgrid()%L+%
            theme(legend.position="top",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
-   
 
 
 ```
@@ -616,19 +617,37 @@ for (i in seq_along(bra_ind_list)) {
   
 }
 
-f_ind_bra(bra_ind)
+map(bra_ind,f_ind_bra(bra_ind))
 ```
 
 # Fazendo múltiplos gráficos com indicadores OCDE
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 
+plots <- bra_ind %>% 
+  select(indicador, pontuacao, db_year) %>% 
+  group_by(indicador) %>% 
+  nest() %>% 
+  mutate(plot = map(data, ~ggplot(., aes(db_year, pontuacao)) + geom_bar(stat="identity", position=position_dodge())))
+        
+paths <- stringr::str_c(names(bra_ind_list), ".pdf")
 
+map(plots$plot,ggsave(filename = ))
 
-
-
+# https://rpubs.com/dani/294422
 
 ```
 
+```{r}
+
+
+plots <- mtcars %>% 
+  split(.$cyl) %>% 
+  map(~ggplot(., aes(mpg, wt)) + geom_point())
+paths <- stringr::str_c(names(plots), ".pdf")
+pwalk(list(paths, plots), ggsave, path = tempdir())
+
+
+```
 
