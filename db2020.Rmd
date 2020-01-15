@@ -618,6 +618,7 @@ for (i in seq_along(bra_ind_list)) {
 }
 
 map(bra_ind,f_ind_bra(bra_ind))
+#
 ```
 
 # Fazendo múltiplos gráficos com indicadores OCDE
@@ -625,10 +626,14 @@ map(bra_ind,f_ind_bra(bra_ind))
 
 ```{r eval=FALSE, include=FALSE}
 
-plots <- bra_ind %>% 
+plotss <- bra_ind %>% 
   select(indicador, pontuacao, db_year) %>% 
-  group_by(indicador) %>% 
-  nest() %>% 
+  mutate (pontuacao = as.double(pontuacao))
+
+   (plotss, key = "indicador", value = "pontuacao", convert = TRUE )
+   
+   
+  ?spread
   mutate(plot = map(data, ~ggplot(., aes(db_year, pontuacao)) + geom_bar(stat="identity", position=position_dodge())))
         
 paths <- stringr::str_c(names(bra_ind_list), ".pdf")
