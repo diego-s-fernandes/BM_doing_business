@@ -175,7 +175,7 @@ bbo <- bind_rows(bbo, bra)
 
 
 clev_ocde <- bbo %>% 
-  filter(grupo_eco == "OCDE" | economy == "Brazil", db_year == 2020) %>% 
+  filter(grupo_eco == "OCDE" | economy == "Brazil", db_year == 2020, grupo_eco != "Brazil") %>% 
   filter( !economy %in% c("Japan Osaka", "Japan Tokyo", "United States Los Angeles","United States New York City"))
   
   g_clev_ocde <- clev_ocde %>% 
@@ -610,7 +610,7 @@ f_ind_bra <- function(data){
 for (i in seq_along(bra_ind_list)) {
     a <- ggplot(subset(data,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao,))+
-    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB", color = "black")+
+    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
       ylim(0,100)+
       geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 5, color = "black")+
       ggtitle (paste("Pontuação em:",bra_ind_list[i] ))+
@@ -623,13 +623,13 @@ for (i in seq_along(bra_ind_list)) {
     
    
     print(a)
-
+    ggsave(filename = paste0(bra_ind_list[i],".pdf"),plot = a, width = 40, height = 20, units = "cm", dpi = "retina")
 }
   
   
 }
 
-map(bra_ind,f_ind_bra(bra_ind))
+f_ind_bra(bra_ind)
 #
 ```
 
@@ -638,32 +638,14 @@ map(bra_ind,f_ind_bra(bra_ind))
 
 ```{r eval=FALSE, include=FALSE}
 
-plotss <- bra_ind %>% 
-  select(indicador, pontuacao, db_year) %>% 
-  mutate (pontuacao = as.double(pontuacao))
 
-   (plotss, key = "indicador", value = "pontuacao", convert = TRUE )
-   
-   
-  ?spread
-  mutate(plot = map(data, ~ggplot(., aes(db_year, pontuacao)) + geom_bar(stat="identity", position=position_dodge())))
-        
-paths <- stringr::str_c(names(bra_ind_list), ".pdf")
-
-map(plots$plot,ggsave(filename = ))
-
-# https://rpubs.com/dani/294422
 
 ```
 
 ```{r}
 
 
-plots <- mtcars %>% 
-  split(.$cyl) %>% 
-  map(~ggplot(., aes(mpg, wt)) + geom_point())
-paths <- stringr::str_c(names(plots), ".pdf")
-pwalk(list(paths, plots), ggsave, path = tempdir())
+
 
 
 ```
