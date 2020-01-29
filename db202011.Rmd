@@ -624,13 +624,15 @@ for (i in seq_along(bra_ind_list)) {
    
     print(a)
     ggsave(filename = paste0(bra_ind_list[i],".pdf"),plot = a, width = 40, height = 20, units = "cm", dpi = "retina")
+    ggsave(filename = paste0(bra_ind_list[i],".png"),plot = a, width = 40, height = 20, units = "cm", dpi = "retina")
+    
 }
   
   
 }
 
 f_ind_bra(bra_ind)
-#
+
 ```
 
 # Fazendo múltiplos gráficos com indicadores OCDE
@@ -652,7 +654,7 @@ f_ind_bra(bra_ind)
 
 
 ```{r}
-?Reserved
+
 
 
 ```
