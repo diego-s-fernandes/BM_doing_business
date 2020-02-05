@@ -1,0 +1,703 @@
+---
+title: "db-2020"
+author: "Diego dos Santos Fernandes"
+date: "03/01/2020"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidyverse)
+library(ggrepel)
+library(readxl)
+library(stargazer)
+library(gghighlight)
+library(ggpubr)
+library(ggthemes)
+library(gridExtra)
+library(corrplot)
+library(GGally)
+library(devtools)
+library(janitor)
+library(hablar)
+library(patchwork)
+library(dplyr)
+library(esquisse)
+library(rvest)
+library(openxlsx)
+library(gdata)
+library(ggimage)
+library(countrycode)
+library(ggloop)
+library(cowplot)
+library(hrbrthemes)
+devtools::install_github('datarootsio/artyfarty')
+
+
+#remotes::install_github("anthonynorth/rscodeio")
+#https://github.com/anthonynorth/rscodeio
+#rscodeio::install_theme()
+```
+
+```{r}
+
+DB2020 <- read_excel("DB2020.xlsx", sheet = "All data", skip = 3)
+
+
+ url <- "https://www.doingbusiness.org/content/dam/doingBusiness/excel/db2020/Historical-data---COMPLETE-dataset-with-scores.xlsx"
+ destfile <- "DB.xlsx"
+ curl::curl_download(url, destfile)
+ DB <- read_excel(destfile, skip = 3)
+
+```
+
+
+```{r}
+
+
+path <- "https://www.doingbusiness.org/content/dam/doingBusiness/excel/db2020/Historical-data---COMPLETE-dataset-with-scores.xlsx"
+
+
+
+
+```
+
+# dados da Pontuação EoDB
+## Unificar as metodologias mais atuais
+```{r}
+
+eodb <- DB2020[ ,1:9]
+eodb <- eodb[ ,-6]
+eodb <- eodb %>%  janitor::clean_names() %>% janitor::remove_empty(c("rows","cols"))
+
+eodb <- eodb %>% 
+  mutate( pontuacao = dplyr::coalesce(ease_of_doing_business_score_db17_20_methodology,ease_of_doing_business_score_db15_methodology,ease_of_doing_business_score_db10_14_methodology))
+eodb <- eodb[ , c(1:5,9)] 
+eodb <- eodb %>% na.omit(pontuacao)
+
+
+
+
+```
+
+## tratando as informações com países com coleta de dados em duas cidades
+
+
+
+```{r}
+#usando o Rbase para renomear as linhas
+eodb$economy[eodb$economy == "Brazil São Paulo" & eodb$db_year <= 2013] <- "Brazil"
+eodb$economy[eodb$economy == "Russian Federation Moscow" & eodb$db_year <= 2013] <- "Russian Federation"
+eodb$economy[eodb$economy == "China Shanghai" & eodb$db_year <= 2013] <- "China"
+eodb$economy[eodb$economy == "India Mumbai" & eodb$db_year <= 2013] <- "India"
+eodb$economy[eodb$economy == "Japan Tokyo" & eodb$db_year <= 2013] <- "Japan"
+eodb$economy[eodb$economy == "Mexico Mexico City" & eodb$db_year <= 2013] <- "Mexico"
+
+# usando o dplyr para fazer a mesma coisa
+eodb <- eodb %>% 
+    mutate( economy = if_else(economy == "United States New York City" & db_year <= 2013, "United States", economy),
+            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy),
+            economy = if_else(economy == "Bangladesh Dhaka" & db_year <= 2013, "Bangladesh", economy),
+            economy = if_else(economy == "Indonesia Jakarta" & db_year <= 2013, "Indonesia", economy),
+            economy = if_else(economy == "Nigeria Lagos" & db_year <= 2013, "Nigeria", economy),
+             
+                )
+
+eodb$db_year <- as_factor(eodb$db_year)
+
+
+eodb <- eodb %>% 
+  mutate(pontuacao = round(pontuacao, 1))
+
+
+
+```
+
+## estabelecendo um tema para os gráficos
+
+```{r}
+
+diego_theme <- theme(text = element_text(color = "gray20", size = 15),
+        legend.position = c("top"), # position the legend in the upper left 
+        legend.direction = "horizontal",
+        legend.justification = 0.1, # anchor point for legend.position.
+        legend.text = element_text(size = 11, color = "gray10"),
+        axis.text = element_text(face = "italic"),
+        axis.title.x = element_text(vjust = -1), # move title away from axis
+        axis.title.y = element_text(vjust = 2), # move away for axis
+        axis.ticks.y = element_blank(), # element_blank() is how we remove elements
+        axis.line = element_line(color = "gray60", size = 0.5),
+        axis.line.y = element_blank(),
+        panel.grid.major = element_line(color = "gray60", size = 0.5),
+        panel.grid.major.x = element_blank()
+        )
+
+```
+
+
+# Criando uma categoria de grupo Brics e OCDE
+
+```{r}
+eodb <- eodb %>% 
+    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa") , "Brics", "Outros"),
+            grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
+
+
+
+```
+
+## Gráfico OCDE e BRICS
+
+```{r}
+bbo <- eodb %>% 
+  filter(grupo_eco %in% c("Brics", "OCDE"))
+
+bra <- eodb %>% 
+  filter(economy == "Brazil") %>% 
+  mutate( grupo_eco = if_else( economy == "Brazil", "Brazil", grupo_eco))
+  
+bbo <- bind_rows(bbo, bra)  
+
+  bbo <- bbo %>% 
+    group_by(economy,grupo_eco, db_year) %>% 
+    summarise(pontuacao = round(mean(pontuacao),2))
+  
+  
+
+```
+
+#clevelend graph bbo
+
+```{r}
+
+
+clev_ocde <- bbo %>% 
+  filter(grupo_eco == "OCDE" | economy == "Brazil", db_year == 2020) %>% 
+  filter( !economy %in% c("Japan Osaka", "Japan Tokyo", "United States Los Angeles","United States New York City"))
+  
+  g_clev_ocde <- clev_ocde %>% 
+  ggplot(aes(x = pontuacao, y = reorder(economy, pontuacao)))+
+  geom_point(color = "black", size = 2)+
+  geom_point(data=subset(bbo, economy == "Brazil" & db_year == 2020),size=4, color = "red")+
+  theme(axis.text.y = element_text(color = "black" ))+
+  geom_segment(aes(x =0, xend= pontuacao, yend=economy),color="black")+
+  geom_segment(data=subset(bbo, economy == "Brazil" & db_year == 2020), aes(x =0, xend= pontuacao, yend=economy),color="red", size = 1)+
+  theme_cleveland() +
+ scale_x_continuous(breaks = seq (0,100,25),
+                       limits = c(0,100))+
+  labs(
+    title = "Facilidade em se Fazer Negócios OCDE e Brasil - 2020",
+    subtitle = "The ease of doing business score", 
+    caption = "Fonte: Banco Mundial\nElaboração própria",
+    x = "Pontuação",
+    y = ""
+     )+
+ theme(plot.title = element_text(color = "black", size = 25, face = "bold"),
+       axis.text=element_text(size=13, color = "black"),
+       axis.title=element_text(size=14,face="bold")) +
+ theme(plot.caption=element_text(size=14, hjust=0))
+
+g_clev_ocde
+
+
+ggsave(filename = "g_clev_ocde.pdf", plot = g_clev_ocde, width = 60, height = 30, units = "cm", dpi = "retina")
+ggsave(filename = "g_clev_ocde.png", plot = g_clev_ocde, width = 60, height = 30, units = "cm", dpi = "retina")
+
+
+```
+
+
+
+```{r}
+
+
+
+#   
+#   g2_clev_ocde <- clev_ocde %>% 
+#   ggdotchart(x = "economy", y = "pontuacao",
+#              color = "grupo_eco",
+#              sorting = "descending",
+#              add = "segments",
+#              group = "grupo_eco",
+#              dot.size = 12,
+#              rotate = TRUE,
+#              label = clev_ocde$pontuacao,
+#              font.label = list(color = "white", size = 8, vjust = 0,5),
+#              ggtheme = theme_pubr()
+#                           )+
+#   theme( legend.position = "none")
+# 
+# 
+# g2_clev_ocde
+
+#https://github.com/kassambara/ggpubr
+
+
+```
+
+
+```{r, fig.height=8, fig.width=12}
+brasil_1 <- eodb %>% 
+  filter(economy == "Brazil")
+
+ggplot(brasil_1) +
+ aes(x = db_year, y = pontuacao) +
+ geom_bar(stat="identity", fill = "#31688e") +
+  scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = -0.2 )+
+ labs(x = "Ano", 
+      y = "pontuação", 
+      title = "Facilidade em se fazer negócios no Brasil", 
+      subtitle = "A pontuação mede de forma geral o aombiente de negócios de um país", 
+      caption = "Fonte: Banco Mundial") +
+ theme_minimal()+
+  theme(plot.caption=element_text(size=10, hjust=0))+
+  theme(axis.title=element_text(face="bold"))
+
+
+
+
+```
+
+## último relatório Brics
+```{r, fig.height=6, fig.width=12}
+brics_2020 <- eodb %>% 
+  filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa"), db_year == 2020)
+
+
+
+g_brics_1 <- brics_2020 %>% 
+  ggplot(aes(x = economy, y = pontuacao)) +
+ geom_bar(stat="identity", fill = "#31688e", colour="black") +
+   scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 5 )+ 
+   labs(x = "", 
+      y = "pontuação", 
+      title = "Facilidade em se fazer Negócios Brics", 
+      subtitle = "The ease of doing business score", 
+      caption = "Fonte: Banco Mundial\nElaboração própria") +
+ theme_minimal_hgrid()+
+  theme(plot.caption=element_text(size=13, hjust=0))+
+ theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
+
+
+g_brics_1
+```
+
+
+#teste com as bandeiras
+
+```{r}
+
+
+```
+
+
+Analisando o Ranking dos Brics
+
+```{r,fig.height=6, fig.width=12}
+
+ranking <- DB2020[DB2020$`DB Year` == 2020, c(1:6) ] %>% clean_names()
+
+gbrics2 <- ranking %>% 
+  filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa")) %>% 
+  ggplot (aes(x = economy, y = ease_of_doing_business_rank, label  = ease_of_doing_business_rank))+
+  geom_point(stat= "identity", color = "black", size = 10)+
+    geom_segment(aes( y = 0,
+                    x= economy,
+                    yend = ease_of_doing_business_rank,
+                    xend = economy),
+               color = "black")+
+  geom_text(color = "white", size = 4, fontface = "bold")+
+  labs( title = "Ranking em Facilidade em se Fazer Negócios 2020",
+        subtitle = "Doing business ranking",
+  x = "",
+  y = "Posição no Ranking"
+  )+ 
+  scale_y_reverse()+
+  theme_cleveland()+
+   theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))+
+   theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
+
+  gbrics2
+
+```
+
+
+```{r,fig.height=6, fig.width=12}
+publicado <-  data.frame("ano"     = c(2010:2020),
+                         "posicao" = c(129,120,126,118,116,111,121,123,125,109,124))
+
+gpub <- publicado %>% 
+   ggplot (aes(x = ano, y = posicao, label  = posicao))+
+  geom_point(stat= "identity", fill = "black", size = 10)+
+    geom_segment(aes( y = 0,
+                    x= ano,
+                    yend = posicao,
+                    xend = ano),
+               color = "grey")+
+  scale_x_continuous(breaks = c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))+
+  geom_text(color = "white", size = 4, fontface = "bold")+
+  labs( title = "Posição no Brasil no ranking de Facilidade em se fazer Negócio",
+  x = "",
+  y = "Posição no Ranking",
+  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração Própria"
+)+ scale_y_reverse()+
+  theme_ft_rc()+
+   theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))
+
+  gpub
+```
+
+
+```{r, fig.height=7, fig.width=14}
+ ggbrics <- g_brics_1 + gbrics2
+ggbrics
+
+ggsave(filename = "ggbrics.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "ggbrics.png", width = 40, height = 20, units = "cm", dpi = "retina")
+
+#https://stackoverflow.com/questions/26495400/save-several-ggplots-to-files
+```
+
+
+# TRATAMENTO DOS INDICADORES INTERMEDIÁRIOS
+## rankings dos indicadores intermediários
+
+```{r}
+
+rank_ind <- DB2020 %>% 
+  filter(`DB Year` == 2020) %>% 
+  select(c(1:5), starts_with("Rank"))
+
+```
+
+## pontuação dos indicadores
+
+```{r}
+# fiz usando o regexx
+#https://stackoverflow.com/questions/45357806/dplyr-select-and-starts-with-on-multiple-values-in-a-variable-list
+nomesind <- c("Starting", "Score-Dealing", "Score-Getting",  "Score-Regis", "Score-Protect", "Score-Paying", "Score-Trading", "Score-Enfor", "Score-Resolving")
+ind <- DB2020 %>% 
+  select(c (1:5), matches (paste(nomesind, collapse = "|")))
+
+# fazer coalesce dos indicadores
+
+ind <- ind %>% clean_names()
+
+ind <- ind %>% 
+  mutate(score_dealing_with_construction =                                                                             coalesce(score_dealing_with_construction_permits_db16_20_methodology,score_dealing_with_construction_permits_db06_15_methodology),    
+         score_getting_electricity = coalesce(score_getting_electricity_db16_20_methodology,score_getting_electricity_db10_15_methodology),
+         score_registering_property = coalesce(score_registering_property_db17_20_methodology,score_registering_property_db05_15_methodology),
+         score_getting_credit = coalesce(score_getting_electricity_db16_20_methodology, score_getting_credit_db15_20_methodology),
+         score_protecting_minority = coalesce(score_protecting_minority_investors_db15_20_methodology, score_protecting_minority_investors_db06_14_methodology),
+         score_paying_taxes = coalesce(score_paying_taxes_db17_20_methodology,score_paying_taxes_db06_16_methodology),
+         score_trading_across_borders = coalesce(score_trading_across_borders_db16_20_methodology, score_trading_across_borders_db06_15_methodology),
+         score_enforcing_contracts = coalesce (score_enforcing_contracts_db17_20_methodology, score_enforcing_contracts_db04_15_methodology)
+         
+         )
+ 
+# despivotando os indicadores de variáveis para observações 
+ind <- ind %>%  select(-c(6,8:23)) %>% 
+  gather(6:15,key = "indicador",  value = "pontuacao") %>% 
+  mutate(pontuacao = round(pontuacao,1)) %>% 
+  na.omit(pontuacao)
+
+# Criando a Categoria OCDE e Brics
+ind <- ind %>% 
+    mutate( grupo_eco = if_else(economy %in% c("Brazil", "China", "Russian Federation", "India", "South Africa") , "Brics", "Outros"),
+            grupo_eco = if_else( region == "High income: OECD","OCDE", grupo_eco ))
+  
+ # trocando o nome das observações da variável indicador
+
+ind$indicador[ind$indicador == "score_starting_a_business" ] <- "Abertura de Empresa" 
+ind$indicador[ind$indicador == "score_getting_electricity" ] <- "Obtenção de Eletricidade"
+ind$indicador[ind$indicador == "score_registering_property" ] <- "Registro de Propriedades"
+ind$indicador[ind$indicador == "score_getting_credit" ] <- "Obtenção de Crédito"
+ind$indicador[ind$indicador == "score_protecting_minority" ] <- "Proteção dos Investidores Minoritários"
+ind$indicador[ind$indicador == "score_trading_across_borders" ] <- "Comércio entre Fronteiras"
+ind$indicador[ind$indicador == "score_resolving_insolvency" ] <- "Resolução de Insolvência"
+ind$indicador[ind$indicador == "score_dealing_with_construction" ] <- "Obtenção de alvarás de construção"
+ind$indicador[ind$indicador == "score_enforcing_contracts" ] <- "Execução de Contratos"
+ind$indicador[ind$indicador == "score_paying_taxes" ] <- "Pagamento de Impostos"
+
+```
+
+## refazendo o trabalho de mudar os países com duas cidades coletadas
+
+
+```{r}
+
+#usando o Rbase para renomear as linhas
+ind$economy[ind$economy == "Brazil São Paulo" & ind$db_year <= 2013] <- "Brazil"
+ind$economy[ind$economy == "Russian Federation Moscow" & ind$db_year <= 2013] <- "Russian Federation"
+ind$economy[ind$economy == "China Shanghai" & ind$db_year <= 2013] <- "China"
+ind$economy[ind$economy == "India Mumbai" & ind$db_year <= 2013] <- "India"
+ind$economy[ind$economy == "Japan Tokyo" & ind$db_year <= 2013] <- "Japan"
+ind$economy[ind$economy == "Mexico Mexico City" & ind$db_year <= 2013] <- "Mexico"
+
+# usando o dplyr para fazer a mesma coisa
+ind <- ind %>% 
+    mutate( economy = if_else(economy == "United States New York City" & db_year <= 2013, "United States", economy),
+            economy = if_else(economy == "Pakistan Karachi" & db_year <= 2013, "Pakistan", economy),
+            economy = if_else(economy == "Bangladesh Dhaka" & db_year <= 2013, "Bangladesh", economy),
+            economy = if_else(economy == "Indonesia Jakarta" & db_year <= 2013, "Indonesia", economy),
+            economy = if_else(economy == "Nigeria Lagos" & db_year <= 2013, "Nigeria", economy),
+             
+                )
+
+ind$db_year <- as_factor(ind$db_year)
+
+
+```
+
+#Crinado a coluna Brics e OCDE
+
+```{r}
+
+bbo_ind <- ind %>% 
+  filter(grupo_eco %in% c("Brics", "OCDE"))
+
+bra_ind <- ind %>% 
+  filter(economy == "Brazil") %>% 
+  mutate( grupo_eco = if_else( economy == "Brazil", "Brazil", grupo_eco))
+  
+bbo_ind <- bind_rows(bbo_ind, bra_ind)
+
+bbo_ind <- bbo_ind %>% 
+    group_by(indicador,grupo_eco, db_year) %>% 
+    summarise(pontuacao = round(mean(pontuacao),2))
+
+
+
+
+```
+
+# tentativa loop OCDE e Brics
+
+```{r echo=TRUE}
+bbo_ind_spread <- bbo_ind %>% 
+  filter(db_year %in% c(2010:2020)) %>% 
+  spread( indicador,pontuacao) %>% 
+  clean_names()
+  
+  ind_loop <- ggloop::ggloop(bbo_ind_spread,aes_loop(x= db_year,y = c(abertura_de_empresa:resolucao_de_insolvencia), fill = grupo_eco))%L+%
+           geom_bar(stat="identity", position=position_dodge(), color = "black")%L+%
+          ylim(0,100)%L+%
+          scale_fill_manual(values=c("#CC6666", "#9999CC", "#66CC99"),
+                      labels = c("Brasil", "Brics", "OCDE"))%L+%
+      labs(
+        x = "Ano",
+        y = "Pontuação",
+        fill = "Grupo Econômico",
+        caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")%L+%
+    theme_minimal_hgrid()%L+%
+           theme(legend.position="top",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+    
+
+
+```
+
+#Separando os gráficos
+
+```{r}
+
+empresa <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.abertura_de_empresa"]]
+empresa <- empresa + geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Abertura de Empresa")
+empresa
+ggsave(filename = "empresa.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ 
+construcao <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_alvaras_de_construcao"]] 
+construcao <- construcao + geom_text(aes(label = obtencao_de_alvaras_de_construcao), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Alvará de Construção")
+construcao
+ggsave(filename = "construcao.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ 
+comercio <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.comercio_entre_fronteiras"]] 
+comercio <- comercio + geom_text(aes(label = comercio_entre_fronteiras), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Comércio Entre fronteiras")
+comercio
+ggsave(filename = "comercio.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+contratos <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.execucao_de_contratos"]]
+contratos <- contratos + geom_text(aes(label = execucao_de_contratos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Execução de Conttratos")
+contratos
+ggsave(filename = "contratos.pdf", width = 40, height = 20, units = "cm", dpi = "retina") 
+
+credito <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_credito"]] 
+credito <- credito +geom_text(aes(label = obtencao_de_credito), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de crédito")
+credito
+ggsave(filename = "credito.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+eletri <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_eletricidade"]]
+eletri <- eletri + geom_text(aes(label = obtencao_de_eletricidade), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Eletricidade") 
+eletri
+ggsave(filename = "eletri.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+impostos <-  ind_loop[["fill.grupo_eco"]][["x.db_year_y.pagamento_de_impostos"]]
+impostos <- impostos + geom_text(aes(label = pagamento_de_impostos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Pagamento de Impostos")
+impostos
+ggsave(filename = "impostos.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+investidores <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.protecao_dos_investidores_minoritarios"]]
+investidores <- investidores  + geom_text(aes(label  = protecao_dos_investidores_minoritarios), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Proteção dos Investidores Minoritários")
+investidores
+ggsave(filename = "investidores.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+propriedades <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.registro_de_propriedades"]]
+propriedades <- propriedades +  geom_text(aes(label  = registro_de_propriedades), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Registro de Propriedades")
+propriedades
+ggsave(filename = "propriedades.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+insol <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.resolucao_de_insolvencia"]]
+insol <- insol + geom_text(aes(label  = resolucao_de_insolvencia), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Resolução de Insolvência")
+insol
+ggsave(filename = "insol.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+```
+
+
+
+# Gráficos indicadores um por um OCDE e Brics
+```{r}
+bbo_ind$grupo_eco <- as_factor(bbo_ind$grupo_eco)
+bbo_ind %>% 
+  filter(indicador ==  "Abertura de Empresa", db_year %in% c(2010:2020)) %>% 
+  ggplot(aes(x = db_year, y = pontuacao, fill = grupo_eco))+
+  geom_bar(stat="identity", position=position_dodge()) +
+  geom_text(aes(label= pontuacao), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black")+
+   labs(
+    title = "Pontuação Abertura de empresa no Brasil",
+    subtitle = "Score Starting a business",
+    x = "Ano",
+    y = "Pontuação",
+    caption = "O gráfico apresenta um histórico de pontuação baseado nas modificações metodológicas dos seguintes anos:\nDB2004-2014, DB2015, DB2016, DB2017-2019."
+    ) +
+  
+  theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+
+
+
+```
+
+
+
+
+# indicadore do brasil teste
+```{r eval=FALSE, include=FALSE}
+
+g_ind1 <- ind %>%
+  filter(indicador == "Abertura de Empresa", economy == "Brazil") %>%
+  ggplot(aes(x = db_year, y = pontuacao))+
+  geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB") +
+  geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 4, color = "black")+
+   labs(
+    title = "Pontuação Abertura de empresa no Brasil",
+    subtitle = "score Starting a business",
+    x = "Ano",
+    y = "Pontuação",
+    caption = "O gráfico apresenta um histórico de pontuação baseado nas modificações metodológicas dos seguintes anos:\nDB2004-2014, DB2015, DB2016, DB2017-2019."
+    ) +
+  theme_minimal()+
+  diego_theme +
+  theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+
+g_ind1
+
+```
+
+# Loop para gerar multiplos gráficos
+
+
+```{r}
+# criandop uma tabela somente para os indicadores brasileiros
+bra_ind <- bra_ind %>% 
+  filter(db_year %in% c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))
+
+# mudando o nome dos indicadores que agor anão são mais variáveis, e sim observações
+
+
+
+# criando o loop para gerar múltiplos gráficos
+
+bra_ind_list <- unique(bra_ind$indicador) # criando a lista de nome dos indicadores
+f_ind_bra <- function(data){
+for (i in seq_along(bra_ind_list)) {
+    a <- ggplot(subset(data,bra_ind$indicador == bra_ind_list[i]),
+                 aes(db_year,pontuacao))+
+    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB", color = "black")+
+      ylim(0,100)+
+      geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 5, color = "black")+
+      ggtitle (paste("Pontuação em:",bra_ind_list[i] ))+
+      labs(
+        x = "Ano",
+        y = "Pontuação",
+        caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
+      theme_minimal_hgrid()+
+           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+    
+   ggsave(paste0(bra_ind_list[i],".png"),plot = a,width = 40, height = 20, units = "cm", dpi = "retina")
+   ggsave(paste0(bra_ind_list[i],".pdf"),plot = a,width = 40, height = 20, units = "cm", dpi = "retina")
+    
+
+}
+  
+  
+}
+
+f_ind_bra(bra_ind)
+
+
+
+
+```
+
+# Fazendo múltiplos gráficos com indicadores OCDE
+
+
+```{r eval=FALSE, include=FALSE}
+
+plotss <- bra_ind %>% 
+  select(indicador, pontuacao, db_year) %>% 
+  mutate (pontuacao = as.double(pontuacao))
+
+   (plotss, key = "indicador", value = "pontuacao", convert = TRUE )
+   
+   
+  ?spread
+  mutate(plot = map(data, ~ggplot(., aes(db_year, pontuacao)) + geom_bar(stat="identity", position=position_dodge())))
+        
+paths <- stringr::str_c(names(bra_ind_list), ".pdf")
+
+map(plots$plot,ggsave(filename = ))
+
+# https://rpubs.com/dani/294422
+
+```
+
+```{r}
+
+
+
+  
+
+```
+
