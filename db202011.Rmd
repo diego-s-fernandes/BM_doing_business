@@ -452,6 +452,8 @@ g_ind_rank <- rank_ind %>%
  
  
 ggsave(filename = "g_ind_rank.png", plot = g_ind_rank, width = 40, height = 30, units = "cm", dpi = "retina")
+
+##
   
 ```
 
