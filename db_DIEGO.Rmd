@@ -187,6 +187,10 @@ eodb <- eodb %>%
 
 ```
 
+
+
+
+
 ## Gráfico OCDE e BRICS
 
 ```{r}
@@ -206,6 +210,37 @@ bbo <- bind_rows(bbo, bra)
   
 
 ```
+
+# EODB  média OCDE
+
+```{r}
+ media_eodb <- eodb %>%
+  filter(grupo_eco != "Outros") %>% 
+    group_by(grupo_eco, db_year) %>% 
+    summarise(pontuacao = round(mean(pontuacao),1))
+
+media_eodb <- bind_rows(media_eodb, bra) 
+media_eodb <- media_eodb %>% 
+ select(grupo_eco,db_year,pontuacao) %>% 
+  filter(grupo_eco != "Outros", db_year %in% c(2015:2020)) 
+ggplot(data = media_eodb,aes(x= db_year,y = pontuacao, fill = grupo_eco))+
+           geom_bar(stat="identity", position=position_dodge())+
+  geom_text(aes(label = pontuacao), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Facilidade em se Fazer Negócios - 2020")+
+          ylim(0,100)+
+          scale_fill_manual(values=c("#CC6666", "#9999CC", "#66CC99"),
+                      labels = c("Brasil", "Brics", "OCDE"))+
+      labs(
+        x = "Ano",
+        y = "Pontuação",
+        fill = "Grupo Econômico",
+        caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
+    theme_minimal()+
+           theme(legend.position="top",plot.caption=element_text(size=12, hjust=0, vjust = 3))+
+    theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
+
+```
+
 
 #clevelend graph bbo
 
@@ -379,7 +414,7 @@ gpub <- publicado %>%
                     yend = posicao,
                     xend = ano),
                color = "black")+
-  scale_x_continuous(breaks = c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))+
+    scale_x_continuous(breaks = c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))+
   geom_text(color = "white", size = 4, fontface = "bold")+
   labs( title = "Posição no Brasil no ranking de Facilidade em se fazer Negócio",
   x = "",
@@ -430,7 +465,7 @@ colnames(rank_ind)
 
 g_ind_rank <- rank_ind %>% 
   filter(economy == "Brazil", db_year == 2020 ) %>% 
-  ggplot (aes(x = indicador, y = posicao, label  = posicao))+
+  ggplot (aes(x = reorder(indicador,posicao), y = posicao, label  = posicao))+
   geom_point(stat= "identity", fill = "black", size = 10, color = "black")+
     geom_segment(aes( y = 0,
                     x= indicador,
@@ -450,6 +485,8 @@ g_ind_rank <- rank_ind %>%
     theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
          axis.text.x = element_text(face = "bold", size = 12,angle = 45,  hjust = 1))
  
+
+g_ind_rank
  
 ggsave(filename = "g_ind_rank.png", plot = g_ind_rank, width = 40, height = 30, units = "cm", dpi = "retina")
 
