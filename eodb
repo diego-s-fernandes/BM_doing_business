@@ -1,0 +1,2225 @@
+"","country_code","economy","region","income_group","db_year","pontuacao"
+"1","AFG","Afghanistan","South Asia","Low income","2020",44.1
+"2","AFG","Afghanistan","South Asia","Low income","2019",44.2
+"3","AFG","Afghanistan","South Asia","Low income","2018",37.1
+"4","AFG","Afghanistan","South Asia","Low income","2017",38.9
+"5","AFG","Afghanistan","South Asia","Low income","2016",39.3
+"6","AFG","Afghanistan","South Asia","Low income","2015",41.7
+"7","AFG","Afghanistan","South Asia","Low income","2014",40.3
+"8","AFG","Afghanistan","South Asia","Low income","2013",39.6
+"9","AFG","Afghanistan","South Asia","Low income","2012",39.2
+"10","AFG","Afghanistan","South Asia","Low income","2011",36.9
+"11","AFG","Afghanistan","South Asia","Low income","2010",39.7
+"12","ALB","Albania","Europe & Central Asia","Upper middle income","2020",67.7
+"13","ALB","Albania","Europe & Central Asia","Upper middle income","2019",67
+"14","ALB","Albania","Europe & Central Asia","Upper middle income","2018",66.8
+"15","ALB","Albania","Europe & Central Asia","Upper middle income","2017",64.2
+"16","ALB","Albania","Europe & Central Asia","Upper middle income","2016",58.1
+"17","ALB","Albania","Europe & Central Asia","Upper middle income","2015",62.1
+"18","ALB","Albania","Europe & Central Asia","Upper middle income","2014",57
+"19","ALB","Albania","Europe & Central Asia","Upper middle income","2013",61.3
+"20","ALB","Albania","Europe & Central Asia","Upper middle income","2012",60.9
+"21","ALB","Albania","Europe & Central Asia","Upper middle income","2011",63.5
+"22","ALB","Albania","Europe & Central Asia","Upper middle income","2010",63.4
+"23","DZA","Algeria","Middle East & North Africa","Upper middle income","2020",48.6
+"24","DZA","Algeria","Middle East & North Africa","Upper middle income","2019",48.5
+"25","DZA","Algeria","Middle East & North Africa","Upper middle income","2018",46.2
+"26","DZA","Algeria","Middle East & North Africa","Upper middle income","2017",46.1
+"27","DZA","Algeria","Middle East & North Africa","Upper middle income","2016",44.2
+"28","DZA","Algeria","Middle East & North Africa","Upper middle income","2015",47.7
+"29","DZA","Algeria","Middle East & North Africa","Upper middle income","2014",46.9
+"30","DZA","Algeria","Middle East & North Africa","Upper middle income","2013",49.1
+"31","DZA","Algeria","Middle East & North Africa","Upper middle income","2012",48.7
+"32","DZA","Algeria","Middle East & North Africa","Upper middle income","2011",48.4
+"33","DZA","Algeria","Middle East & North Africa","Upper middle income","2010",48.8
+"34","AGO","Angola","Sub-Saharan Africa","Lower middle income","2020",41.3
+"35","AGO","Angola","Sub-Saharan Africa","Lower middle income","2019",41.2
+"36","AGO","Angola","Sub-Saharan Africa","Lower middle income","2018",39
+"37","AGO","Angola","Sub-Saharan Africa","Lower middle income","2017",37.7
+"38","AGO","Angola","Sub-Saharan Africa","Lower middle income","2016",37.6
+"39","AGO","Angola","Sub-Saharan Africa","Lower middle income","2015",39.4
+"40","AGO","Angola","Sub-Saharan Africa","Lower middle income","2014",39.2
+"41","AGO","Angola","Sub-Saharan Africa","Lower middle income","2013",42.9
+"42","AGO","Angola","Sub-Saharan Africa","Lower middle income","2012",40.3
+"43","AGO","Angola","Sub-Saharan Africa","Lower middle income","2011",36.9
+"44","AGO","Angola","Sub-Saharan Africa","Lower middle income","2010",37
+"45","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2020",60.3
+"46","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2019",59.9
+"47","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2018",59.8
+"48","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2017",58.8
+"49","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2016",59.2
+"50","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2015",59.7
+"51","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2014",59.7
+"52","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2013",62.1
+"53","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2012",62.8
+"54","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2011",63
+"55","ATG","Antigua and Barbuda","Latin America & Caribbean","High income","2010",63.3
+"56","ARG","Argentina","Latin America & Caribbean","Upper middle income","2020",59
+"57","ARG","Argentina","Latin America & Caribbean","Upper middle income","2019",58.2
+"58","ARG","Argentina","Latin America & Caribbean","Upper middle income","2018",57.3
+"59","ARG","Argentina","Latin America & Caribbean","Upper middle income","2017",57.2
+"60","ARG","Argentina","Latin America & Caribbean","Upper middle income","2016",56.7
+"61","ARG","Argentina","Latin America & Caribbean","Upper middle income","2015",56.3
+"62","ARG","Argentina","Latin America & Caribbean","Upper middle income","2014",56.2
+"63","ARG","Argentina","Latin America & Caribbean","Upper middle income","2013",56.5
+"64","ARG","Argentina","Latin America & Caribbean","Upper middle income","2012",57.9
+"65","ARG","Argentina","Latin America & Caribbean","Upper middle income","2011",57.5
+"66","ARG","Argentina","Latin America & Caribbean","Upper middle income","2010",57.8
+"67","ARM","Armenia","Europe & Central Asia","Upper middle income","2020",74.5
+"68","ARM","Armenia","Europe & Central Asia","Upper middle income","2019",73.2
+"69","ARM","Armenia","Europe & Central Asia","Upper middle income","2018",71.5
+"70","ARM","Armenia","Europe & Central Asia","Upper middle income","2017",70.6
+"71","ARM","Armenia","Europe & Central Asia","Upper middle income","2016",69.1
+"72","ARM","Armenia","Europe & Central Asia","Upper middle income","2015",66.8
+"73","ARM","Armenia","Europe & Central Asia","Upper middle income","2014",65.5
+"74","ARM","Armenia","Europe & Central Asia","Upper middle income","2013",68.2
+"75","ARM","Armenia","Europe & Central Asia","Upper middle income","2012",64.3
+"76","ARM","Armenia","Europe & Central Asia","Upper middle income","2011",61.7
+"77","ARM","Armenia","Europe & Central Asia","Upper middle income","2010",61.1
+"78","AUS","Australia","High income: OECD","High income","2020",81.2
+"79","AUS","Australia","High income: OECD","High income","2019",80.7
+"80","AUS","Australia","High income: OECD","High income","2018",80.8
+"81","AUS","Australia","High income: OECD","High income","2017",80.2
+"82","AUS","Australia","High income: OECD","High income","2016",80.4
+"83","AUS","Australia","High income: OECD","High income","2015",80.6
+"84","AUS","Australia","High income: OECD","High income","2014",80.7
+"85","AUS","Australia","High income: OECD","High income","2013",80.3
+"86","AUS","Australia","High income: OECD","High income","2012",79.7
+"87","AUS","Australia","High income: OECD","High income","2011",79.7
+"88","AUS","Australia","High income: OECD","High income","2010",79.5
+"89","AUT","Austria","High income: OECD","High income","2020",78.7
+"90","AUT","Austria","High income: OECD","High income","2019",78.7
+"91","AUT","Austria","High income: OECD","High income","2018",78.7
+"92","AUT","Austria","High income: OECD","High income","2017",78.9
+"93","AUT","Austria","High income: OECD","High income","2016",78.8
+"94","AUT","Austria","High income: OECD","High income","2015",77.3
+"95","AUT","Austria","High income: OECD","High income","2014",76.8
+"96","AUT","Austria","High income: OECD","High income","2013",76.5
+"97","AUT","Austria","High income: OECD","High income","2012",75.9
+"98","AUT","Austria","High income: OECD","High income","2011",75.9
+"99","AUT","Austria","High income: OECD","High income","2010",75.7
+"100","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2020",76.7
+"101","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2019",73.6
+"102","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2018",66.8
+"103","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2017",64.3
+"104","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2016",65.4
+"105","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2015",62.3
+"106","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2014",60.7
+"107","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2013",64.2
+"108","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2012",63.4
+"109","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2011",63.1
+"110","AZE","Azerbaijan","Europe & Central Asia","Upper middle income","2010",62.3
+"111","BHS","Bahamas, The","Latin America & Caribbean","High income","2020",59.9
+"112","BHS","Bahamas, The","Latin America & Caribbean","High income","2019",59.4
+"113","BHS","Bahamas, The","Latin America & Caribbean","High income","2018",58.6
+"114","BHS","Bahamas, The","Latin America & Caribbean","High income","2017",56.9
+"115","BHS","Bahamas, The","Latin America & Caribbean","High income","2016",57.1
+"116","BHS","Bahamas, The","Latin America & Caribbean","High income","2015",60.9
+"117","BHS","Bahamas, The","Latin America & Caribbean","High income","2014",60.6
+"118","BHS","Bahamas, The","Latin America & Caribbean","High income","2013",62.4
+"119","BHS","Bahamas, The","Latin America & Caribbean","High income","2012",62.7
+"120","BHS","Bahamas, The","Latin America & Caribbean","High income","2011",63.1
+"121","BHS","Bahamas, The","Latin America & Caribbean","High income","2010",63.1
+"122","BHR","Bahrain","Middle East & North Africa","High income","2020",76
+"123","BHR","Bahrain","Middle East & North Africa","High income","2019",70.1
+"124","BHR","Bahrain","Middle East & North Africa","High income","2018",69.1
+"125","BHR","Bahrain","Middle East & North Africa","High income","2017",68.7
+"126","BHR","Bahrain","Middle East & North Africa","High income","2016",66.6
+"127","BHR","Bahrain","Middle East & North Africa","High income","2015",67.7
+"128","BHR","Bahrain","Middle East & North Africa","High income","2014",66.6
+"129","BHR","Bahrain","Middle East & North Africa","High income","2013",66.6
+"130","BHR","Bahrain","Middle East & North Africa","High income","2012",66.2
+"131","BHR","Bahrain","Middle East & North Africa","High income","2011",66.3
+"132","BHR","Bahrain","Middle East & North Africa","High income","2010",66.3
+"133","BANG","Bangladesh","South Asia","Lower middle income","2020",45
+"134","BANG","Bangladesh","South Asia","Lower middle income","2019",42.5
+"135","BANG","Bangladesh","South Asia","Lower middle income","2018",41.6
+"136","BANG","Bangladesh","South Asia","Lower middle income","2017",41
+"137","BANG","Bangladesh","South Asia","Lower middle income","2016",40.9
+"138","BANG","Bangladesh","South Asia","Lower middle income","2015",44.5
+"139","BANG","Bangladesh","South Asia","Lower middle income","2014",44
+"140","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2020",45.6
+"141","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2019",43.4
+"142","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2018",42.3
+"143","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2017",42
+"144","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2016",41.9
+"145","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2015",46
+"146","BGD_Chit","Bangladesh Chittagong","South Asia","Lower middle income","2014",45.4
+"147","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2020",44.9
+"148","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2019",42.2
+"149","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2018",41.4
+"150","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2017",40.7
+"151","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2016",40.6
+"152","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2015",44
+"153","BGD","Bangladesh Dhaka","South Asia","Lower middle income","2014",43.6
+"154","BGD","Bangladesh","South Asia","Lower middle income","2013",45.2
+"155","BGD","Bangladesh","South Asia","Lower middle income","2012",45.4
+"156","BGD","Bangladesh","South Asia","Lower middle income","2011",46.9
+"157","BGD","Bangladesh","South Asia","Lower middle income","2010",45.3
+"158","BRB","Barbados","Latin America & Caribbean","High income","2020",57.9
+"159","BRB","Barbados","Latin America & Caribbean","High income","2019",57.7
+"160","BRB","Barbados","Latin America & Caribbean","High income","2018",57.7
+"161","BRB","Barbados","Latin America & Caribbean","High income","2017",57.8
+"162","BRB","Barbados","Latin America & Caribbean","High income","2016",57.7
+"163","BRB","Barbados","Latin America & Caribbean","High income","2015",61.1
+"164","BRB","Barbados","Latin America & Caribbean","High income","2014",61
+"165","BRB","Barbados","Latin America & Caribbean","High income","2013",62.5
+"166","BRB","Barbados","Latin America & Caribbean","High income","2012",62.8
+"167","BLR","Belarus","Europe & Central Asia","Upper middle income","2020",74.3
+"168","BLR","Belarus","Europe & Central Asia","Upper middle income","2019",74.4
+"169","BLR","Belarus","Europe & Central Asia","Upper middle income","2018",73.6
+"170","BLR","Belarus","Europe & Central Asia","Upper middle income","2017",72.6
+"171","BLR","Belarus","Europe & Central Asia","Upper middle income","2016",68.7
+"172","BLR","Belarus","Europe & Central Asia","Upper middle income","2015",65.7
+"173","BLR","Belarus","Europe & Central Asia","Upper middle income","2014",64.5
+"174","BLR","Belarus","Europe & Central Asia","Upper middle income","2013",62.2
+"175","BLR","Belarus","Europe & Central Asia","Upper middle income","2012",58.5
+"176","BLR","Belarus","Europe & Central Asia","Upper middle income","2011",53.7
+"177","BLR","Belarus","Europe & Central Asia","Upper middle income","2010",52
+"178","BEL","Belgium","High income: OECD","High income","2020",75
+"179","BEL","Belgium","High income: OECD","High income","2019",74.7
+"180","BEL","Belgium","High income: OECD","High income","2018",72.2
+"181","BEL","Belgium","High income: OECD","High income","2017",72.4
+"182","BEL","Belgium","High income: OECD","High income","2016",72.4
+"183","BEL","Belgium","High income: OECD","High income","2015",69.9
+"184","BEL","Belgium","High income: OECD","High income","2014",69.9
+"185","BEL","Belgium","High income: OECD","High income","2013",71.2
+"186","BEL","Belgium","High income: OECD","High income","2012",71.1
+"187","BEL","Belgium","High income: OECD","High income","2011",70.9
+"188","BEL","Belgium","High income: OECD","High income","2010",70.4
+"189","BLZ","Belize","Latin America & Caribbean","Upper middle income","2020",55.5
+"190","BLZ","Belize","Latin America & Caribbean","Upper middle income","2019",55.3
+"191","BLZ","Belize","Latin America & Caribbean","Upper middle income","2018",55.3
+"192","BLZ","Belize","Latin America & Caribbean","Upper middle income","2017",55.4
+"193","BLZ","Belize","Latin America & Caribbean","Upper middle income","2016",55.4
+"194","BLZ","Belize","Latin America & Caribbean","Upper middle income","2015",56.3
+"195","BLZ","Belize","Latin America & Caribbean","Upper middle income","2014",56.2
+"196","BLZ","Belize","Latin America & Caribbean","Upper middle income","2013",60.1
+"197","BLZ","Belize","Latin America & Caribbean","Upper middle income","2012",59.9
+"198","BLZ","Belize","Latin America & Caribbean","Upper middle income","2011",59.3
+"199","BLZ","Belize","Latin America & Caribbean","Upper middle income","2010",59.4
+"200","BEN","Benin","Sub-Saharan Africa","Low income","2020",52.4
+"201","BEN","Benin","Sub-Saharan Africa","Low income","2019",51.7
+"202","BEN","Benin","Sub-Saharan Africa","Low income","2018",51.6
+"203","BEN","Benin","Sub-Saharan Africa","Low income","2017",49.7
+"204","BEN","Benin","Sub-Saharan Africa","Low income","2016",48.7
+"205","BEN","Benin","Sub-Saharan Africa","Low income","2015",50.7
+"206","BEN","Benin","Sub-Saharan Africa","Low income","2014",46.1
+"207","BEN","Benin","Sub-Saharan Africa","Low income","2013",45.5
+"208","BEN","Benin","Sub-Saharan Africa","Low income","2012",43.8
+"209","BEN","Benin","Sub-Saharan Africa","Low income","2011",41.3
+"210","BEN","Benin","Sub-Saharan Africa","Low income","2010",39.8
+"211","BTN","Bhutan","South Asia","Lower middle income","2020",66
+"212","BTN","Bhutan","South Asia","Lower middle income","2019",66
+"213","BTN","Bhutan","South Asia","Lower middle income","2018",65.8
+"214","BTN","Bhutan","South Asia","Lower middle income","2017",65
+"215","BTN","Bhutan","South Asia","Lower middle income","2016",64.9
+"216","BTN","Bhutan","South Asia","Lower middle income","2015",58.5
+"217","BTN","Bhutan","South Asia","Lower middle income","2014",58
+"218","BTN","Bhutan","South Asia","Lower middle income","2013",59.1
+"219","BTN","Bhutan","South Asia","Lower middle income","2012",58.7
+"220","BTN","Bhutan","South Asia","Lower middle income","2011",55.8
+"221","BTN","Bhutan","South Asia","Lower middle income","2010",56.4
+"222","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2020",51.7
+"223","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2019",51.6
+"224","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2018",51
+"225","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2017",50.2
+"226","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2016",49.8
+"227","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2015",50.2
+"228","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2014",50.1
+"229","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2013",51.1
+"230","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2012",50.9
+"231","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2011",50.6
+"232","BOL","Bolivia","Latin America & Caribbean","Lower middle income","2010",50.4
+"233","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2020",65.4
+"234","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2019",65.4
+"235","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2018",65.2
+"236","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2017",64.8
+"237","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2016",64.1
+"238","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2015",60.8
+"239","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2014",60.4
+"240","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2013",58.9
+"241","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2012",58.4
+"242","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2011",57.2
+"243","BIH","Bosnia and Herzegovina","Europe & Central Asia","Upper middle income","2010",54.8
+"244","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2020",66.2
+"245","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2019",66.2
+"246","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2018",65.7
+"247","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2017",65.6
+"248","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2016",65.5
+"249","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2015",65.6
+"250","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2014",65.7
+"251","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2013",65
+"252","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2012",64.6
+"253","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2011",63.3
+"254","BWA","Botswana","Sub-Saharan Africa","Upper middle income","2010",63.1
+"255","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2020",59.1
+"256","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2019",58.6
+"257","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2018",55.6
+"258","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2017",55.2
+"259","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2016",55.6
+"260","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2015",56.5
+"261","BRAZ","Brazil","Latin America & Caribbean","Upper middle income","2014",55.9
+"262","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2020",59.5
+"263","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2019",59
+"264","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2018",57.1
+"265","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2017",56.5
+"266","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2016",56.8
+"267","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2015",57.4
+"268","BRA_Rio","Brazil Rio de Janeiro","Latin America & Caribbean","Upper middle income","2014",56.9
+"269","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2020",58.8
+"270","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2019",58.3
+"271","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2018",54.7
+"272","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2017",54.4
+"273","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2016",54.9
+"274","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2015",56
+"275","BRA","Brazil São Paulo","Latin America & Caribbean","Upper middle income","2014",55.3
+"276","BRA","Brazil","Latin America & Caribbean","Upper middle income","2013",54.8
+"277","BRA","Brazil","Latin America & Caribbean","Upper middle income","2012",54.7
+"278","BRA","Brazil","Latin America & Caribbean","Upper middle income","2011",54.8
+"279","BRA","Brazil","Latin America & Caribbean","Upper middle income","2010",55.1
+"280","BRN","Brunei Darussalam","East Asia & Pacific","High income","2020",70.1
+"281","BRN","Brunei Darussalam","East Asia & Pacific","High income","2019",69.6
+"282","BRN","Brunei Darussalam","East Asia & Pacific","High income","2018",67.7
+"283","BRN","Brunei Darussalam","East Asia & Pacific","High income","2017",62.9
+"284","BRN","Brunei Darussalam","East Asia & Pacific","High income","2016",57.5
+"285","BRN","Brunei Darussalam","East Asia & Pacific","High income","2015",57.6
+"286","BRN","Brunei Darussalam","East Asia & Pacific","High income","2014",57.6
+"287","BRN","Brunei Darussalam","East Asia & Pacific","High income","2013",59.7
+"288","BRN","Brunei Darussalam","East Asia & Pacific","High income","2012",59.6
+"289","BRN","Brunei Darussalam","East Asia & Pacific","High income","2011",58.2
+"290","BRN","Brunei Darussalam","East Asia & Pacific","High income","2010",58
+"291","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2020",72
+"292","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2019",71.8
+"293","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2018",71.7
+"294","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2017",71.6
+"295","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2016",72.5
+"296","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2015",69.9
+"297","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2014",69.9
+"298","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2013",70.1
+"299","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2012",69.3
+"300","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2011",69.6
+"301","BGR","Bulgaria","Europe & Central Asia","Upper middle income","2010",69.4
+"302","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2020",51.4
+"303","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2019",51.3
+"304","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2018",51.2
+"305","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2017",50.9
+"306","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2016",50.7
+"307","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2015",46.7
+"308","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2014",46.2
+"309","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2013",46
+"310","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2012",45.7
+"311","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2011",42.3
+"312","BFA","Burkina Faso","Sub-Saharan Africa","Low income","2010",41.6
+"313","BDI","Burundi","Sub-Saharan Africa","Low income","2020",46.8
+"314","BDI","Burundi","Sub-Saharan Africa","Low income","2019",46.5
+"315","BDI","Burundi","Sub-Saharan Africa","Low income","2018",45.9
+"316","BDI","Burundi","Sub-Saharan Africa","Low income","2017",45.7
+"317","BDI","Burundi","Sub-Saharan Africa","Low income","2016",45.6
+"318","BDI","Burundi","Sub-Saharan Africa","Low income","2015",49
+"319","BDI","Burundi","Sub-Saharan Africa","Low income","2014",47.8
+"320","BDI","Burundi","Sub-Saharan Africa","Low income","2013",47.5
+"321","BDI","Burundi","Sub-Saharan Africa","Low income","2012",43.4
+"322","BDI","Burundi","Sub-Saharan Africa","Low income","2011",37.4
+"323","BDI","Burundi","Sub-Saharan Africa","Low income","2010",37.2
+"324","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2020",55
+"325","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2019",54
+"326","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2018",54
+"327","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2017",53.4
+"328","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2016",53.4
+"329","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2015",56.4
+"330","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2014",56.5
+"331","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2013",58.1
+"332","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2012",57.8
+"333","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2011",55
+"334","CPV","Cabo Verde","Sub-Saharan Africa","Lower middle income","2010",52.9
+"335","KHM","Cambodia","East Asia & Pacific","Lower middle income","2020",53.8
+"336","KHM","Cambodia","East Asia & Pacific","Lower middle income","2019",53.8
+"337","KHM","Cambodia","East Asia & Pacific","Lower middle income","2018",53.4
+"338","KHM","Cambodia","East Asia & Pacific","Lower middle income","2017",53.2
+"339","KHM","Cambodia","East Asia & Pacific","Lower middle income","2016",52.9
+"340","KHM","Cambodia","East Asia & Pacific","Lower middle income","2015",53.3
+"341","KHM","Cambodia","East Asia & Pacific","Lower middle income","2014",53
+"342","KHM","Cambodia","East Asia & Pacific","Lower middle income","2013",55.4
+"343","KHM","Cambodia","East Asia & Pacific","Lower middle income","2012",54.2
+"344","KHM","Cambodia","East Asia & Pacific","Lower middle income","2011",53.6
+"345","KHM","Cambodia","East Asia & Pacific","Lower middle income","2010",53.2
+"346","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2020",46.1
+"347","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2019",46
+"348","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2018",45.1
+"349","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2017",41.8
+"350","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2016",41.9
+"351","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2015",46.4
+"352","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2014",46.9
+"353","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2013",48.7
+"354","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2012",47.6
+"355","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2011",45.2
+"356","CMR","Cameroon","Sub-Saharan Africa","Lower middle income","2010",43.5
+"357","CAN","Canada","High income: OECD","High income","2020",79.6
+"358","CAN","Canada","High income: OECD","High income","2019",79.7
+"359","CAN","Canada","High income: OECD","High income","2018",79.3
+"360","CAN","Canada","High income: OECD","High income","2017",79.5
+"361","CAN","Canada","High income: OECD","High income","2016",79.8
+"362","CAN","Canada","High income: OECD","High income","2015",79.6
+"363","CAN","Canada","High income: OECD","High income","2014",79.9
+"364","CAN","Canada","High income: OECD","High income","2013",79.9
+"365","CAN","Canada","High income: OECD","High income","2012",79.5
+"366","CAN","Canada","High income: OECD","High income","2011",79.8
+"367","CAN","Canada","High income: OECD","High income","2010",78.7
+"368","CAF","Central African Republic","Sub-Saharan Africa","Low income","2020",35.6
+"369","CAF","Central African Republic","Sub-Saharan Africa","Low income","2019",34.8
+"370","CAF","Central African Republic","Sub-Saharan Africa","Low income","2018",32.4
+"371","CAF","Central African Republic","Sub-Saharan Africa","Low income","2017",32
+"372","CAF","Central African Republic","Sub-Saharan Africa","Low income","2016",32
+"373","CAF","Central African Republic","Sub-Saharan Africa","Low income","2015",29.4
+"374","CAF","Central African Republic","Sub-Saharan Africa","Low income","2014",30
+"375","CAF","Central African Republic","Sub-Saharan Africa","Low income","2013",32.3
+"376","CAF","Central African Republic","Sub-Saharan Africa","Low income","2012",33.3
+"377","CAF","Central African Republic","Sub-Saharan Africa","Low income","2011",26.9
+"378","CAF","Central African Republic","Sub-Saharan Africa","Low income","2010",26.9
+"379","TCD","Chad","Sub-Saharan Africa","Low income","2020",36.9
+"380","TCD","Chad","Sub-Saharan Africa","Low income","2019",36.7
+"381","TCD","Chad","Sub-Saharan Africa","Low income","2018",35.5
+"382","TCD","Chad","Sub-Saharan Africa","Low income","2017",36
+"383","TCD","Chad","Sub-Saharan Africa","Low income","2016",35.3
+"384","TCD","Chad","Sub-Saharan Africa","Low income","2015",33.1
+"385","TCD","Chad","Sub-Saharan Africa","Low income","2014",31.5
+"386","TCD","Chad","Sub-Saharan Africa","Low income","2013",33
+"387","TCD","Chad","Sub-Saharan Africa","Low income","2012",32.8
+"388","TCD","Chad","Sub-Saharan Africa","Low income","2011",30
+"389","TCD","Chad","Sub-Saharan Africa","Low income","2010",30.4
+"390","CHL","Chile","High income: OECD","High income","2020",72.6
+"391","CHL","Chile","High income: OECD","High income","2019",72.3
+"392","CHL","Chile","High income: OECD","High income","2018",72
+"393","CHL","Chile","High income: OECD","High income","2017",71.6
+"394","CHL","Chile","High income: OECD","High income","2016",71.2
+"395","CHL","Chile","High income: OECD","High income","2015",72.2
+"396","CHL","Chile","High income: OECD","High income","2014",72.1
+"397","CHL","Chile","High income: OECD","High income","2013",72.9
+"398","CHL","Chile","High income: OECD","High income","2012",73.4
+"399","CHL","Chile","High income: OECD","High income","2011",70.6
+"400","CHL","Chile","High income: OECD","High income","2010",69.7
+"401","CHIN","China","East Asia & Pacific","Upper middle income","2020",77.9
+"402","CHIN","China","East Asia & Pacific","Upper middle income","2019",74
+"403","CHIN","China","East Asia & Pacific","Upper middle income","2018",65.2
+"404","CHIN","China","East Asia & Pacific","Upper middle income","2017",64.6
+"405","CHIN","China","East Asia & Pacific","Upper middle income","2016",63.1
+"406","CHIN","China","East Asia & Pacific","Upper middle income","2015",61.6
+"407","CHIN","China","East Asia & Pacific","Upper middle income","2014",60
+"408","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2020",78.2
+"409","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2019",73.9
+"410","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2018",65.2
+"411","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2017",64.7
+"412","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2016",63
+"413","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2015",61.7
+"414","CHN_Beij","China Beijing","East Asia & Pacific","Upper middle income","2014",60.1
+"415","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2020",77.7
+"416","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2019",74
+"417","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2018",65.2
+"418","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2017",64.6
+"419","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2016",63.2
+"420","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2015",61.5
+"421","CHN","China Shanghai","East Asia & Pacific","Upper middle income","2014",59.9
+"422","CHN","China","East Asia & Pacific","Upper middle income","2013",60.1
+"423","CHN","China","East Asia & Pacific","Upper middle income","2012",58.8
+"424","CHN","China","East Asia & Pacific","Upper middle income","2011",58.5
+"425","CHN","China","East Asia & Pacific","Upper middle income","2010",56.6
+"426","COL","Colombia","Latin America & Caribbean","Upper middle income","2020",70.1
+"427","COL","Colombia","Latin America & Caribbean","Upper middle income","2019",69.2
+"428","COL","Colombia","Latin America & Caribbean","Upper middle income","2018",69
+"429","COL","Colombia","Latin America & Caribbean","Upper middle income","2017",69.2
+"430","COL","Colombia","Latin America & Caribbean","Upper middle income","2016",68.9
+"431","COL","Colombia","Latin America & Caribbean","Upper middle income","2015",70.8
+"432","COL","Colombia","Latin America & Caribbean","Upper middle income","2014",66.6
+"433","COL","Colombia","Latin America & Caribbean","Upper middle income","2013",66.1
+"434","COL","Colombia","Latin America & Caribbean","Upper middle income","2012",66.3
+"435","COL","Colombia","Latin America & Caribbean","Upper middle income","2011",64.8
+"436","COL","Colombia","Latin America & Caribbean","Upper middle income","2010",64.4
+"437","COM","Comoros","Sub-Saharan Africa","Lower middle income","2020",47.9
+"438","COM","Comoros","Sub-Saharan Africa","Lower middle income","2019",47
+"439","COM","Comoros","Sub-Saharan Africa","Lower middle income","2018",46.9
+"440","COM","Comoros","Sub-Saharan Africa","Lower middle income","2017",46.4
+"441","COM","Comoros","Sub-Saharan Africa","Lower middle income","2016",46.2
+"442","COM","Comoros","Sub-Saharan Africa","Lower middle income","2015",47.5
+"443","COM","Comoros","Sub-Saharan Africa","Lower middle income","2014",47
+"444","COM","Comoros","Sub-Saharan Africa","Lower middle income","2013",48.1
+"445","COM","Comoros","Sub-Saharan Africa","Lower middle income","2012",46.8
+"446","COM","Comoros","Sub-Saharan Africa","Lower middle income","2011",44.9
+"447","COM","Comoros","Sub-Saharan Africa","Lower middle income","2010",44.6
+"448","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2020",36.2
+"449","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2019",35.2
+"450","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2018",34.6
+"451","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2017",34.4
+"452","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2016",34.4
+"453","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2015",36.5
+"454","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2014",33.8
+"455","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2013",32.3
+"456","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2012",31.7
+"457","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2011",30.6
+"458","ZAR","Congo, Dem. Rep.","Sub-Saharan Africa","Low income","2010",27.4
+"459","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2020",39.5
+"460","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2019",38.2
+"461","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2018",37.9
+"462","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2017",38.5
+"463","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2016",38.9
+"464","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2015",41.2
+"465","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2014",39.8
+"466","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2013",40.2
+"467","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2012",39
+"468","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2011",36
+"469","COG","Congo, Rep.","Sub-Saharan Africa","Lower middle income","2010",38.4
+"470","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2020",69.2
+"471","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2019",68.8
+"472","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2018",69.3
+"473","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2017",67.7
+"474","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2016",67.7
+"475","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2015",62.3
+"476","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2014",61.7
+"477","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2013",60.2
+"478","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2012",57.8
+"479","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2011",56.6
+"480","CRI","Costa Rica","Latin America & Caribbean","Upper middle income","2010",56.6
+"481","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2020",60.7
+"482","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2019",58.3
+"483","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2018",53
+"484","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2017",51
+"485","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2016",50.3
+"486","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2015",50.9
+"487","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2014",47.6
+"488","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2013",44.5
+"489","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2012",43.8
+"490","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2011",41.4
+"491","CIV","Côte d'Ivoire","Sub-Saharan Africa","Lower middle income","2010",41.2
+"492","HRV","Croatia","Europe & Central Asia","High income","2020",73.6
+"493","HRV","Croatia","Europe & Central Asia","High income","2019",73
+"494","HRV","Croatia","Europe & Central Asia","High income","2018",72.6
+"495","HRV","Croatia","Europe & Central Asia","High income","2017",72.2
+"496","HRV","Croatia","Europe & Central Asia","High income","2016",71.4
+"497","HRV","Croatia","Europe & Central Asia","High income","2015",67.8
+"498","HRV","Croatia","Europe & Central Asia","High income","2014",65.6
+"499","HRV","Croatia","Europe & Central Asia","High income","2013",64.3
+"500","HRV","Croatia","Europe & Central Asia","High income","2012",64.7
+"501","HRV","Croatia","Europe & Central Asia","High income","2011",63.6
+"502","HRV","Croatia","Europe & Central Asia","High income","2010",63.4
+"503","CYP","Cyprus","Europe & Central Asia","High income","2020",73.4
+"504","CYP","Cyprus","Europe & Central Asia","High income","2019",72.8
+"505","CYP","Cyprus","Europe & Central Asia","High income","2018",72.3
+"506","CYP","Cyprus","Europe & Central Asia","High income","2017",72.3
+"507","CYP","Cyprus","Europe & Central Asia","High income","2016",72
+"508","CYP","Cyprus","Europe & Central Asia","High income","2015",65.5
+"509","CYP","Cyprus","Europe & Central Asia","High income","2014",65.8
+"510","CYP","Cyprus","Europe & Central Asia","High income","2013",66.6
+"511","CYP","Cyprus","Europe & Central Asia","High income","2012",66.2
+"512","CYP","Cyprus","Europe & Central Asia","High income","2011",64.9
+"513","CYP","Cyprus","Europe & Central Asia","High income","2010",63.7
+"514","CZE","Czech Republic","High income: OECD","High income","2020",76.3
+"515","CZE","Czech Republic","High income: OECD","High income","2019",76.3
+"516","CZE","Czech Republic","High income: OECD","High income","2018",76.4
+"517","CZE","Czech Republic","High income: OECD","High income","2017",76.4
+"518","CZE","Czech Republic","High income: OECD","High income","2016",76.1
+"519","CZE","Czech Republic","High income: OECD","High income","2015",74.3
+"520","CZE","Czech Republic","High income: OECD","High income","2014",73.1
+"521","CZE","Czech Republic","High income: OECD","High income","2013",71.7
+"522","CZE","Czech Republic","High income: OECD","High income","2012",70.2
+"523","CZE","Czech Republic","High income: OECD","High income","2011",69.2
+"524","CZE","Czech Republic","High income: OECD","High income","2010",66.4
+"525","DNK","Denmark","High income: OECD","High income","2020",85.3
+"526","DNK","Denmark","High income: OECD","High income","2019",85.2
+"527","DNK","Denmark","High income: OECD","High income","2018",84.6
+"528","DNK","Denmark","High income: OECD","High income","2017",84.6
+"529","DNK","Denmark","High income: OECD","High income","2016",84.5
+"530","DNK","Denmark","High income: OECD","High income","2015",84.3
+"531","DNK","Denmark","High income: OECD","High income","2014",84.1
+"532","DNK","Denmark","High income: OECD","High income","2013",84.7
+"533","DNK","Denmark","High income: OECD","High income","2012",84.6
+"534","DNK","Denmark","High income: OECD","High income","2011",83.6
+"535","DNK","Denmark","High income: OECD","High income","2010",82.6
+"536","DJI","Djibouti","Middle East & North Africa","Lower middle income","2020",60.5
+"537","DJI","Djibouti","Middle East & North Africa","Lower middle income","2019",58.4
+"538","DJI","Djibouti","Middle East & North Africa","Lower middle income","2018",50.9
+"539","DJI","Djibouti","Middle East & North Africa","Lower middle income","2017",47.2
+"540","DJI","Djibouti","Middle East & North Africa","Lower middle income","2016",44.3
+"541","DJI","Djibouti","Middle East & North Africa","Lower middle income","2015",49.9
+"542","DJI","Djibouti","Middle East & North Africa","Lower middle income","2014",48.9
+"543","DJI","Djibouti","Middle East & North Africa","Lower middle income","2013",45.9
+"544","DJI","Djibouti","Middle East & North Africa","Lower middle income","2012",45.4
+"545","DJI","Djibouti","Middle East & North Africa","Lower middle income","2011",44.9
+"546","DJI","Djibouti","Middle East & North Africa","Lower middle income","2010",45.7
+"547","DMA","Dominica","Latin America & Caribbean","Upper middle income","2020",60.5
+"548","DMA","Dominica","Latin America & Caribbean","Upper middle income","2019",60.5
+"549","DMA","Dominica","Latin America & Caribbean","Upper middle income","2018",61.7
+"550","DMA","Dominica","Latin America & Caribbean","Upper middle income","2017",61.2
+"551","DMA","Dominica","Latin America & Caribbean","Upper middle income","2016",61.5
+"552","DMA","Dominica","Latin America & Caribbean","Upper middle income","2015",61.2
+"553","DMA","Dominica","Latin America & Caribbean","Upper middle income","2014",61.1
+"554","DMA","Dominica","Latin America & Caribbean","Upper middle income","2013",64.3
+"555","DMA","Dominica","Latin America & Caribbean","Upper middle income","2012",64.1
+"556","DMA","Dominica","Latin America & Caribbean","Upper middle income","2011",64
+"557","DMA","Dominica","Latin America & Caribbean","Upper middle income","2010",64
+"558","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2020",60
+"559","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2019",59.3
+"560","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2018",59.1
+"561","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2017",57.7
+"562","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2016",57.9
+"563","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2015",61.4
+"564","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2014",60.8
+"565","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2013",63.7
+"566","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2012",64.1
+"567","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2011",64.1
+"568","DOM","Dominican Republic","Latin America & Caribbean","Upper middle income","2010",64.4
+"569","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2020",57.7
+"570","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2019",57.6
+"571","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2018",57.5
+"572","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2017",57.5
+"573","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2016",57.1
+"574","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2015",57.8
+"575","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2014",57.2
+"576","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2013",57.3
+"577","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2012",57.7
+"578","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2011",57.3
+"579","ECU","Ecuador","Latin America & Caribbean","Upper middle income","2010",57.3
+"580","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2020",60.1
+"581","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2019",58.5
+"582","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2018",55.8
+"583","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2017",55.5
+"584","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2016",54.7
+"585","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2015",60.1
+"586","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2014",59.6
+"587","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2013",59.4
+"588","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2012",59
+"589","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2011",58.2
+"590","EGY","Egypt, Arab Rep.","Middle East & North Africa","Lower middle income","2010",57.2
+"591","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2020",65.3
+"592","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2019",64.9
+"593","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2018",64.7
+"594","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2017",62.7
+"595","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2016",62.4
+"596","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2015",61
+"597","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2014",61
+"598","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2013",62.2
+"599","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2012",62.2
+"600","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2011",62.1
+"601","SLV","El Salvador","Latin America & Caribbean","Lower middle income","2010",62.4
+"602","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2020",41.1
+"603","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2019",40.5
+"604","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2018",40.3
+"605","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2017",38.5
+"606","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2016",40
+"607","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2015",46.9
+"608","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2014",45.5
+"609","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2013",47.7
+"610","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2012",47.4
+"611","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2011",44.9
+"612","GNQ","Equatorial Guinea","Sub-Saharan Africa","Upper middle income","2010",45.6
+"613","ERI","Eritrea","Sub-Saharan Africa","Low income","2020",21.6
+"614","ERI","Eritrea","Sub-Saharan Africa","Low income","2019",21.5
+"615","ERI","Eritrea","Sub-Saharan Africa","Low income","2018",21.4
+"616","ERI","Eritrea","Sub-Saharan Africa","Low income","2017",20.9
+"617","ERI","Eritrea","Sub-Saharan Africa","Low income","2016",20.9
+"618","ERI","Eritrea","Sub-Saharan Africa","Low income","2015",31.2
+"619","ERI","Eritrea","Sub-Saharan Africa","Low income","2014",30.7
+"620","ERI","Eritrea","Sub-Saharan Africa","Low income","2013",32.7
+"621","ERI","Eritrea","Sub-Saharan Africa","Low income","2012",31.8
+"622","ERI","Eritrea","Sub-Saharan Africa","Low income","2011",31.6
+"623","ERI","Eritrea","Sub-Saharan Africa","Low income","2010",30.4
+"624","EST","Estonia","High income: OECD","High income","2020",80.6
+"625","EST","Estonia","High income: OECD","High income","2019",80.8
+"626","EST","Estonia","High income: OECD","High income","2018",80.8
+"627","EST","Estonia","High income: OECD","High income","2017",80.7
+"628","EST","Estonia","High income: OECD","High income","2016",80.5
+"629","EST","Estonia","High income: OECD","High income","2015",78.3
+"630","EST","Estonia","High income: OECD","High income","2014",77.8
+"631","EST","Estonia","High income: OECD","High income","2013",77.6
+"632","EST","Estonia","High income: OECD","High income","2012",78
+"633","EST","Estonia","High income: OECD","High income","2011",78.5
+"634","EST","Estonia","High income: OECD","High income","2010",78
+"635","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2020",59.5
+"636","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2019",58.7
+"637","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2018",58.6
+"638","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2017",58.4
+"639","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2016",56.9
+"640","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2015",56.2
+"641","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2014",55.7
+"642","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2013",58.2
+"643","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2012",57.5
+"644","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2011",57.2
+"645","SWZ","Eswatini","Sub-Saharan Africa","Lower middle income","2010",53.2
+"646","ETH","Ethiopia","Sub-Saharan Africa","Low income","2020",48
+"647","ETH","Ethiopia","Sub-Saharan Africa","Low income","2019",47.1
+"648","ETH","Ethiopia","Sub-Saharan Africa","Low income","2018",46.1
+"649","ETH","Ethiopia","Sub-Saharan Africa","Low income","2017",44.1
+"650","ETH","Ethiopia","Sub-Saharan Africa","Low income","2016",43.8
+"651","ETH","Ethiopia","Sub-Saharan Africa","Low income","2015",46.1
+"652","ETH","Ethiopia","Sub-Saharan Africa","Low income","2014",45.7
+"653","ETH","Ethiopia","Sub-Saharan Africa","Low income","2013",48.8
+"654","ETH","Ethiopia","Sub-Saharan Africa","Low income","2012",47.8
+"655","ETH","Ethiopia","Sub-Saharan Africa","Low income","2011",47.8
+"656","ETH","Ethiopia","Sub-Saharan Africa","Low income","2010",45.7
+"657","FJI","Fiji","East Asia & Pacific","Upper middle income","2020",61.5
+"658","FJI","Fiji","East Asia & Pacific","Upper middle income","2019",61.4
+"659","FJI","Fiji","East Asia & Pacific","Upper middle income","2018",61.3
+"660","FJI","Fiji","East Asia & Pacific","Upper middle income","2017",61.3
+"661","FJI","Fiji","East Asia & Pacific","Upper middle income","2016",62.8
+"662","FJI","Fiji","East Asia & Pacific","Upper middle income","2015",63.6
+"663","FJI","Fiji","East Asia & Pacific","Upper middle income","2014",63.6
+"664","FJI","Fiji","East Asia & Pacific","Upper middle income","2013",66.5
+"665","FJI","Fiji","East Asia & Pacific","Upper middle income","2012",67.3
+"666","FJI","Fiji","East Asia & Pacific","Upper middle income","2011",67.4
+"667","FJI","Fiji","East Asia & Pacific","Upper middle income","2010",67.2
+"668","FIN","Finland","High income: OECD","High income","2020",80.2
+"669","FIN","Finland","High income: OECD","High income","2019",80
+"670","FIN","Finland","High income: OECD","High income","2018",80
+"671","FIN","Finland","High income: OECD","High income","2017",80.1
+"672","FIN","Finland","High income: OECD","High income","2016",80.1
+"673","FIN","Finland","High income: OECD","High income","2015",79.6
+"674","FIN","Finland","High income: OECD","High income","2014",80.5
+"675","FIN","Finland","High income: OECD","High income","2013",81.7
+"676","FIN","Finland","High income: OECD","High income","2012",81.7
+"677","FIN","Finland","High income: OECD","High income","2011",81
+"678","FIN","Finland","High income: OECD","High income","2010",80.5
+"679","FRA","France","High income: OECD","High income","2020",76.8
+"680","FRA","France","High income: OECD","High income","2019",76.8
+"681","FRA","France","High income: OECD","High income","2018",76
+"682","FRA","France","High income: OECD","High income","2017",76.3
+"683","FRA","France","High income: OECD","High income","2016",76.1
+"684","FRA","France","High income: OECD","High income","2015",73
+"685","FRA","France","High income: OECD","High income","2014",71.2
+"686","FRA","France","High income: OECD","High income","2013",70.6
+"687","FRA","France","High income: OECD","High income","2012",71.1
+"688","FRA","France","High income: OECD","High income","2011",71
+"689","FRA","France","High income: OECD","High income","2010",70.3
+"690","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2020",45
+"691","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2019",44.5
+"692","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2018",44.7
+"693","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2017",43.7
+"694","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2016",44
+"695","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2015",50.3
+"696","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2014",50.7
+"697","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2013",51.8
+"698","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2012",52.2
+"699","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2011",49.8
+"700","GAB","Gabon","Sub-Saharan Africa","Upper middle income","2010",49.1
+"701","GMB","Gambia, The","Sub-Saharan Africa","Low income","2020",50.3
+"702","GMB","Gambia, The","Sub-Saharan Africa","Low income","2019",47.8
+"703","GMB","Gambia, The","Sub-Saharan Africa","Low income","2018",47.8
+"704","GMB","Gambia, The","Sub-Saharan Africa","Low income","2017",47.8
+"705","GMB","Gambia, The","Sub-Saharan Africa","Low income","2016",46.2
+"706","GMB","Gambia, The","Sub-Saharan Africa","Low income","2015",50.7
+"707","GMB","Gambia, The","Sub-Saharan Africa","Low income","2014",47.3
+"708","GMB","Gambia, The","Sub-Saharan Africa","Low income","2013",50.1
+"709","GMB","Gambia, The","Sub-Saharan Africa","Low income","2012",47.8
+"710","GMB","Gambia, The","Sub-Saharan Africa","Low income","2011",46.6
+"711","GMB","Gambia, The","Sub-Saharan Africa","Low income","2010",46.4
+"712","GEO","Georgia","Europe & Central Asia","Upper middle income","2020",83.7
+"713","GEO","Georgia","Europe & Central Asia","Upper middle income","2019",83.5
+"714","GEO","Georgia","Europe & Central Asia","Upper middle income","2018",83
+"715","GEO","Georgia","Europe & Central Asia","Upper middle income","2017",80.8
+"716","GEO","Georgia","Europe & Central Asia","Upper middle income","2016",78.3
+"717","GEO","Georgia","Europe & Central Asia","Upper middle income","2015",80.8
+"718","GEO","Georgia","Europe & Central Asia","Upper middle income","2014",81
+"719","GEO","Georgia","Europe & Central Asia","Upper middle income","2013",82
+"720","GEO","Georgia","Europe & Central Asia","Upper middle income","2012",78.8
+"721","GEO","Georgia","Europe & Central Asia","Upper middle income","2011",76.1
+"722","GEO","Georgia","Europe & Central Asia","Upper middle income","2010",74.1
+"723","DEU","Germany","High income: OECD","High income","2020",79.7
+"724","DEU","Germany","High income: OECD","High income","2019",79.3
+"725","DEU","Germany","High income: OECD","High income","2018",79.3
+"726","DEU","Germany","High income: OECD","High income","2017",79.6
+"727","DEU","Germany","High income: OECD","High income","2016",79.5
+"728","DEU","Germany","High income: OECD","High income","2015",78.9
+"729","DEU","Germany","High income: OECD","High income","2014",79.4
+"730","DEU","Germany","High income: OECD","High income","2013",79.3
+"731","DEU","Germany","High income: OECD","High income","2012",79.4
+"732","DEU","Germany","High income: OECD","High income","2011",79.3
+"733","DEU","Germany","High income: OECD","High income","2010",79.4
+"734","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2020",60
+"735","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2019",60.4
+"736","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2018",58.4
+"737","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2017",58
+"738","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2016",57
+"739","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2015",63.3
+"740","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2014",62.4
+"741","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2013",65.4
+"742","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2012",61.6
+"743","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2011",60.9
+"744","GHA","Ghana","Sub-Saharan Africa","Lower middle income","2010",58.2
+"745","GRC","Greece","High income: OECD","High income","2020",68.4
+"746","GRC","Greece","High income: OECD","High income","2019",67.4
+"747","GRC","Greece","High income: OECD","High income","2018",67.1
+"748","GRC","Greece","High income: OECD","High income","2017",67.1
+"749","GRC","Greece","High income: OECD","High income","2016",66.9
+"750","GRC","Greece","High income: OECD","High income","2015",65.6
+"751","GRC","Greece","High income: OECD","High income","2014",64
+"752","GRC","Greece","High income: OECD","High income","2013",62.3
+"753","GRC","Greece","High income: OECD","High income","2012",60.1
+"754","GRC","Greece","High income: OECD","High income","2011",59.7
+"755","GRC","Greece","High income: OECD","High income","2010",61.8
+"756","GRD","Grenada","Latin America & Caribbean","Upper middle income","2020",53.4
+"757","GRD","Grenada","Latin America & Caribbean","Upper middle income","2019",53.4
+"758","GRD","Grenada","Latin America & Caribbean","Upper middle income","2018",53.3
+"759","GRD","Grenada","Latin America & Caribbean","Upper middle income","2017",53.4
+"760","GRD","Grenada","Latin America & Caribbean","Upper middle income","2016",53.6
+"761","GRD","Grenada","Latin America & Caribbean","Upper middle income","2015",57.3
+"762","GRD","Grenada","Latin America & Caribbean","Upper middle income","2014",56.9
+"763","GRD","Grenada","Latin America & Caribbean","Upper middle income","2013",59.7
+"764","GRD","Grenada","Latin America & Caribbean","Upper middle income","2012",59.5
+"765","GRD","Grenada","Latin America & Caribbean","Upper middle income","2011",59.5
+"766","GRD","Grenada","Latin America & Caribbean","Upper middle income","2010",58.4
+"767","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2020",62.6
+"768","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2019",62.5
+"769","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2018",61.5
+"770","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2017",62
+"771","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2016",61.7
+"772","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2015",64
+"773","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2014",63.3
+"774","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2013",61.3
+"775","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2012",60.7
+"776","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2011",60.3
+"777","GTM","Guatemala","Latin America & Caribbean","Upper middle income","2010",60.3
+"778","GIN","Guinea","Sub-Saharan Africa","Low income","2020",49.4
+"779","GIN","Guinea","Sub-Saharan Africa","Low income","2019",49.3
+"780","GIN","Guinea","Sub-Saharan Africa","Low income","2018",46.7
+"781","GIN","Guinea","Sub-Saharan Africa","Low income","2017",46
+"782","GIN","Guinea","Sub-Saharan Africa","Low income","2016",44.3
+"783","GIN","Guinea","Sub-Saharan Africa","Low income","2015",45.3
+"784","GIN","Guinea","Sub-Saharan Africa","Low income","2014",44.3
+"785","GIN","Guinea","Sub-Saharan Africa","Low income","2013",42.7
+"786","GIN","Guinea","Sub-Saharan Africa","Low income","2012",40
+"787","GIN","Guinea","Sub-Saharan Africa","Low income","2011",38
+"788","GIN","Guinea","Sub-Saharan Africa","Low income","2010",38.7
+"789","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2020",43.2
+"790","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2019",43.2
+"791","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2018",42.9
+"792","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2017",42.8
+"793","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2016",40.4
+"794","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2015",42.3
+"795","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2014",42.4
+"796","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2013",41.1
+"797","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2012",40.3
+"798","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2011",33.7
+"799","GNB","Guinea-Bissau","Sub-Saharan Africa","Low income","2010",33.5
+"800","GUY","Guyana","Latin America & Caribbean","Upper middle income","2020",55.5
+"801","GUY","Guyana","Latin America & Caribbean","Upper middle income","2019",55.6
+"802","GUY","Guyana","Latin America & Caribbean","Upper middle income","2018",56.8
+"803","GUY","Guyana","Latin America & Caribbean","Upper middle income","2017",56.4
+"804","GUY","Guyana","Latin America & Caribbean","Upper middle income","2016",51
+"805","GUY","Guyana","Latin America & Caribbean","Upper middle income","2015",56.2
+"806","GUY","Guyana","Latin America & Caribbean","Upper middle income","2014",56.2
+"807","GUY","Guyana","Latin America & Caribbean","Upper middle income","2013",57.2
+"808","GUY","Guyana","Latin America & Caribbean","Upper middle income","2012",57
+"809","GUY","Guyana","Latin America & Caribbean","Upper middle income","2011",57.1
+"810","GUY","Guyana","Latin America & Caribbean","Upper middle income","2010",56.8
+"811","HTI","Haiti","Latin America & Caribbean","Low income","2020",40.7
+"812","HTI","Haiti","Latin America & Caribbean","Low income","2019",37.9
+"813","HTI","Haiti","Latin America & Caribbean","Low income","2018",37.7
+"814","HTI","Haiti","Latin America & Caribbean","Low income","2017",37.7
+"815","HTI","Haiti","Latin America & Caribbean","Low income","2016",37.7
+"816","HTI","Haiti","Latin America & Caribbean","Low income","2015",40.1
+"817","HTI","Haiti","Latin America & Caribbean","Low income","2014",39.6
+"818","HTI","Haiti","Latin America & Caribbean","Low income","2013",41.8
+"819","HTI","Haiti","Latin America & Caribbean","Low income","2012",42.1
+"820","HTI","Haiti","Latin America & Caribbean","Low income","2011",42.3
+"821","HTI","Haiti","Latin America & Caribbean","Low income","2010",42.1
+"822","HND","Honduras","Latin America & Caribbean","Lower middle income","2020",56.3
+"823","HND","Honduras","Latin America & Caribbean","Lower middle income","2019",56
+"824","HND","Honduras","Latin America & Caribbean","Lower middle income","2018",55.9
+"825","HND","Honduras","Latin America & Caribbean","Lower middle income","2017",55.7
+"826","HND","Honduras","Latin America & Caribbean","Lower middle income","2016",56.1
+"827","HND","Honduras","Latin America & Caribbean","Lower middle income","2015",57.5
+"828","HND","Honduras","Latin America & Caribbean","Lower middle income","2014",58.5
+"829","HND","Honduras","Latin America & Caribbean","Lower middle income","2013",59.1
+"830","HND","Honduras","Latin America & Caribbean","Lower middle income","2012",58.4
+"831","HND","Honduras","Latin America & Caribbean","Lower middle income","2011",57.6
+"832","HND","Honduras","Latin America & Caribbean","Lower middle income","2010",59.2
+"833","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2020",85.3
+"834","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2019",85.1
+"835","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2018",85
+"836","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2017",84.8
+"837","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2016",84.3
+"838","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2015",83.7
+"839","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2014",83.2
+"840","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2013",87
+"841","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2012",87
+"842","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2011",86.4
+"843","HKG","Hong Kong SAR, China","East Asia & Pacific","High income","2010",86.1
+"844","HUN","Hungary","High income: OECD","High income","2020",73.4
+"845","HUN","Hungary","High income: OECD","High income","2019",73.2
+"846","HUN","Hungary","High income: OECD","High income","2018",72.7
+"847","HUN","Hungary","High income: OECD","High income","2017",71.4
+"848","HUN","Hungary","High income: OECD","High income","2016",71.1
+"849","HUN","Hungary","High income: OECD","High income","2015",68
+"850","HUN","Hungary","High income: OECD","High income","2014",66.9
+"851","HUN","Hungary","High income: OECD","High income","2013",67.7
+"852","HUN","Hungary","High income: OECD","High income","2012",67.7
+"853","HUN","Hungary","High income: OECD","High income","2011",68
+"854","HUN","Hungary","High income: OECD","High income","2010",66.2
+"855","ISL","Iceland","High income: OECD","High income","2020",79
+"856","ISL","Iceland","High income: OECD","High income","2019",79
+"857","ISL","Iceland","High income: OECD","High income","2018",79
+"858","ISL","Iceland","High income: OECD","High income","2017",79
+"859","ISL","Iceland","High income: OECD","High income","2016",79
+"860","ISL","Iceland","High income: OECD","High income","2015",80.5
+"861","ISL","Iceland","High income: OECD","High income","2014",80.9
+"862","ISL","Iceland","High income: OECD","High income","2013",80.4
+"863","ISL","Iceland","High income: OECD","High income","2012",80.3
+"864","ISL","Iceland","High income: OECD","High income","2011",79.6
+"865","ISL","Iceland","High income: OECD","High income","2010",79.4
+"866","INDI","India","South Asia","Lower middle income","2020",71
+"867","INDI","India","South Asia","Lower middle income","2019",67.5
+"868","INDI","India","South Asia","Lower middle income","2018",60.9
+"869","INDI","India","South Asia","Lower middle income","2017",55.9
+"870","INDI","India","South Asia","Lower middle income","2016",54.5
+"871","INDI","India","South Asia","Lower middle income","2015",52.9
+"872","INDI","India","South Asia","Lower middle income","2014",51.9
+"873","IND_Delh","India Delhi","South Asia","Lower middle income","2020",71.9
+"874","IND_Delh","India Delhi","South Asia","Lower middle income","2019",68.1
+"875","IND_Delh","India Delhi","South Asia","Lower middle income","2018",61.4
+"876","IND_Delh","India Delhi","South Asia","Lower middle income","2017",56.9
+"877","IND_Delh","India Delhi","South Asia","Lower middle income","2016",54.9
+"878","IND_Delh","India Delhi","South Asia","Lower middle income","2015",53.2
+"879","IND_Delh","India Delhi","South Asia","Lower middle income","2014",52.1
+"880","IND","India Mumbai","South Asia","Lower middle income","2020",70.1
+"881","IND","India Mumbai","South Asia","Lower middle income","2019",66.8
+"882","IND","India Mumbai","South Asia","Lower middle income","2018",60.4
+"883","IND","India Mumbai","South Asia","Lower middle income","2017",54.9
+"884","IND","India Mumbai","South Asia","Lower middle income","2016",54.1
+"885","IND","India Mumbai","South Asia","Lower middle income","2015",52.5
+"886","IND","India Mumbai","South Asia","Lower middle income","2014",51.6
+"887","IND","India","South Asia","Lower middle income","2013",52.1
+"888","IND","India","South Asia","Lower middle income","2012",51.7
+"889","IND","India","South Asia","Lower middle income","2011",50.1
+"890","IND","India","South Asia","Lower middle income","2010",49.1
+"891","INDO","Indonesia","East Asia & Pacific","Lower middle income","2020",69.6
+"892","INDO","Indonesia","East Asia & Pacific","Lower middle income","2019",68.2
+"893","INDO","Indonesia","East Asia & Pacific","Lower middle income","2018",66.9
+"894","INDO","Indonesia","East Asia & Pacific","Lower middle income","2017",64.7
+"895","INDO","Indonesia","East Asia & Pacific","Lower middle income","2016",62.1
+"896","INDO","Indonesia","East Asia & Pacific","Lower middle income","2015",61.8
+"897","INDO","Indonesia","East Asia & Pacific","Lower middle income","2014",60.7
+"898","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2020",69.8
+"899","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2019",68.4
+"900","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2018",67.1
+"901","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2017",64.8
+"902","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2016",62.3
+"903","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2015",61.8
+"904","IDN","Indonesia Jakarta","East Asia & Pacific","Lower middle income","2014",60.4
+"905","IDN","Indonesia","East Asia & Pacific","Lower middle income","2013",62.4
+"906","IDN","Indonesia","East Asia & Pacific","Lower middle income","2012",60.4
+"907","IDN","Indonesia","East Asia & Pacific","Lower middle income","2011",59.5
+"908","IDN","Indonesia","East Asia & Pacific","Lower middle income","2010",58.7
+"909","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2020",68.8
+"910","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2019",67.4
+"911","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2018",66.2
+"912","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2017",64.1
+"913","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2016",61.6
+"914","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2015",62.1
+"915","IDN_Sura","Indonesia Surabaya","East Asia & Pacific","Lower middle income","2014",61.9
+"916","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2020",58.5
+"917","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2019",58.6
+"918","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2018",55.7
+"919","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2017",55.7
+"920","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2016",55.4
+"921","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2015",57.3
+"922","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2014",56.5
+"923","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2013",57.6
+"924","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2012",56.2
+"925","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2011",56.1
+"926","IRN","Iran, Islamic Rep.","Middle East & North Africa","Upper middle income","2010",55.9
+"927","IRQ","Iraq","Middle East & North Africa","Upper middle income","2020",44.7
+"928","IRQ","Iraq","Middle East & North Africa","Upper middle income","2019",44.7
+"929","IRQ","Iraq","Middle East & North Africa","Upper middle income","2018",44.6
+"930","IRQ","Iraq","Middle East & North Africa","Upper middle income","2017",44.1
+"931","IRQ","Iraq","Middle East & North Africa","Upper middle income","2016",42.9
+"932","IRQ","Iraq","Middle East & North Africa","Upper middle income","2015",47.1
+"933","IRQ","Iraq","Middle East & North Africa","Upper middle income","2014",47.6
+"934","IRQ","Iraq","Middle East & North Africa","Upper middle income","2013",48
+"935","IRQ","Iraq","Middle East & North Africa","Upper middle income","2012",46.8
+"936","IRQ","Iraq","Middle East & North Africa","Upper middle income","2011",46.6
+"937","IRQ","Iraq","Middle East & North Africa","Upper middle income","2010",47.3
+"938","IRL","Ireland","High income: OECD","High income","2020",79.6
+"939","IRL","Ireland","High income: OECD","High income","2019",79.6
+"940","IRL","Ireland","High income: OECD","High income","2018",80.1
+"941","IRL","Ireland","High income: OECD","High income","2017",80.1
+"942","IRL","Ireland","High income: OECD","High income","2016",79.8
+"943","IRL","Ireland","High income: OECD","High income","2015",80.7
+"944","IRL","Ireland","High income: OECD","High income","2014",78.7
+"945","IRL","Ireland","High income: OECD","High income","2013",80.8
+"946","IRL","Ireland","High income: OECD","High income","2012",79.8
+"947","IRL","Ireland","High income: OECD","High income","2011",80.3
+"948","IRL","Ireland","High income: OECD","High income","2010",80.7
+"949","ISR","Israel","High income: OECD","High income","2020",76.7
+"950","ISR","Israel","High income: OECD","High income","2019",75
+"951","ISR","Israel","High income: OECD","High income","2018",74.3
+"952","ISR","Israel","High income: OECD","High income","2017",74.2
+"953","ISR","Israel","High income: OECD","High income","2016",73
+"954","ISR","Israel","High income: OECD","High income","2015",72.7
+"955","ISR","Israel","High income: OECD","High income","2014",72.8
+"956","ISR","Israel","High income: OECD","High income","2013",73.5
+"957","ISR","Israel","High income: OECD","High income","2012",72.3
+"958","ISR","Israel","High income: OECD","High income","2011",72.2
+"959","ISR","Israel","High income: OECD","High income","2010",71.9
+"960","ITA","Italy","High income: OECD","High income","2020",72.9
+"961","ITA","Italy","High income: OECD","High income","2019",73
+"962","ITA","Italy","High income: OECD","High income","2018",73.2
+"963","ITA","Italy","High income: OECD","High income","2017",71.8
+"964","ITA","Italy","High income: OECD","High income","2016",71.7
+"965","ITA","Italy","High income: OECD","High income","2015",68.7
+"966","ITA","Italy","High income: OECD","High income","2014",68.4
+"967","ITA","Italy","High income: OECD","High income","2013",66.6
+"968","ITA","Italy","High income: OECD","High income","2012",66.2
+"969","ITA","Italy","High income: OECD","High income","2011",66
+"970","ITA","Italy","High income: OECD","High income","2010",65.8
+"971","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2020",69.7
+"972","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2019",68.3
+"973","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2018",67.7
+"974","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2017",67.3
+"975","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2016",66.2
+"976","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2015",66.2
+"977","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2014",61.2
+"978","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2013",62.3
+"979","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2012",60.4
+"980","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2011",60.2
+"981","JAM","Jamaica","Latin America & Caribbean","Upper middle income","2010",59.3
+"982","JAP","Japan","High income: OECD","High income","2020",78
+"983","JAP","Japan","High income: OECD","High income","2019",78
+"984","JAP","Japan","High income: OECD","High income","2018",78
+"985","JAP","Japan","High income: OECD","High income","2017",77.9
+"986","JAP","Japan","High income: OECD","High income","2016",77.5
+"987","JAP","Japan","High income: OECD","High income","2015",77.1
+"988","JAP","Japan","High income: OECD","High income","2014",77.2
+"989","JPN_Osak","Japan Osaka","High income: OECD","High income","2020",78.4
+"990","JPN_Osak","Japan Osaka","High income: OECD","High income","2019",78.5
+"991","JPN_Osak","Japan Osaka","High income: OECD","High income","2018",78.5
+"992","JPN_Osak","Japan Osaka","High income: OECD","High income","2017",78.5
+"993","JPN_Osak","Japan Osaka","High income: OECD","High income","2016",77.8
+"994","JPN_Osak","Japan Osaka","High income: OECD","High income","2015",77.5
+"995","JPN_Osak","Japan Osaka","High income: OECD","High income","2014",77.6
+"996","JPN","Japan Tokyo","High income: OECD","High income","2020",77.8
+"997","JPN","Japan Tokyo","High income: OECD","High income","2019",77.8
+"998","JPN","Japan Tokyo","High income: OECD","High income","2018",77.7
+"999","JPN","Japan Tokyo","High income: OECD","High income","2017",77.6
+"1000","JPN","Japan Tokyo","High income: OECD","High income","2016",77.4
+"1001","JPN","Japan Tokyo","High income: OECD","High income","2015",76.9
+"1002","JPN","Japan Tokyo","High income: OECD","High income","2014",77
+"1003","JPN","Japan","High income: OECD","High income","2013",79.3
+"1004","JPN","Japan","High income: OECD","High income","2012",79.4
+"1005","JPN","Japan","High income: OECD","High income","2011",79.1
+"1006","JPN","Japan","High income: OECD","High income","2010",78.1
+"1007","JOR","Jordan","Middle East & North Africa","Upper middle income","2020",69
+"1008","JOR","Jordan","Middle East & North Africa","Upper middle income","2019",61.3
+"1009","JOR","Jordan","Middle East & North Africa","Upper middle income","2018",59.9
+"1010","JOR","Jordan","Middle East & North Africa","Upper middle income","2017",57
+"1011","JOR","Jordan","Middle East & North Africa","Upper middle income","2016",56.7
+"1012","JOR","Jordan","Middle East & North Africa","Upper middle income","2015",57.9
+"1013","JOR","Jordan","Middle East & North Africa","Upper middle income","2014",57.5
+"1014","JOR","Jordan","Middle East & North Africa","Upper middle income","2013",57.6
+"1015","JOR","Jordan","Middle East & North Africa","Upper middle income","2012",57.6
+"1016","JOR","Jordan","Middle East & North Africa","Upper middle income","2011",56.7
+"1017","JOR","Jordan","Middle East & North Africa","Upper middle income","2010",56.3
+"1018","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2020",79.6
+"1019","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2019",78
+"1020","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2018",76.9
+"1021","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2017",74.8
+"1022","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2016",70.9
+"1023","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2015",62.7
+"1024","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2014",61.8
+"1025","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2013",62.3
+"1026","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2012",62.2
+"1027","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2011",59.2
+"1028","KAZ","Kazakhstan","Europe & Central Asia","Upper middle income","2010",57.2
+"1029","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2020",73.2
+"1030","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2019",71
+"1031","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2018",65.4
+"1032","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2017",62.8
+"1033","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2016",58
+"1034","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2015",53.9
+"1035","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2014",53.9
+"1036","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2013",56.3
+"1037","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2012",56
+"1038","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2011",55.9
+"1039","KEN","Kenya","Sub-Saharan Africa","Lower middle income","2010",56.3
+"1040","KIR","Kiribati","East Asia & Pacific","Lower middle income","2020",46.9
+"1041","KIR","Kiribati","East Asia & Pacific","Lower middle income","2019",46.8
+"1042","KIR","Kiribati","East Asia & Pacific","Lower middle income","2018",46.2
+"1043","KIR","Kiribati","East Asia & Pacific","Lower middle income","2017",46.7
+"1044","KIR","Kiribati","East Asia & Pacific","Lower middle income","2016",45.4
+"1045","KIR","Kiribati","East Asia & Pacific","Lower middle income","2015",52
+"1046","KIR","Kiribati","East Asia & Pacific","Lower middle income","2014",51.5
+"1047","KIR","Kiribati","East Asia & Pacific","Lower middle income","2013",55.6
+"1048","KIR","Kiribati","East Asia & Pacific","Lower middle income","2012",55.7
+"1049","KIR","Kiribati","East Asia & Pacific","Lower middle income","2011",55.5
+"1050","KIR","Kiribati","East Asia & Pacific","Lower middle income","2010",55.8
+"1051","KOR","Korea, Rep.","High income: OECD","High income","2020",84
+"1052","KOR","Korea, Rep.","High income: OECD","High income","2019",84
+"1053","KOR","Korea, Rep.","High income: OECD","High income","2018",84
+"1054","KOR","Korea, Rep.","High income: OECD","High income","2017",84
+"1055","KOR","Korea, Rep.","High income: OECD","High income","2016",83.1
+"1056","KOR","Korea, Rep.","High income: OECD","High income","2015",82.8
+"1057","KOR","Korea, Rep.","High income: OECD","High income","2014",82.3
+"1058","KOR","Korea, Rep.","High income: OECD","High income","2013",82.8
+"1059","KOR","Korea, Rep.","High income: OECD","High income","2012",81.8
+"1060","KOR","Korea, Rep.","High income: OECD","High income","2011",81.1
+"1061","KOR","Korea, Rep.","High income: OECD","High income","2010",80.9
+"1062","KSV","Kosovo","Europe & Central Asia","Upper middle income","2020",73.2
+"1063","KSV","Kosovo","Europe & Central Asia","Upper middle income","2019",71
+"1064","KSV","Kosovo","Europe & Central Asia","Upper middle income","2018",70.5
+"1065","KSV","Kosovo","Europe & Central Asia","Upper middle income","2017",64.9
+"1066","KSV","Kosovo","Europe & Central Asia","Upper middle income","2016",63
+"1067","KSV","Kosovo","Europe & Central Asia","Upper middle income","2015",61
+"1068","KSV","Kosovo","Europe & Central Asia","Upper middle income","2014",59.3
+"1069","KSV","Kosovo","Europe & Central Asia","Upper middle income","2013",58.8
+"1070","KSV","Kosovo","Europe & Central Asia","Upper middle income","2012",53.3
+"1071","KSV","Kosovo","Europe & Central Asia","Upper middle income","2011",53.2
+"1072","KSV","Kosovo","Europe & Central Asia","Upper middle income","2010",53.8
+"1073","KWT","Kuwait","Middle East & North Africa","High income","2020",67.4
+"1074","KWT","Kuwait","Middle East & North Africa","High income","2019",62.6
+"1075","KWT","Kuwait","Middle East & North Africa","High income","2018",61.8
+"1076","KWT","Kuwait","Middle East & North Africa","High income","2017",60
+"1077","KWT","Kuwait","Middle East & North Africa","High income","2016",60.7
+"1078","KWT","Kuwait","Middle East & North Africa","High income","2015",60.5
+"1079","KWT","Kuwait","Middle East & North Africa","High income","2014",61
+"1080","KWT","Kuwait","Middle East & North Africa","High income","2013",61
+"1081","KWT","Kuwait","Middle East & North Africa","High income","2012",60.7
+"1082","KWT","Kuwait","Middle East & North Africa","High income","2011",59.8
+"1083","KWT","Kuwait","Middle East & North Africa","High income","2010",60.3
+"1084","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2020",67.8
+"1085","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2019",65.4
+"1086","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2018",62.4
+"1087","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2017",61.3
+"1088","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2016",61.3
+"1089","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2015",57.8
+"1090","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2014",58.3
+"1091","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2013",62.2
+"1092","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2012",60.3
+"1093","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2011",62.1
+"1094","KGZ","Kyrgyz Republic","Europe & Central Asia","Lower middle income","2010",59.2
+"1095","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2020",50.8
+"1096","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2019",49.8
+"1097","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2018",50
+"1098","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2017",49.1
+"1099","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2016",48.2
+"1100","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2015",47
+"1101","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2014",43.8
+"1102","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2013",46.1
+"1103","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2012",46.2
+"1104","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2011",45.2
+"1105","LAO","Lao PDR","East Asia & Pacific","Lower middle income","2010",44.3
+"1106","LVA","Latvia","High income: OECD","High income","2020",80.3
+"1107","LVA","Latvia","High income: OECD","High income","2019",80.3
+"1108","LVA","Latvia","High income: OECD","High income","2018",80
+"1109","LVA","Latvia","High income: OECD","High income","2017",80.6
+"1110","LVA","Latvia","High income: OECD","High income","2016",79.1
+"1111","LVA","Latvia","High income: OECD","High income","2015",78
+"1112","LVA","Latvia","High income: OECD","High income","2014",77.9
+"1113","LVA","Latvia","High income: OECD","High income","2013",77.8
+"1114","LVA","Latvia","High income: OECD","High income","2012",77.7
+"1115","LVA","Latvia","High income: OECD","High income","2011",74.4
+"1116","LVA","Latvia","High income: OECD","High income","2010",74
+"1117","LBN","Lebanon","Middle East & North Africa","Upper middle income","2020",54.3
+"1118","LBN","Lebanon","Middle East & North Africa","Upper middle income","2019",54.4
+"1119","LBN","Lebanon","Middle East & North Africa","Upper middle income","2018",54.4
+"1120","LBN","Lebanon","Middle East & North Africa","Upper middle income","2017",54.5
+"1121","LBN","Lebanon","Middle East & North Africa","Upper middle income","2016",54.7
+"1122","LBN","Lebanon","Middle East & North Africa","Upper middle income","2015",59.5
+"1123","LBN","Lebanon","Middle East & North Africa","Upper middle income","2014",59.5
+"1124","LBN","Lebanon","Middle East & North Africa","Upper middle income","2013",61.4
+"1125","LBN","Lebanon","Middle East & North Africa","Upper middle income","2012",61
+"1126","LBN","Lebanon","Middle East & North Africa","Upper middle income","2011",60.6
+"1127","LBN","Lebanon","Middle East & North Africa","Upper middle income","2010",60.2
+"1128","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2020",59.4
+"1129","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2019",58.7
+"1130","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2018",58.6
+"1131","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2017",58
+"1132","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2016",55.2
+"1133","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2015",54.6
+"1134","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2014",54.1
+"1135","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2013",55
+"1136","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2012",50.4
+"1137","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2011",50.2
+"1138","LSO","Lesotho","Sub-Saharan Africa","Lower middle income","2010",49.3
+"1139","LBR","Liberia","Sub-Saharan Africa","Low income","2020",43.2
+"1140","LBR","Liberia","Sub-Saharan Africa","Low income","2019",43.5
+"1141","LBR","Liberia","Sub-Saharan Africa","Low income","2018",43.6
+"1142","LBR","Liberia","Sub-Saharan Africa","Low income","2017",40
+"1143","LBR","Liberia","Sub-Saharan Africa","Low income","2016",40
+"1144","LBR","Liberia","Sub-Saharan Africa","Low income","2015",43.3
+"1145","LBR","Liberia","Sub-Saharan Africa","Low income","2014",43.3
+"1146","LBR","Liberia","Sub-Saharan Africa","Low income","2013",46
+"1147","LBR","Liberia","Sub-Saharan Africa","Low income","2012",44.1
+"1148","LBR","Liberia","Sub-Saharan Africa","Low income","2011",41.4
+"1149","LBR","Liberia","Sub-Saharan Africa","Low income","2010",40.5
+"1150","LBY","Libya","Middle East & North Africa","Upper middle income","2020",32.7
+"1151","LBY","Libya","Middle East & North Africa","Upper middle income","2019",32.7
+"1152","LBY","Libya","Middle East & North Africa","Upper middle income","2018",32.5
+"1153","LBY","Libya","Middle East & North Africa","Upper middle income","2017",32.5
+"1154","LBY","Libya","Middle East & North Africa","Upper middle income","2016",32.6
+"1155","LBY","Libya","Middle East & North Africa","Upper middle income","2015",33.9
+"1156","LBY","Libya","Middle East & North Africa","Upper middle income","2014",33.9
+"1157","LBY","Libya","Middle East & North Africa","Upper middle income","2013",34.9
+"1158","LIE","Liechtenstein","Europe & Central Asia","High income","2020",64.8
+"1159","LIE","Liechtenstein","Europe & Central Asia","High income","2019",64.9
+"1160","LTU","Lithuania","High income: OECD","High income","2020",81.6
+"1161","LTU","Lithuania","High income: OECD","High income","2019",81
+"1162","LTU","Lithuania","High income: OECD","High income","2018",80.6
+"1163","LTU","Lithuania","High income: OECD","High income","2017",79.2
+"1164","LTU","Lithuania","High income: OECD","High income","2016",79
+"1165","LTU","Lithuania","High income: OECD","High income","2015",75.6
+"1166","LTU","Lithuania","High income: OECD","High income","2014",75.4
+"1167","LTU","Lithuania","High income: OECD","High income","2013",74.3
+"1168","LTU","Lithuania","High income: OECD","High income","2012",74.3
+"1169","LTU","Lithuania","High income: OECD","High income","2011",73.2
+"1170","LTU","Lithuania","High income: OECD","High income","2010",73.1
+"1171","LUX","Luxembourg","High income: OECD","High income","2020",69.6
+"1172","LUX","Luxembourg","High income: OECD","High income","2019",69.6
+"1173","LUX","Luxembourg","High income: OECD","High income","2018",69.6
+"1174","LUX","Luxembourg","High income: OECD","High income","2017",69.2
+"1175","LUX","Luxembourg","High income: OECD","High income","2016",69.2
+"1176","LUX","Luxembourg","High income: OECD","High income","2015",67.5
+"1177","LUX","Luxembourg","High income: OECD","High income","2014",66.5
+"1178","LUX","Luxembourg","High income: OECD","High income","2013",66.8
+"1179","LUX","Luxembourg","High income: OECD","High income","2012",66.8
+"1180","LUX","Luxembourg","High income: OECD","High income","2011",66.7
+"1181","LUX","Luxembourg","High income: OECD","High income","2010",66.5
+"1182","MDG","Madagascar","Sub-Saharan Africa","Low income","2020",47.7
+"1183","MDG","Madagascar","Sub-Saharan Africa","Low income","2019",47
+"1184","MDG","Madagascar","Sub-Saharan Africa","Low income","2018",46.4
+"1185","MDG","Madagascar","Sub-Saharan Africa","Low income","2017",42.7
+"1186","MDG","Madagascar","Sub-Saharan Africa","Low income","2016",41.9
+"1187","MDG","Madagascar","Sub-Saharan Africa","Low income","2015",45.3
+"1188","MDG","Madagascar","Sub-Saharan Africa","Low income","2014",45.1
+"1189","MDG","Madagascar","Sub-Saharan Africa","Low income","2013",48
+"1190","MDG","Madagascar","Sub-Saharan Africa","Low income","2012",48.2
+"1191","MDG","Madagascar","Sub-Saharan Africa","Low income","2011",46.4
+"1192","MDG","Madagascar","Sub-Saharan Africa","Low income","2010",47
+"1193","MWI","Malawi","Sub-Saharan Africa","Low income","2020",60.9
+"1194","MWI","Malawi","Sub-Saharan Africa","Low income","2019",60.4
+"1195","MWI","Malawi","Sub-Saharan Africa","Low income","2018",59.5
+"1196","MWI","Malawi","Sub-Saharan Africa","Low income","2017",53.2
+"1197","MWI","Malawi","Sub-Saharan Africa","Low income","2016",49.7
+"1198","MWI","Malawi","Sub-Saharan Africa","Low income","2015",47.6
+"1199","MWI","Malawi","Sub-Saharan Africa","Low income","2014",45.1
+"1200","MWI","Malawi","Sub-Saharan Africa","Low income","2013",48.7
+"1201","MWI","Malawi","Sub-Saharan Africa","Low income","2012",50.1
+"1202","MWI","Malawi","Sub-Saharan Africa","Low income","2011",49.8
+"1203","MWI","Malawi","Sub-Saharan Africa","Low income","2010",48.9
+"1204","MYS","Malaysia","East Asia & Pacific","Upper middle income","2020",81.5
+"1205","MYS","Malaysia","East Asia & Pacific","Upper middle income","2019",81.3
+"1206","MYS","Malaysia","East Asia & Pacific","Upper middle income","2018",78.8
+"1207","MYS","Malaysia","East Asia & Pacific","Upper middle income","2017",78.3
+"1208","MYS","Malaysia","East Asia & Pacific","Upper middle income","2016",78.6
+"1209","MYS","Malaysia","East Asia & Pacific","Upper middle income","2015",79.5
+"1210","MYS","Malaysia","East Asia & Pacific","Upper middle income","2014",77.5
+"1211","MYS","Malaysia","East Asia & Pacific","Upper middle income","2013",78.7
+"1212","MYS","Malaysia","East Asia & Pacific","Upper middle income","2012",78.7
+"1213","MYS","Malaysia","East Asia & Pacific","Upper middle income","2011",76.3
+"1214","MYS","Malaysia","East Asia & Pacific","Upper middle income","2010",74.6
+"1215","MDV","Maldives","South Asia","Upper middle income","2020",53.3
+"1216","MDV","Maldives","South Asia","Upper middle income","2019",53.3
+"1217","MDV","Maldives","South Asia","Upper middle income","2018",53.2
+"1218","MDV","Maldives","South Asia","Upper middle income","2017",52.4
+"1219","MDV","Maldives","South Asia","Upper middle income","2016",52.4
+"1220","MDV","Maldives","South Asia","Upper middle income","2015",57
+"1221","MDV","Maldives","South Asia","Upper middle income","2014",56.8
+"1222","MDV","Maldives","South Asia","Upper middle income","2013",62.2
+"1223","MDV","Maldives","South Asia","Upper middle income","2012",64.1
+"1224","MDV","Maldives","South Asia","Upper middle income","2011",61.5
+"1225","MDV","Maldives","South Asia","Upper middle income","2010",57.2
+"1226","MLI","Mali","Sub-Saharan Africa","Low income","2020",52.9
+"1227","MLI","Mali","Sub-Saharan Africa","Low income","2019",53.1
+"1228","MLI","Mali","Sub-Saharan Africa","Low income","2018",52.9
+"1229","MLI","Mali","Sub-Saharan Africa","Low income","2017",52.6
+"1230","MLI","Mali","Sub-Saharan Africa","Low income","2016",50.3
+"1231","MLI","Mali","Sub-Saharan Africa","Low income","2015",51.2
+"1232","MLI","Mali","Sub-Saharan Africa","Low income","2014",50.6
+"1233","MLI","Mali","Sub-Saharan Africa","Low income","2013",50.1
+"1234","MLI","Mali","Sub-Saharan Africa","Low income","2012",48.9
+"1235","MLI","Mali","Sub-Saharan Africa","Low income","2011",47.5
+"1236","MLI","Mali","Sub-Saharan Africa","Low income","2010",44.4
+"1237","MLT","Malta","Middle East & North Africa","High income","2020",66.1
+"1238","MLT","Malta","Middle East & North Africa","High income","2019",65.5
+"1239","MLT","Malta","Middle East & North Africa","High income","2018",65.2
+"1240","MLT","Malta","Middle East & North Africa","High income","2017",64.8
+"1241","MLT","Malta","Middle East & North Africa","High income","2016",62.3
+"1242","MLT","Malta","Middle East & North Africa","High income","2015",63.4
+"1243","MLT","Malta","Middle East & North Africa","High income","2014",63
+"1244","MLT","Malta","Middle East & North Africa","High income","2013",62.7
+"1245","MLT","Malta","Middle East & North Africa","High income","2012",62.7
+"1246","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2020",50.9
+"1247","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2019",50.9
+"1248","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2018",50.9
+"1249","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2017",50.9
+"1250","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2016",50.6
+"1251","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2015",54.8
+"1252","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2014",54.9
+"1253","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2013",56.7
+"1254","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2012",56.7
+"1255","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2011",56.7
+"1256","MHL","Marshall Islands","East Asia & Pacific","Upper middle income","2010",54.2
+"1257","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2020",51.1
+"1258","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2019",49.4
+"1259","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2018",48.4
+"1260","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2017",46.9
+"1261","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2016",43.8
+"1262","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2015",43.6
+"1263","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2014",44.5
+"1264","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2013",46
+"1265","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2012",45.6
+"1266","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2011",42.9
+"1267","MRT","Mauritania","Sub-Saharan Africa","Lower middle income","2010",41.8
+"1268","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2020",81.5
+"1269","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2019",80.3
+"1270","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2018",78.9
+"1271","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2017",76.5
+"1272","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2016",76
+"1273","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2015",75.9
+"1274","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2014",75.5
+"1275","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2013",77.2
+"1276","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2012",75.1
+"1277","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2011",75.1
+"1278","MUS","Mauritius","Sub-Saharan Africa","Upper middle income","2010",74.7
+"1279","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2020",72.4
+"1280","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2019",72.3
+"1281","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2018",72.5
+"1282","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2017",72.4
+"1283","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2016",71.6
+"1284","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2015",70.5
+"1285","MEXI","Mexico","Latin America & Caribbean","Upper middle income","2014",69.3
+"1286","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2020",71.7
+"1287","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2019",71.6
+"1288","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2018",71.8
+"1289","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2017",71.6
+"1290","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2016",70.8
+"1291","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2015",69.6
+"1292","MEX","Mexico Mexico City","Latin America & Caribbean","Upper middle income","2014",68.4
+"1293","MEX","Mexico","Latin America & Caribbean","Upper middle income","2013",68
+"1294","MEX","Mexico","Latin America & Caribbean","Upper middle income","2012",66.2
+"1295","MEX","Mexico","Latin America & Caribbean","Upper middle income","2011",64.6
+"1296","MEX","Mexico","Latin America & Caribbean","Upper middle income","2010",63.3
+"1297","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2020",75.7
+"1298","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2019",75.7
+"1299","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2018",75.9
+"1300","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2017",76.2
+"1301","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2016",76
+"1302","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2015",74.9
+"1303","MEX_Mont","Mexico Monterrey","Latin America & Caribbean","Upper middle income","2014",73.5
+"1304","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2020",48.1
+"1305","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2019",48.1
+"1306","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2018",48.1
+"1307","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2017",48.1
+"1308","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2016",48.1
+"1309","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2015",52
+"1310","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2014",49.9
+"1311","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2013",53.6
+"1312","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2012",53.6
+"1313","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2011",53.6
+"1314","FSM","Micronesia, Fed. Sts.","East Asia & Pacific","Lower middle income","2010",53.6
+"1315","MDA","Moldova","Europe & Central Asia","Lower middle income","2020",74.4
+"1316","MDA","Moldova","Europe & Central Asia","Lower middle income","2019",73.1
+"1317","MDA","Moldova","Europe & Central Asia","Lower middle income","2018",72.7
+"1318","MDA","Moldova","Europe & Central Asia","Lower middle income","2017",72.5
+"1319","MDA","Moldova","Europe & Central Asia","Lower middle income","2016",71.4
+"1320","MDA","Moldova","Europe & Central Asia","Lower middle income","2015",66.2
+"1321","MDA","Moldova","Europe & Central Asia","Lower middle income","2014",62.4
+"1322","MDA","Moldova","Europe & Central Asia","Lower middle income","2013",62.1
+"1323","MDA","Moldova","Europe & Central Asia","Lower middle income","2012",61.2
+"1324","MDA","Moldova","Europe & Central Asia","Lower middle income","2011",60.2
+"1325","MDA","Moldova","Europe & Central Asia","Lower middle income","2010",59.6
+"1326","MNG","Mongolia","East Asia & Pacific","Lower middle income","2020",67.8
+"1327","MNG","Mongolia","East Asia & Pacific","Lower middle income","2019",67.7
+"1328","MNG","Mongolia","East Asia & Pacific","Lower middle income","2018",67.4
+"1329","MNG","Mongolia","East Asia & Pacific","Lower middle income","2017",66.1
+"1330","MNG","Mongolia","East Asia & Pacific","Lower middle income","2016",65.3
+"1331","MNG","Mongolia","East Asia & Pacific","Lower middle income","2015",63.7
+"1332","MNG","Mongolia","East Asia & Pacific","Lower middle income","2014",63
+"1333","MNG","Mongolia","East Asia & Pacific","Lower middle income","2013",62.9
+"1334","MNG","Mongolia","East Asia & Pacific","Lower middle income","2012",61.2
+"1335","MNG","Mongolia","East Asia & Pacific","Lower middle income","2011",60
+"1336","MNG","Mongolia","East Asia & Pacific","Lower middle income","2010",59.9
+"1337","MNE","Montenegro","Europe & Central Asia","Upper middle income","2020",73.8
+"1338","MNE","Montenegro","Europe & Central Asia","Upper middle income","2019",73.7
+"1339","MNE","Montenegro","Europe & Central Asia","Upper middle income","2018",73.8
+"1340","MNE","Montenegro","Europe & Central Asia","Upper middle income","2017",71.2
+"1341","MNE","Montenegro","Europe & Central Asia","Upper middle income","2016",70.6
+"1342","MNE","Montenegro","Europe & Central Asia","Upper middle income","2015",68.1
+"1343","MNE","Montenegro","Europe & Central Asia","Upper middle income","2014",66.8
+"1344","MNE","Montenegro","Europe & Central Asia","Upper middle income","2013",65.8
+"1345","MNE","Montenegro","Europe & Central Asia","Upper middle income","2012",64.4
+"1346","MNE","Montenegro","Europe & Central Asia","Upper middle income","2011",62.6
+"1347","MNE","Montenegro","Europe & Central Asia","Upper middle income","2010",61.6
+"1348","MAR","Morocco","Middle East & North Africa","Lower middle income","2020",73.4
+"1349","MAR","Morocco","Middle East & North Africa","Lower middle income","2019",71.7
+"1350","MAR","Morocco","Middle East & North Africa","Lower middle income","2018",69.2
+"1351","MAR","Morocco","Middle East & North Africa","Lower middle income","2017",69.2
+"1352","MAR","Morocco","Middle East & North Africa","Lower middle income","2016",67.4
+"1353","MAR","Morocco","Middle East & North Africa","Lower middle income","2015",65.3
+"1354","MAR","Morocco","Middle East & North Africa","Lower middle income","2014",64.5
+"1355","MAR","Morocco","Middle East & North Africa","Lower middle income","2013",63.5
+"1356","MAR","Morocco","Middle East & North Africa","Lower middle income","2012",63.8
+"1357","MAR","Morocco","Middle East & North Africa","Lower middle income","2011",60.2
+"1358","MAR","Morocco","Middle East & North Africa","Lower middle income","2010",60.4
+"1359","MOZ","Mozambique","Sub-Saharan Africa","Low income","2020",55
+"1360","MOZ","Mozambique","Sub-Saharan Africa","Low income","2019",54.6
+"1361","MOZ","Mozambique","Sub-Saharan Africa","Low income","2018",52.8
+"1362","MOZ","Mozambique","Sub-Saharan Africa","Low income","2017",52.1
+"1363","MOZ","Mozambique","Sub-Saharan Africa","Low income","2016",52.8
+"1364","MOZ","Mozambique","Sub-Saharan Africa","Low income","2015",55.9
+"1365","MOZ","Mozambique","Sub-Saharan Africa","Low income","2014",51.6
+"1366","MOZ","Mozambique","Sub-Saharan Africa","Low income","2013",53.6
+"1367","MOZ","Mozambique","Sub-Saharan Africa","Low income","2012",53.3
+"1368","MOZ","Mozambique","Sub-Saharan Africa","Low income","2011",54.3
+"1369","MOZ","Mozambique","Sub-Saharan Africa","Low income","2010",53.2
+"1370","MMR","Myanmar","East Asia & Pacific","Lower middle income","2020",46.8
+"1371","MMR","Myanmar","East Asia & Pacific","Lower middle income","2019",43.5
+"1372","MMR","Myanmar","East Asia & Pacific","Lower middle income","2018",43
+"1373","MMR","Myanmar","East Asia & Pacific","Lower middle income","2017",42.7
+"1374","MMR","Myanmar","East Asia & Pacific","Lower middle income","2016",42.1
+"1375","MMR","Myanmar","East Asia & Pacific","Lower middle income","2015",42
+"1376","MMR","Myanmar","East Asia & Pacific","Lower middle income","2014",40.4
+"1377","MMR","Myanmar","East Asia & Pacific","Lower middle income","2013",42.3
+"1378","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2020",61.4
+"1379","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2019",61.4
+"1380","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2018",61.1
+"1381","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2017",60.1
+"1382","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2016",60
+"1383","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2015",61.4
+"1384","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2014",61.6
+"1385","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2013",62.8
+"1386","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2012",62.4
+"1387","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2011",62.2
+"1388","NAM","Namibia","Sub-Saharan Africa","Upper middle income","2010",62.3
+"1389","NPL","Nepal","South Asia","Low income","2020",63.2
+"1390","NPL","Nepal","South Asia","Low income","2019",59.7
+"1391","NPL","Nepal","South Asia","Low income","2018",60
+"1392","NPL","Nepal","South Asia","Low income","2017",58
+"1393","NPL","Nepal","South Asia","Low income","2016",59.7
+"1394","NPL","Nepal","South Asia","Low income","2015",60
+"1395","NPL","Nepal","South Asia","Low income","2014",59.2
+"1396","NPL","Nepal","South Asia","Low income","2013",59.9
+"1397","NPL","Nepal","South Asia","Low income","2012",59.4
+"1398","NPL","Nepal","South Asia","Low income","2011",58
+"1399","NPL","Nepal","South Asia","Low income","2010",60.2
+"1400","NLD","Netherlands","High income: OECD","High income","2020",76.1
+"1401","NLD","Netherlands","High income: OECD","High income","2019",76.1
+"1402","NLD","Netherlands","High income: OECD","High income","2018",76.1
+"1403","NLD","Netherlands","High income: OECD","High income","2017",75.6
+"1404","NLD","Netherlands","High income: OECD","High income","2016",75.5
+"1405","NLD","Netherlands","High income: OECD","High income","2015",74.8
+"1406","NLD","Netherlands","High income: OECD","High income","2014",74.8
+"1407","NLD","Netherlands","High income: OECD","High income","2013",74.7
+"1408","NLD","Netherlands","High income: OECD","High income","2012",73.5
+"1409","NLD","Netherlands","High income: OECD","High income","2011",73.1
+"1410","NLD","Netherlands","High income: OECD","High income","2010",73.1
+"1411","NZL","New Zealand","High income: OECD","High income","2020",86.8
+"1412","NZL","New Zealand","High income: OECD","High income","2019",87
+"1413","NZL","New Zealand","High income: OECD","High income","2018",87
+"1414","NZL","New Zealand","High income: OECD","High income","2017",87.2
+"1415","NZL","New Zealand","High income: OECD","High income","2016",87.1
+"1416","NZL","New Zealand","High income: OECD","High income","2015",87
+"1417","NZL","New Zealand","High income: OECD","High income","2014",86.4
+"1418","NZL","New Zealand","High income: OECD","High income","2013",87.5
+"1419","NZL","New Zealand","High income: OECD","High income","2012",87.3
+"1420","NZL","New Zealand","High income: OECD","High income","2011",87.3
+"1421","NZL","New Zealand","High income: OECD","High income","2010",87.2
+"1422","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2020",54.4
+"1423","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2019",54.5
+"1424","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2018",54.2
+"1425","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2017",54.2
+"1426","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2016",54.1
+"1427","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2015",56.3
+"1428","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2014",54.8
+"1429","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2013",57.1
+"1430","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2012",56.3
+"1431","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2011",53.2
+"1432","NIC","Nicaragua","Latin America & Caribbean","Lower middle income","2010",53.1
+"1433","NER","Niger","Sub-Saharan Africa","Low income","2020",56.8
+"1434","NER","Niger","Sub-Saharan Africa","Low income","2019",52.3
+"1435","NER","Niger","Sub-Saharan Africa","Low income","2018",51.2
+"1436","NER","Niger","Sub-Saharan Africa","Low income","2017",49.3
+"1437","NER","Niger","Sub-Saharan Africa","Low income","2016",46.3
+"1438","NER","Niger","Sub-Saharan Africa","Low income","2015",44
+"1439","NER","Niger","Sub-Saharan Africa","Low income","2014",43.3
+"1440","NER","Niger","Sub-Saharan Africa","Low income","2013",43.4
+"1441","NER","Niger","Sub-Saharan Africa","Low income","2012",41.8
+"1442","NER","Niger","Sub-Saharan Africa","Low income","2011",38.8
+"1443","NER","Niger","Sub-Saharan Africa","Low income","2010",37.9
+"1444","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2020",56.9
+"1445","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2019",53.4
+"1446","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2018",52
+"1447","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2017",48.5
+"1448","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2016",48.4
+"1449","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2015",50.6
+"1450","NIGE","Nigeria","Sub-Saharan Africa","Lower middle income","2014",47
+"1451","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2020",58.2
+"1452","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2019",56
+"1453","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2018",55.2
+"1454","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2017",52
+"1455","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2016",51.8
+"1456","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2015",55.8
+"1457","NGA_Kano","Nigeria Kano","Sub-Saharan Africa","Lower middle income","2014",51.9
+"1458","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2020",56.5
+"1459","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2019",52.6
+"1460","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2018",51.1
+"1461","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2017",47.4
+"1462","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2016",47.4
+"1463","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2015",49
+"1464","NGA","Nigeria Lagos","Sub-Saharan Africa","Lower middle income","2014",45.5
+"1465","NGA","Nigeria","Sub-Saharan Africa","Lower middle income","2013",45.4
+"1466","NGA","Nigeria","Sub-Saharan Africa","Lower middle income","2012",45.8
+"1467","NGA","Nigeria","Sub-Saharan Africa","Lower middle income","2011",44.6
+"1468","NGA","Nigeria","Sub-Saharan Africa","Lower middle income","2010",44.7
+"1469","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2020",80.7
+"1470","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2019",80.7
+"1471","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2018",80.3
+"1472","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2017",80.6
+"1473","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2016",77.9
+"1474","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2015",75.2
+"1475","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2014",73.2
+"1476","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2013",71.1
+"1477","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2012",70.4
+"1478","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2011",67.2
+"1479","MKD","North Macedonia","Europe & Central Asia","Upper middle income","2010",66.9
+"1480","NOR","Norway","High income: OECD","High income","2020",82.6
+"1481","NOR","Norway","High income: OECD","High income","2019",82.9
+"1482","NOR","Norway","High income: OECD","High income","2018",82.7
+"1483","NOR","Norway","High income: OECD","High income","2017",82.4
+"1484","NOR","Norway","High income: OECD","High income","2016",81.8
+"1485","NOR","Norway","High income: OECD","High income","2015",82.7
+"1486","NOR","Norway","High income: OECD","High income","2014",82.5
+"1487","NOR","Norway","High income: OECD","High income","2013",81.9
+"1488","NOR","Norway","High income: OECD","High income","2012",80.6
+"1489","NOR","Norway","High income: OECD","High income","2011",80.6
+"1490","NOR","Norway","High income: OECD","High income","2010",80.5
+"1491","OMN","Oman","Middle East & North Africa","High income","2020",70
+"1492","OMN","Oman","Middle East & North Africa","High income","2019",68.8
+"1493","OMN","Oman","Middle East & North Africa","High income","2018",68.6
+"1494","OMN","Oman","Middle East & North Africa","High income","2017",68.1
+"1495","OMN","Oman","Middle East & North Africa","High income","2016",66.3
+"1496","OMN","Oman","Middle East & North Africa","High income","2015",66.7
+"1497","OMN","Oman","Middle East & North Africa","High income","2014",66.7
+"1498","OMN","Oman","Middle East & North Africa","High income","2013",68.5
+"1499","OMN","Oman","Middle East & North Africa","High income","2012",67.4
+"1500","OMN","Oman","Middle East & North Africa","High income","2011",65.7
+"1501","OMN","Oman","Middle East & North Africa","High income","2010",65.6
+"1502","PAKI","Pakistan","South Asia","Lower middle income","2020",61
+"1503","PAKI","Pakistan","South Asia","Lower middle income","2019",55.5
+"1504","PAKI","Pakistan","South Asia","Lower middle income","2018",53
+"1505","PAKI","Pakistan","South Asia","Lower middle income","2017",52.5
+"1506","PAKI","Pakistan","South Asia","Lower middle income","2016",50.4
+"1507","PAKI","Pakistan","South Asia","Lower middle income","2015",52.9
+"1508","PAKI","Pakistan","South Asia","Lower middle income","2014",53.1
+"1509","PAK","Pakistan Karachi","South Asia","Lower middle income","2020",59.5
+"1510","PAK","Pakistan Karachi","South Asia","Lower middle income","2019",54
+"1511","PAK","Pakistan Karachi","South Asia","Lower middle income","2018",51.8
+"1512","PAK","Pakistan Karachi","South Asia","Lower middle income","2017",51.4
+"1513","PAK","Pakistan Karachi","South Asia","Lower middle income","2016",49.7
+"1514","PAK","Pakistan Karachi","South Asia","Lower middle income","2015",51.9
+"1515","PAK","Pakistan Karachi","South Asia","Lower middle income","2014",52.3
+"1516","PAK","Pakistan","South Asia","Lower middle income","2013",52.7
+"1517","PAK","Pakistan","South Asia","Lower middle income","2012",52.8
+"1518","PAK","Pakistan","South Asia","Lower middle income","2011",52.9
+"1519","PAK","Pakistan","South Asia","Lower middle income","2010",52.2
+"1520","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2020",63.6
+"1521","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2019",58.2
+"1522","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2018",55.3
+"1523","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2017",54.4
+"1524","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2016",51.6
+"1525","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2015",54.8
+"1526","PAK_Laho","Pakistan Lahore","South Asia","Lower middle income","2014",54.4
+"1527","PLW","Palau","East Asia & Pacific","High income","2020",53.7
+"1528","PLW","Palau","East Asia & Pacific","High income","2019",53.7
+"1529","PLW","Palau","East Asia & Pacific","High income","2018",53.7
+"1530","PLW","Palau","East Asia & Pacific","High income","2017",53.2
+"1531","PLW","Palau","East Asia & Pacific","High income","2016",53.1
+"1532","PLW","Palau","East Asia & Pacific","High income","2015",57.4
+"1533","PLW","Palau","East Asia & Pacific","High income","2014",57.3
+"1534","PLW","Palau","East Asia & Pacific","High income","2013",53.7
+"1535","PLW","Palau","East Asia & Pacific","High income","2012",54
+"1536","PLW","Palau","East Asia & Pacific","High income","2011",53.8
+"1537","PLW","Palau","East Asia & Pacific","High income","2010",54.1
+"1538","PAN","Panama","Latin America & Caribbean","High income","2020",66.6
+"1539","PAN","Panama","Latin America & Caribbean","High income","2019",66.9
+"1540","PAN","Panama","Latin America & Caribbean","High income","2018",66.5
+"1541","PAN","Panama","Latin America & Caribbean","High income","2017",64.7
+"1542","PAN","Panama","Latin America & Caribbean","High income","2016",64.7
+"1543","PAN","Panama","Latin America & Caribbean","High income","2015",68.1
+"1544","PAN","Panama","Latin America & Caribbean","High income","2014",66.6
+"1545","PAN","Panama","Latin America & Caribbean","High income","2013",65.9
+"1546","PAN","Panama","Latin America & Caribbean","High income","2012",65.6
+"1547","PAN","Panama","Latin America & Caribbean","High income","2011",65.6
+"1548","PAN","Panama","Latin America & Caribbean","High income","2010",65
+"1549","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2020",59.8
+"1550","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2019",59.4
+"1551","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2018",59.4
+"1552","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2017",59.3
+"1553","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2016",56
+"1554","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2015",56.4
+"1555","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2014",56.4
+"1556","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2013",57.8
+"1557","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2012",57.8
+"1558","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2011",57.7
+"1559","PNG","Papua New Guinea","East Asia & Pacific","Lower middle income","2010",57.8
+"1560","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2020",59.1
+"1561","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2019",58.5
+"1562","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2018",58
+"1563","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2017",58
+"1564","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2016",58.1
+"1565","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2015",61.1
+"1566","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2014",60.7
+"1567","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2013",63.1
+"1568","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2012",63.1
+"1569","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2011",62.9
+"1570","PRY","Paraguay","Latin America & Caribbean","Upper middle income","2010",61.9
+"1571","PER","Peru","Latin America & Caribbean","Upper middle income","2020",68.7
+"1572","PER","Peru","Latin America & Caribbean","Upper middle income","2019",68.3
+"1573","PER","Peru","Latin America & Caribbean","Upper middle income","2018",67.8
+"1574","PER","Peru","Latin America & Caribbean","Upper middle income","2017",67.5
+"1575","PER","Peru","Latin America & Caribbean","Upper middle income","2016",67.2
+"1576","PER","Peru","Latin America & Caribbean","Upper middle income","2015",69.1
+"1577","PER","Peru","Latin America & Caribbean","Upper middle income","2014",69
+"1578","PER","Peru","Latin America & Caribbean","Upper middle income","2013",70
+"1579","PER","Peru","Latin America & Caribbean","Upper middle income","2012",68.9
+"1580","PER","Peru","Latin America & Caribbean","Upper middle income","2011",67.8
+"1581","PER","Peru","Latin America & Caribbean","Upper middle income","2010",66.8
+"1582","PHL","Philippines","East Asia & Pacific","Lower middle income","2020",62.8
+"1583","PHL","Philippines","East Asia & Pacific","Lower middle income","2019",60.9
+"1584","PHL","Philippines","East Asia & Pacific","Lower middle income","2018",59.3
+"1585","PHL","Philippines","East Asia & Pacific","Lower middle income","2017",59.3
+"1586","PHL","Philippines","East Asia & Pacific","Lower middle income","2016",58.2
+"1587","PHL","Philippines","East Asia & Pacific","Lower middle income","2015",60.5
+"1588","PHL","Philippines","East Asia & Pacific","Lower middle income","2014",60.4
+"1589","PHL","Philippines","East Asia & Pacific","Lower middle income","2013",60.3
+"1590","PHL","Philippines","East Asia & Pacific","Lower middle income","2012",57.5
+"1591","PHL","Philippines","East Asia & Pacific","Lower middle income","2011",55.7
+"1592","PHL","Philippines","East Asia & Pacific","Lower middle income","2010",55.2
+"1593","POL","Poland","High income: OECD","High income","2020",76.4
+"1594","POL","Poland","High income: OECD","High income","2019",76.9
+"1595","POL","Poland","High income: OECD","High income","2018",77.9
+"1596","POL","Poland","High income: OECD","High income","2017",77.7
+"1597","POL","Poland","High income: OECD","High income","2016",76.9
+"1598","POL","Poland","High income: OECD","High income","2015",74.1
+"1599","POL","Poland","High income: OECD","High income","2014",73.6
+"1600","POL","Poland","High income: OECD","High income","2013",72.8
+"1601","POL","Poland","High income: OECD","High income","2012",68
+"1602","POL","Poland","High income: OECD","High income","2011",67
+"1603","POL","Poland","High income: OECD","High income","2010",65.1
+"1604","PRT","Portugal","High income: OECD","High income","2020",76.5
+"1605","PRT","Portugal","High income: OECD","High income","2019",76.4
+"1606","PRT","Portugal","High income: OECD","High income","2018",76.5
+"1607","PRT","Portugal","High income: OECD","High income","2017",76.7
+"1608","PRT","Portugal","High income: OECD","High income","2016",76.4
+"1609","PRT","Portugal","High income: OECD","High income","2015",73.8
+"1610","PRT","Portugal","High income: OECD","High income","2014",74.2
+"1611","PRT","Portugal","High income: OECD","High income","2013",74.6
+"1612","PRT","Portugal","High income: OECD","High income","2012",73.8
+"1613","PRT","Portugal","High income: OECD","High income","2011",72.9
+"1614","PRT","Portugal","High income: OECD","High income","2010",70.7
+"1615","PRI","Puerto Rico","Latin America & Caribbean","High income","2020",70.1
+"1616","PRI","Puerto Rico","Latin America & Caribbean","High income","2019",70
+"1617","PRI","Puerto Rico","Latin America & Caribbean","High income","2018",69.8
+"1618","PRI","Puerto Rico","Latin America & Caribbean","High income","2017",69.3
+"1619","PRI","Puerto Rico","Latin America & Caribbean","High income","2016",68.7
+"1620","PRI","Puerto Rico","Latin America & Caribbean","High income","2015",70.1
+"1621","PRI","Puerto Rico","Latin America & Caribbean","High income","2014",70.5
+"1622","PRI","Puerto Rico","Latin America & Caribbean","High income","2013",72.4
+"1623","PRI","Puerto Rico","Latin America & Caribbean","High income","2012",72.1
+"1624","PRI","Puerto Rico","Latin America & Caribbean","High income","2011",72.4
+"1625","PRI","Puerto Rico","Latin America & Caribbean","High income","2010",72.1
+"1626","QAT","Qatar","Middle East & North Africa","High income","2020",68.7
+"1627","QAT","Qatar","Middle East & North Africa","High income","2019",66.7
+"1628","QAT","Qatar","Middle East & North Africa","High income","2018",66
+"1629","QAT","Qatar","Middle East & North Africa","High income","2017",65.4
+"1630","QAT","Qatar","Middle East & North Africa","High income","2016",66.5
+"1631","QAT","Qatar","Middle East & North Africa","High income","2015",67.5
+"1632","QAT","Qatar","Middle East & North Africa","High income","2014",67.4
+"1633","QAT","Qatar","Middle East & North Africa","High income","2013",68.7
+"1634","QAT","Qatar","Middle East & North Africa","High income","2012",66.9
+"1635","QAT","Qatar","Middle East & North Africa","High income","2011",65.4
+"1636","QAT","Qatar","Middle East & North Africa","High income","2010",66.2
+"1637","ROM","Romania","Europe & Central Asia","Upper middle income","2020",73.3
+"1638","ROM","Romania","Europe & Central Asia","Upper middle income","2019",72.5
+"1639","ROM","Romania","Europe & Central Asia","Upper middle income","2018",73
+"1640","ROM","Romania","Europe & Central Asia","Upper middle income","2017",72.9
+"1641","ROM","Romania","Europe & Central Asia","Upper middle income","2016",72.7
+"1642","ROM","Romania","Europe & Central Asia","Upper middle income","2015",68.9
+"1643","ROM","Romania","Europe & Central Asia","Upper middle income","2014",66.6
+"1644","ROM","Romania","Europe & Central Asia","Upper middle income","2013",66.4
+"1645","ROM","Romania","Europe & Central Asia","Upper middle income","2012",65
+"1646","ROM","Romania","Europe & Central Asia","Upper middle income","2011",65.2
+"1647","ROM","Romania","Europe & Central Asia","Upper middle income","2010",66
+"1648","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2020",78.2
+"1649","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2019",77.4
+"1650","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2018",76.5
+"1651","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2017",75.3
+"1652","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2016",74.1
+"1653","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2015",69.2
+"1654","RUSS","Russian Federation","Europe & Central Asia","Upper middle income","2014",67.5
+"1655","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2020",78.3
+"1656","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2019",77.5
+"1657","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2018",76.6
+"1658","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2017",75.4
+"1659","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2016",74.4
+"1660","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2015",69.1
+"1661","RUS","Russian Federation Moscow","Europe & Central Asia","Upper middle income","2014",66.9
+"1662","RUS","Russian Federation","Europe & Central Asia","Upper middle income","2013",59.9
+"1663","RUS","Russian Federation","Europe & Central Asia","Upper middle income","2012",57.6
+"1664","RUS","Russian Federation","Europe & Central Asia","Upper middle income","2011",55.5
+"1665","RUS","Russian Federation","Europe & Central Asia","Upper middle income","2010",56
+"1666","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2020",77.9
+"1667","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2019",77.2
+"1668","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2018",76.3
+"1669","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2017",75
+"1670","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2016",73.3
+"1671","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2015",69.3
+"1672","RUS_Sai","Russian Federation Saint Petersburg","Europe & Central Asia","Upper middle income","2014",68.8
+"1673","RWA","Rwanda","Sub-Saharan Africa","Low income","2020",76.5
+"1674","RWA","Rwanda","Sub-Saharan Africa","Low income","2019",75.4
+"1675","RWA","Rwanda","Sub-Saharan Africa","Low income","2018",71.1
+"1676","RWA","Rwanda","Sub-Saharan Africa","Low income","2017",69
+"1677","RWA","Rwanda","Sub-Saharan Africa","Low income","2016",67.1
+"1678","RWA","Rwanda","Sub-Saharan Africa","Low income","2015",67.5
+"1679","RWA","Rwanda","Sub-Saharan Africa","Low income","2014",66.2
+"1680","RWA","Rwanda","Sub-Saharan Africa","Low income","2013",67
+"1681","RWA","Rwanda","Sub-Saharan Africa","Low income","2012",62.8
+"1682","RWA","Rwanda","Sub-Saharan Africa","Low income","2011",62.6
+"1683","RWA","Rwanda","Sub-Saharan Africa","Low income","2010",60.8
+"1684","WSM","Samoa","East Asia & Pacific","Upper middle income","2020",62.1
+"1685","WSM","Samoa","East Asia & Pacific","Upper middle income","2019",62.1
+"1686","WSM","Samoa","East Asia & Pacific","Upper middle income","2018",62.1
+"1687","WSM","Samoa","East Asia & Pacific","Upper middle income","2017",60
+"1688","WSM","Samoa","East Asia & Pacific","Upper middle income","2016",60.2
+"1689","WSM","Samoa","East Asia & Pacific","Upper middle income","2015",64.1
+"1690","WSM","Samoa","East Asia & Pacific","Upper middle income","2014",64.1
+"1691","WSM","Samoa","East Asia & Pacific","Upper middle income","2013",68.8
+"1692","WSM","Samoa","East Asia & Pacific","Upper middle income","2012",68.7
+"1693","WSM","Samoa","East Asia & Pacific","Upper middle income","2011",68.5
+"1694","WSM","Samoa","East Asia & Pacific","Upper middle income","2010",66.5
+"1695","SMR","San Marino","Europe & Central Asia","High income","2020",64.2
+"1696","SMR","San Marino","Europe & Central Asia","High income","2019",64.2
+"1697","SMR","San Marino","Europe & Central Asia","High income","2018",61.9
+"1698","SMR","San Marino","Europe & Central Asia","High income","2017",61.9
+"1699","SMR","San Marino","Europe & Central Asia","High income","2016",61.4
+"1700","SMR","San Marino","Europe & Central Asia","High income","2015",59.8
+"1701","SMR","San Marino","Europe & Central Asia","High income","2014",59
+"1702","SMR","San Marino","Europe & Central Asia","High income","2013",62.6
+"1703","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2020",45
+"1704","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2019",45
+"1705","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2018",44.7
+"1706","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2017",44.3
+"1707","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2016",43.8
+"1708","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2015",47.7
+"1709","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2014",47.3
+"1710","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2013",47
+"1711","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2012",46.7
+"1712","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2011",40.5
+"1713","STP","São Tomé and Príncipe","Sub-Saharan Africa","Lower middle income","2010",42.4
+"1714","SAU","Saudi Arabia","Middle East & North Africa","High income","2020",71.6
+"1715","SAU","Saudi Arabia","Middle East & North Africa","High income","2019",63.8
+"1716","SAU","Saudi Arabia","Middle East & North Africa","High income","2018",62.1
+"1717","SAU","Saudi Arabia","Middle East & North Africa","High income","2017",59.4
+"1718","SAU","Saudi Arabia","Middle East & North Africa","High income","2016",59.2
+"1719","SAU","Saudi Arabia","Middle East & North Africa","High income","2015",65.3
+"1720","SAU","Saudi Arabia","Middle East & North Africa","High income","2014",65.2
+"1721","SAU","Saudi Arabia","Middle East & North Africa","High income","2013",68
+"1722","SAU","Saudi Arabia","Middle East & North Africa","High income","2012",67
+"1723","SAU","Saudi Arabia","Middle East & North Africa","High income","2011",67.1
+"1724","SAU","Saudi Arabia","Middle East & North Africa","High income","2010",66.1
+"1725","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2020",59.3
+"1726","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2019",54.4
+"1727","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2018",54
+"1728","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2017",50.3
+"1729","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2016",49.6
+"1730","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2015",47.9
+"1731","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2014",44.5
+"1732","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2013",44.6
+"1733","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2012",44.2
+"1734","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2011",42.4
+"1735","SEN","Senegal","Sub-Saharan Africa","Lower middle income","2010",43
+"1736","SRB","Serbia","Europe & Central Asia","Upper middle income","2020",75.7
+"1737","SRB","Serbia","Europe & Central Asia","Upper middle income","2019",73.9
+"1738","SRB","Serbia","Europe & Central Asia","Upper middle income","2018",73.8
+"1739","SRB","Serbia","Europe & Central Asia","Upper middle income","2017",73.3
+"1740","SRB","Serbia","Europe & Central Asia","Upper middle income","2016",70
+"1741","SRB","Serbia","Europe & Central Asia","Upper middle income","2015",62.3
+"1742","SRB","Serbia","Europe & Central Asia","Upper middle income","2014",62.8
+"1743","SRB","Serbia","Europe & Central Asia","Upper middle income","2013",62.8
+"1744","SRB","Serbia","Europe & Central Asia","Upper middle income","2012",61.8
+"1745","SRB","Serbia","Europe & Central Asia","Upper middle income","2011",60.7
+"1746","SRB","Serbia","Europe & Central Asia","Upper middle income","2010",60.1
+"1747","SYC","Seychelles","Sub-Saharan Africa","High income","2020",61.7
+"1748","SYC","Seychelles","Sub-Saharan Africa","High income","2019",61.5
+"1749","SYC","Seychelles","Sub-Saharan Africa","High income","2018",61.5
+"1750","SYC","Seychelles","Sub-Saharan Africa","High income","2017",60.5
+"1751","SYC","Seychelles","Sub-Saharan Africa","High income","2016",59
+"1752","SYC","Seychelles","Sub-Saharan Africa","High income","2015",60.4
+"1753","SYC","Seychelles","Sub-Saharan Africa","High income","2014",59
+"1754","SYC","Seychelles","Sub-Saharan Africa","High income","2013",62.3
+"1755","SYC","Seychelles","Sub-Saharan Africa","High income","2012",62.3
+"1756","SYC","Seychelles","Sub-Saharan Africa","High income","2011",61.8
+"1757","SYC","Seychelles","Sub-Saharan Africa","High income","2010",61.7
+"1758","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2020",47.5
+"1759","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2019",47.2
+"1760","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2018",47.1
+"1761","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2017",47.2
+"1762","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2016",46.9
+"1763","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2015",49.7
+"1764","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2014",47.5
+"1765","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2013",48
+"1766","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2012",47.2
+"1767","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2011",43.4
+"1768","SLE","Sierra Leone","Sub-Saharan Africa","Low income","2010",39
+"1769","SGP","Singapore","East Asia & Pacific","High income","2020",86.2
+"1770","SGP","Singapore","East Asia & Pacific","High income","2019",85.8
+"1771","SGP","Singapore","East Asia & Pacific","High income","2018",85.6
+"1772","SGP","Singapore","East Asia & Pacific","High income","2017",85.4
+"1773","SGP","Singapore","East Asia & Pacific","High income","2016",84.9
+"1774","SGP","Singapore","East Asia & Pacific","High income","2015",86.7
+"1775","SGP","Singapore","East Asia & Pacific","High income","2014",86.9
+"1776","SGP","Singapore","East Asia & Pacific","High income","2013",88.7
+"1777","SGP","Singapore","East Asia & Pacific","High income","2012",88.7
+"1778","SGP","Singapore","East Asia & Pacific","High income","2011",88.7
+"1779","SGP","Singapore","East Asia & Pacific","High income","2010",88.1
+"1780","SVK","Slovak Republic","High income: OECD","High income","2020",75.6
+"1781","SVK","Slovak Republic","High income: OECD","High income","2019",75.4
+"1782","SVK","Slovak Republic","High income: OECD","High income","2018",75.2
+"1783","SVK","Slovak Republic","High income: OECD","High income","2017",75
+"1784","SVK","Slovak Republic","High income: OECD","High income","2016",74.8
+"1785","SVK","Slovak Republic","High income: OECD","High income","2015",70.7
+"1786","SVK","Slovak Republic","High income: OECD","High income","2014",71
+"1787","SVK","Slovak Republic","High income: OECD","High income","2013",71.4
+"1788","SVK","Slovak Republic","High income: OECD","High income","2012",70.7
+"1789","SVK","Slovak Republic","High income: OECD","High income","2011",70.6
+"1790","SVK","Slovak Republic","High income: OECD","High income","2010",69.9
+"1791","SVN","Slovenia","High income: OECD","High income","2020",76.5
+"1792","SVN","Slovenia","High income: OECD","High income","2019",76.4
+"1793","SVN","Slovenia","High income: OECD","High income","2018",76.4
+"1794","SVN","Slovenia","High income: OECD","High income","2017",75.4
+"1795","SVN","Slovenia","High income: OECD","High income","2016",74.7
+"1796","SVN","Slovenia","High income: OECD","High income","2015",69.8
+"1797","SVN","Slovenia","High income: OECD","High income","2014",69.5
+"1798","SVN","Slovenia","High income: OECD","High income","2013",69.1
+"1799","SVN","Slovenia","High income: OECD","High income","2012",67
+"1800","SVN","Slovenia","High income: OECD","High income","2011",65.2
+"1801","SVN","Slovenia","High income: OECD","High income","2010",62.6
+"1802","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2020",55.3
+"1803","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2019",55.2
+"1804","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2018",54.9
+"1805","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2017",55.1
+"1806","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2016",54.7
+"1807","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2015",58.2
+"1808","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2014",56.2
+"1809","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2013",59.3
+"1810","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2012",58.2
+"1811","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2011",56.3
+"1812","SLB","Solomon Islands","East Asia & Pacific","Lower middle income","2010",51.7
+"1813","SOM","Somalia","Sub-Saharan Africa","Low income","2020",20
+"1814","SOM","Somalia","Sub-Saharan Africa","Low income","2019",20
+"1815","SOM","Somalia","Sub-Saharan Africa","Low income","2018",20
+"1816","SOM","Somalia","Sub-Saharan Africa","Low income","2017",20.3
+"1817","SOM","Somalia","Sub-Saharan Africa","Low income","2016",20.2
+"1818","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2020",67
+"1819","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2019",66.7
+"1820","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2018",65.3
+"1821","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2017",65.4
+"1822","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2016",66.2
+"1823","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2015",68.7
+"1824","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2014",69.7
+"1825","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2013",71
+"1826","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2012",70
+"1827","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2011",68.3
+"1828","ZAF","South Africa","Sub-Saharan Africa","Upper middle income","2010",68
+"1829","SSD","South Sudan","Sub-Saharan Africa","Low income","2020",34.6
+"1830","SSD","South Sudan","Sub-Saharan Africa","Low income","2019",33.6
+"1831","SSD","South Sudan","Sub-Saharan Africa","Low income","2018",31.6
+"1832","SSD","South Sudan","Sub-Saharan Africa","Low income","2017",32.7
+"1833","SSD","South Sudan","Sub-Saharan Africa","Low income","2016",32.8
+"1834","SSD","South Sudan","Sub-Saharan Africa","Low income","2015",34.8
+"1835","SSD","South Sudan","Sub-Saharan Africa","Low income","2014",33.3
+"1836","SSD","South Sudan","Sub-Saharan Africa","Low income","2013",37.2
+"1837","ESP","Spain","High income: OECD","High income","2020",77.9
+"1838","ESP","Spain","High income: OECD","High income","2019",77.7
+"1839","ESP","Spain","High income: OECD","High income","2018",77.6
+"1840","ESP","Spain","High income: OECD","High income","2017",77.6
+"1841","ESP","Spain","High income: OECD","High income","2016",75.9
+"1842","ESP","Spain","High income: OECD","High income","2015",71.2
+"1843","ESP","Spain","High income: OECD","High income","2014",70.2
+"1844","ESP","Spain","High income: OECD","High income","2013",70
+"1845","ESP","Spain","High income: OECD","High income","2012",70
+"1846","ESP","Spain","High income: OECD","High income","2011",68.3
+"1847","ESP","Spain","High income: OECD","High income","2010",67.6
+"1848","LKA","Sri Lanka","South Asia","Upper middle income","2020",61.8
+"1849","LKA","Sri Lanka","South Asia","Upper middle income","2019",61.8
+"1850","LKA","Sri Lanka","South Asia","Upper middle income","2018",60
+"1851","LKA","Sri Lanka","South Asia","Upper middle income","2017",59.8
+"1852","LKA","Sri Lanka","South Asia","Upper middle income","2016",59.2
+"1853","LKA","Sri Lanka","South Asia","Upper middle income","2015",61.2
+"1854","LKA","Sri Lanka","South Asia","Upper middle income","2014",59.9
+"1855","LKA","Sri Lanka","South Asia","Upper middle income","2013",60.7
+"1856","LKA","Sri Lanka","South Asia","Upper middle income","2012",56.8
+"1857","LKA","Sri Lanka","South Asia","Upper middle income","2011",55.8
+"1858","LKA","Sri Lanka","South Asia","Upper middle income","2010",57
+"1859","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2020",54.6
+"1860","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2019",54.6
+"1861","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2018",54.6
+"1862","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2017",54.4
+"1863","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2016",55.6
+"1864","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2015",57.2
+"1865","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2014",57.1
+"1866","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2013",60
+"1867","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2012",60.2
+"1868","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2011",61
+"1869","KNA","St. Kitts and Nevis","Latin America & Caribbean","High income","2010",61.1
+"1870","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2020",63.7
+"1871","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2019",63.6
+"1872","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2018",63.6
+"1873","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2017",63.5
+"1874","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2016",63.5
+"1875","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2015",61.8
+"1876","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2014",61.6
+"1877","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2013",64.3
+"1878","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2012",64.1
+"1879","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2011",64
+"1880","LCA","St. Lucia","Latin America & Caribbean","Upper middle income","2010",64.2
+"1881","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2020",57.1
+"1882","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2019",57
+"1883","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2018",57
+"1884","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2017",57
+"1885","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2016",57.1
+"1886","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2015",60.3
+"1887","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2014",60.3
+"1888","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2013",62.6
+"1889","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2012",63.9
+"1890","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2011",63.8
+"1891","VCT","St. Vincent and the Grenadines","Latin America & Caribbean","Upper middle income","2010",63.7
+"1892","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2020",44.8
+"1893","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2019",48
+"1894","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2018",45
+"1895","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2017",44.8
+"1896","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2016",45.5
+"1897","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2015",48.9
+"1898","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2014",48.8
+"1899","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2013",50
+"1900","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2012",48.3
+"1901","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2011",47.9
+"1902","SDN","Sudan","Sub-Saharan Africa","Lower middle income","2010",47.7
+"1903","SUR","Suriname","Latin America & Caribbean","Upper middle income","2020",47.5
+"1904","SUR","Suriname","Latin America & Caribbean","Upper middle income","2019",47.4
+"1905","SUR","Suriname","Latin America & Caribbean","Upper middle income","2018",47.4
+"1906","SUR","Suriname","Latin America & Caribbean","Upper middle income","2017",47.4
+"1907","SUR","Suriname","Latin America & Caribbean","Upper middle income","2016",46.4
+"1908","SUR","Suriname","Latin America & Caribbean","Upper middle income","2015",49.7
+"1909","SUR","Suriname","Latin America & Caribbean","Upper middle income","2014",48.3
+"1910","SUR","Suriname","Latin America & Caribbean","Upper middle income","2013",47.1
+"1911","SUR","Suriname","Latin America & Caribbean","Upper middle income","2012",47.1
+"1912","SUR","Suriname","Latin America & Caribbean","Upper middle income","2011",46.9
+"1913","SUR","Suriname","Latin America & Caribbean","Upper middle income","2010",46.6
+"1914","SWE","Sweden","High income: OECD","High income","2020",82
+"1915","SWE","Sweden","High income: OECD","High income","2019",82
+"1916","SWE","Sweden","High income: OECD","High income","2018",82.2
+"1917","SWE","Sweden","High income: OECD","High income","2017",82.2
+"1918","SWE","Sweden","High income: OECD","High income","2016",81.6
+"1919","SWE","Sweden","High income: OECD","High income","2015",81.4
+"1920","SWE","Sweden","High income: OECD","High income","2014",81
+"1921","SWE","Sweden","High income: OECD","High income","2013",82.2
+"1922","SWE","Sweden","High income: OECD","High income","2012",82.3
+"1923","SWE","Sweden","High income: OECD","High income","2011",82.6
+"1924","SWE","Sweden","High income: OECD","High income","2010",81.2
+"1925","CHE","Switzerland","High income: OECD","High income","2020",76.6
+"1926","CHE","Switzerland","High income: OECD","High income","2019",76.6
+"1927","CHE","Switzerland","High income: OECD","High income","2018",76.6
+"1928","CHE","Switzerland","High income: OECD","High income","2017",76.4
+"1929","CHE","Switzerland","High income: OECD","High income","2016",76.4
+"1930","CHE","Switzerland","High income: OECD","High income","2015",76.9
+"1931","CHE","Switzerland","High income: OECD","High income","2014",75.4
+"1932","CHE","Switzerland","High income: OECD","High income","2013",76.9
+"1933","CHE","Switzerland","High income: OECD","High income","2012",76.7
+"1934","CHE","Switzerland","High income: OECD","High income","2011",76.6
+"1935","CHE","Switzerland","High income: OECD","High income","2010",76.6
+"1936","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2020",42
+"1937","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2019",41.5
+"1938","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2018",41.4
+"1939","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2017",41.4
+"1940","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2016",43
+"1941","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2015",46
+"1942","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2014",46.6
+"1943","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2013",51.7
+"1944","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2012",51.5
+"1945","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2011",50.7
+"1946","SYR","Syrian Arab Republic","Middle East & North Africa","Low income","2010",50.4
+"1947","TWN","Taiwan, China","East Asia & Pacific","High income","2020",80.9
+"1948","TWN","Taiwan, China","East Asia & Pacific","High income","2019",81
+"1949","TWN","Taiwan, China","East Asia & Pacific","High income","2018",80.7
+"1950","TWN","Taiwan, China","East Asia & Pacific","High income","2017",80.3
+"1951","TWN","Taiwan, China","East Asia & Pacific","High income","2016",81.3
+"1952","TWN","Taiwan, China","East Asia & Pacific","High income","2015",79.5
+"1953","TWN","Taiwan, China","East Asia & Pacific","High income","2014",78.4
+"1954","TWN","Taiwan, China","East Asia & Pacific","High income","2013",78.1
+"1955","TWN","Taiwan, China","East Asia & Pacific","High income","2012",74.8
+"1956","TWN","Taiwan, China","East Asia & Pacific","High income","2011",73.7
+"1957","TWN","Taiwan, China","East Asia & Pacific","High income","2010",73.3
+"1958","TJK","Tajikistan","Europe & Central Asia","Low income","2020",61.3
+"1959","TJK","Tajikistan","Europe & Central Asia","Low income","2019",55.4
+"1960","TJK","Tajikistan","Europe & Central Asia","Low income","2018",54.3
+"1961","TJK","Tajikistan","Europe & Central Asia","Low income","2017",53.4
+"1962","TJK","Tajikistan","Europe & Central Asia","Low income","2016",51.8
+"1963","TJK","Tajikistan","Europe & Central Asia","Low income","2015",47.3
+"1964","TJK","Tajikistan","Europe & Central Asia","Low income","2014",41.8
+"1965","TJK","Tajikistan","Europe & Central Asia","Low income","2013",44.9
+"1966","TJK","Tajikistan","Europe & Central Asia","Low income","2012",43.3
+"1967","TJK","Tajikistan","Europe & Central Asia","Low income","2011",43.4
+"1968","TJK","Tajikistan","Europe & Central Asia","Low income","2010",40.6
+"1969","TZA","Tanzania","Sub-Saharan Africa","Low income","2020",54.5
+"1970","TZA","Tanzania","Sub-Saharan Africa","Low income","2019",54.3
+"1971","TZA","Tanzania","Sub-Saharan Africa","Low income","2018",54
+"1972","TZA","Tanzania","Sub-Saharan Africa","Low income","2017",53.9
+"1973","TZA","Tanzania","Sub-Saharan Africa","Low income","2016",49.7
+"1974","TZA","Tanzania","Sub-Saharan Africa","Low income","2015",54.5
+"1975","TZA","Tanzania","Sub-Saharan Africa","Low income","2014",54.4
+"1976","TZA","Tanzania","Sub-Saharan Africa","Low income","2013",56.1
+"1977","TZA","Tanzania","Sub-Saharan Africa","Low income","2012",56.3
+"1978","TZA","Tanzania","Sub-Saharan Africa","Low income","2011",55.1
+"1979","TZA","Tanzania","Sub-Saharan Africa","Low income","2010",51.8
+"1980","THA","Thailand","East Asia & Pacific","Upper middle income","2020",80.1
+"1981","THA","Thailand","East Asia & Pacific","Upper middle income","2019",79.5
+"1982","THA","Thailand","East Asia & Pacific","Upper middle income","2018",78.5
+"1983","THA","Thailand","East Asia & Pacific","Upper middle income","2017",72.8
+"1984","THA","Thailand","East Asia & Pacific","Upper middle income","2016",71.9
+"1985","THA","Thailand","East Asia & Pacific","Upper middle income","2015",73.6
+"1986","THA","Thailand","East Asia & Pacific","Upper middle income","2014",73.4
+"1987","THA","Thailand","East Asia & Pacific","Upper middle income","2013",74.9
+"1988","THA","Thailand","East Asia & Pacific","Upper middle income","2012",74.6
+"1989","THA","Thailand","East Asia & Pacific","Upper middle income","2011",73.4
+"1990","THA","Thailand","East Asia & Pacific","Upper middle income","2010",73.8
+"1991","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2020",39.4
+"1992","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2019",39.7
+"1993","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2018",38
+"1994","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2017",38.2
+"1995","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2016",39.3
+"1996","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2015",45
+"1997","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2014",42.7
+"1998","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2013",43.4
+"1999","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2012",43.3
+"2000","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2011",42.9
+"2001","TMP","Timor-Leste","East Asia & Pacific","Lower middle income","2010",42
+"2002","TGO","Togo","Sub-Saharan Africa","Low income","2020",62.3
+"2003","TGO","Togo","Sub-Saharan Africa","Low income","2019",55.3
+"2004","TGO","Togo","Sub-Saharan Africa","Low income","2018",48.8
+"2005","TGO","Togo","Sub-Saharan Africa","Low income","2017",48.1
+"2006","TGO","Togo","Sub-Saharan Africa","Low income","2016",46.9
+"2007","TGO","Togo","Sub-Saharan Africa","Low income","2015",50.4
+"2008","TGO","Togo","Sub-Saharan Africa","Low income","2014",46.1
+"2009","TGO","Togo","Sub-Saharan Africa","Low income","2013",44.2
+"2010","TGO","Togo","Sub-Saharan Africa","Low income","2012",42.2
+"2011","TGO","Togo","Sub-Saharan Africa","Low income","2011",40.3
+"2012","TGO","Togo","Sub-Saharan Africa","Low income","2010",39.4
+"2013","TON","Tonga","East Asia & Pacific","Upper middle income","2020",61.4
+"2014","TON","Tonga","East Asia & Pacific","Upper middle income","2019",61.7
+"2015","TON","Tonga","East Asia & Pacific","Upper middle income","2018",61.6
+"2016","TON","Tonga","East Asia & Pacific","Upper middle income","2017",61.1
+"2017","TON","Tonga","East Asia & Pacific","Upper middle income","2016",61.3
+"2018","TON","Tonga","East Asia & Pacific","Upper middle income","2015",63.9
+"2019","TON","Tonga","East Asia & Pacific","Upper middle income","2014",63.8
+"2020","TON","Tonga","East Asia & Pacific","Upper middle income","2013",64.7
+"2021","TON","Tonga","East Asia & Pacific","Upper middle income","2012",65.1
+"2022","TON","Tonga","East Asia & Pacific","Upper middle income","2011",64.6
+"2023","TON","Tonga","East Asia & Pacific","Upper middle income","2010",64.3
+"2024","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2020",61.3
+"2025","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2019",61
+"2026","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2018",61.2
+"2027","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2017",61.3
+"2028","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2016",61.4
+"2029","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2015",64.5
+"2030","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2014",61.8
+"2031","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2013",63.9
+"2032","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2012",63
+"2033","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2011",62.6
+"2034","TTO","Trinidad and Tobago","Latin America & Caribbean","High income","2010",62.4
+"2035","TUN","Tunisia","Middle East & North Africa","Lower middle income","2020",68.7
+"2036","TUN","Tunisia","Middle East & North Africa","Lower middle income","2019",67.2
+"2037","TUN","Tunisia","Middle East & North Africa","Lower middle income","2018",65.3
+"2038","TUN","Tunisia","Middle East & North Africa","Lower middle income","2017",65.5
+"2039","TUN","Tunisia","Middle East & North Africa","Lower middle income","2016",64.6
+"2040","TUN","Tunisia","Middle East & North Africa","Lower middle income","2015",67.3
+"2041","TUN","Tunisia","Middle East & North Africa","Lower middle income","2014",67.4
+"2042","TUN","Tunisia","Middle East & North Africa","Lower middle income","2013",68.3
+"2043","TUN","Tunisia","Middle East & North Africa","Lower middle income","2012",68.1
+"2044","TUN","Tunisia","Middle East & North Africa","Lower middle income","2011",68.3
+"2045","TUN","Tunisia","Middle East & North Africa","Lower middle income","2010",66.5
+"2046","TUR","Turkey","Europe & Central Asia","Upper middle income","2020",76.8
+"2047","TUR","Turkey","Europe & Central Asia","Upper middle income","2019",75.3
+"2048","TUR","Turkey","Europe & Central Asia","Upper middle income","2018",70.9
+"2049","TUR","Turkey","Europe & Central Asia","Upper middle income","2017",69.4
+"2050","TUR","Turkey","Europe & Central Asia","Upper middle income","2016",69.1
+"2051","TUR","Turkey","Europe & Central Asia","Upper middle income","2015",68.8
+"2052","TUR","Turkey","Europe & Central Asia","Upper middle income","2014",67.8
+"2053","TUR","Turkey","Europe & Central Asia","Upper middle income","2013",66.8
+"2054","TUR","Turkey","Europe & Central Asia","Upper middle income","2012",65.7
+"2055","TUR","Turkey","Europe & Central Asia","Upper middle income","2011",65.3
+"2056","TUR","Turkey","Europe & Central Asia","Upper middle income","2010",65.3
+"2057","UGA","Uganda","Sub-Saharan Africa","Low income","2020",60
+"2058","UGA","Uganda","Sub-Saharan Africa","Low income","2019",58.4
+"2059","UGA","Uganda","Sub-Saharan Africa","Low income","2018",57.9
+"2060","UGA","Uganda","Sub-Saharan Africa","Low income","2017",57.3
+"2061","UGA","Uganda","Sub-Saharan Africa","Low income","2016",56.6
+"2062","UGA","Uganda","Sub-Saharan Africa","Low income","2015",51.9
+"2063","UGA","Uganda","Sub-Saharan Africa","Low income","2014",49.8
+"2064","UGA","Uganda","Sub-Saharan Africa","Low income","2013",48.8
+"2065","UGA","Uganda","Sub-Saharan Africa","Low income","2012",48.9
+"2066","UGA","Uganda","Sub-Saharan Africa","Low income","2011",49.8
+"2067","UGA","Uganda","Sub-Saharan Africa","Low income","2010",47.5
+"2068","UKR","Ukraine","Europe & Central Asia","Lower middle income","2020",70.2
+"2069","UKR","Ukraine","Europe & Central Asia","Lower middle income","2019",69.1
+"2070","UKR","Ukraine","Europe & Central Asia","Lower middle income","2018",68.1
+"2071","UKR","Ukraine","Europe & Central Asia","Lower middle income","2017",65.4
+"2072","UKR","Ukraine","Europe & Central Asia","Lower middle income","2016",64.2
+"2073","UKR","Ukraine","Europe & Central Asia","Lower middle income","2015",62.4
+"2074","UKR","Ukraine","Europe & Central Asia","Lower middle income","2014",59.9
+"2075","UKR","Ukraine","Europe & Central Asia","Lower middle income","2013",49.8
+"2076","UKR","Ukraine","Europe & Central Asia","Lower middle income","2012",45.5
+"2077","UKR","Ukraine","Europe & Central Asia","Lower middle income","2011",45.4
+"2078","UKR","Ukraine","Europe & Central Asia","Lower middle income","2010",40.8
+"2079","ARE","United Arab Emirates","Middle East & North Africa","High income","2020",80.9
+"2080","ARE","United Arab Emirates","Middle East & North Africa","High income","2019",81.6
+"2081","ARE","United Arab Emirates","Middle East & North Africa","High income","2018",79.3
+"2082","ARE","United Arab Emirates","Middle East & North Africa","High income","2017",77.4
+"2083","ARE","United Arab Emirates","Middle East & North Africa","High income","2016",76.3
+"2084","ARE","United Arab Emirates","Middle East & North Africa","High income","2015",76.5
+"2085","ARE","United Arab Emirates","Middle East & North Africa","High income","2014",74.6
+"2086","ARE","United Arab Emirates","Middle East & North Africa","High income","2013",73.6
+"2087","ARE","United Arab Emirates","Middle East & North Africa","High income","2012",72.2
+"2088","ARE","United Arab Emirates","Middle East & North Africa","High income","2011",71.9
+"2089","ARE","United Arab Emirates","Middle East & North Africa","High income","2010",71.8
+"2090","GBR","United Kingdom","High income: OECD","High income","2020",83.5
+"2091","GBR","United Kingdom","High income: OECD","High income","2019",83.6
+"2092","GBR","United Kingdom","High income: OECD","High income","2018",83.2
+"2093","GBR","United Kingdom","High income: OECD","High income","2017",83.3
+"2094","GBR","United Kingdom","High income: OECD","High income","2016",83.3
+"2095","GBR","United Kingdom","High income: OECD","High income","2015",82.9
+"2096","GBR","United Kingdom","High income: OECD","High income","2014",82.7
+"2097","GBR","United Kingdom","High income: OECD","High income","2013",83.7
+"2098","GBR","United Kingdom","High income: OECD","High income","2012",83.7
+"2099","GBR","United Kingdom","High income: OECD","High income","2011",83.6
+"2100","GBR","United Kingdom","High income: OECD","High income","2010",83
+"2101","US","United States","High income: OECD","High income","2020",84
+"2102","US","United States","High income: OECD","High income","2019",83.6
+"2103","US","United States","High income: OECD","High income","2018",83.6
+"2104","US","United States","High income: OECD","High income","2017",83.6
+"2105","US","United States","High income: OECD","High income","2016",83.6
+"2106","US","United States","High income: OECD","High income","2015",82.6
+"2107","US","United States","High income: OECD","High income","2014",82.6
+"2108","USA_Losa","United States Los Angeles","High income: OECD","High income","2020",82.2
+"2109","USA_Losa","United States Los Angeles","High income: OECD","High income","2019",81.4
+"2110","USA_Losa","United States Los Angeles","High income: OECD","High income","2018",81.5
+"2111","USA_Losa","United States Los Angeles","High income: OECD","High income","2017",81.5
+"2112","USA_Losa","United States Los Angeles","High income: OECD","High income","2016",81.5
+"2113","USA_Losa","United States Los Angeles","High income: OECD","High income","2015",80.5
+"2114","USA_Losa","United States Los Angeles","High income: OECD","High income","2014",80.5
+"2115","USA","United States New York City","High income: OECD","High income","2020",85.2
+"2116","USA","United States New York City","High income: OECD","High income","2019",85
+"2117","USA","United States New York City","High income: OECD","High income","2018",85
+"2118","USA","United States New York City","High income: OECD","High income","2017",85
+"2119","USA","United States New York City","High income: OECD","High income","2016",85
+"2120","USA","United States New York City","High income: OECD","High income","2015",84
+"2121","USA","United States New York City","High income: OECD","High income","2014",84
+"2122","USA","United States","High income: OECD","High income","2013",85.2
+"2123","USA","United States","High income: OECD","High income","2012",86
+"2124","USA","United States","High income: OECD","High income","2011",86
+"2125","USA","United States","High income: OECD","High income","2010",86.3
+"2126","URY","Uruguay","Latin America & Caribbean","High income","2020",61.5
+"2127","URY","Uruguay","Latin America & Caribbean","High income","2019",61.4
+"2128","URY","Uruguay","Latin America & Caribbean","High income","2018",61
+"2129","URY","Uruguay","Latin America & Caribbean","High income","2017",60.7
+"2130","URY","Uruguay","Latin America & Caribbean","High income","2016",60.2
+"2131","URY","Uruguay","Latin America & Caribbean","High income","2015",62.2
+"2132","URY","Uruguay","Latin America & Caribbean","High income","2014",61.5
+"2133","URY","Uruguay","Latin America & Caribbean","High income","2013",63.4
+"2134","URY","Uruguay","Latin America & Caribbean","High income","2012",62
+"2135","URY","Uruguay","Latin America & Caribbean","High income","2011",59.1
+"2136","URY","Uruguay","Latin America & Caribbean","High income","2010",59
+"2137","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2020",69.9
+"2138","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2019",67.8
+"2139","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2018",66.6
+"2140","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2017",62.1
+"2141","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2016",61.7
+"2142","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2015",52.3
+"2143","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2014",47.9
+"2144","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2013",46.2
+"2145","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2012",44.1
+"2146","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2011",41.1
+"2147","UZB","Uzbekistan","Europe & Central Asia","Lower middle income","2010",40.2
+"2148","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2020",61.1
+"2149","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2019",60.7
+"2150","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2018",60.9
+"2151","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2017",60.9
+"2152","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2016",59.3
+"2153","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2015",62.2
+"2154","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2014",61.5
+"2155","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2013",62.8
+"2156","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2012",61.5
+"2157","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2011",60.9
+"2158","VUT","Vanuatu","East Asia & Pacific","Lower middle income","2010",60.6
+"2159","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2020",30.2
+"2160","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2019",32.1
+"2161","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2018",30
+"2162","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2017",31.1
+"2163","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2016",34.1
+"2164","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2015",39.8
+"2165","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2014",38.7
+"2166","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2013",39.6
+"2167","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2012",38.5
+"2168","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2011",38.8
+"2169","VEN","Venezuela, RB","Latin America & Caribbean","Upper middle income","2010",37.1
+"2170","VNM","Vietnam","East Asia & Pacific","Lower middle income","2020",69.8
+"2171","VNM","Vietnam","East Asia & Pacific","Lower middle income","2019",68.6
+"2172","VNM","Vietnam","East Asia & Pacific","Lower middle income","2018",67
+"2173","VNM","Vietnam","East Asia & Pacific","Lower middle income","2017",65.3
+"2174","VNM","Vietnam","East Asia & Pacific","Lower middle income","2016",62.6
+"2175","VNM","Vietnam","East Asia & Pacific","Lower middle income","2015",62.2
+"2176","VNM","Vietnam","East Asia & Pacific","Lower middle income","2014",61.9
+"2177","VNM","Vietnam","East Asia & Pacific","Lower middle income","2013",61.1
+"2178","VNM","Vietnam","East Asia & Pacific","Lower middle income","2012",60.5
+"2179","VNM","Vietnam","East Asia & Pacific","Lower middle income","2011",60.3
+"2180","VNM","Vietnam","East Asia & Pacific","Lower middle income","2010",59.5
+"2181","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2020",60
+"2182","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2019",59.7
+"2183","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2018",59.3
+"2184","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2017",55.5
+"2185","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2016",54.2
+"2186","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2015",52.4
+"2187","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2014",51.7
+"2188","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2013",50.6
+"2189","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2012",49.6
+"2190","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2011",49.6
+"2191","WBG","West Bank and Gaza","Middle East & North Africa","Lower middle income","2010",50.1
+"2192","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2020",31.8
+"2193","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2019",30.7
+"2194","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2018",31.3
+"2195","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2017",31.2
+"2196","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2016",38.4
+"2197","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2015",53.7
+"2198","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2014",53.8
+"2199","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2013",55.9
+"2200","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2012",58.2
+"2201","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2011",56.9
+"2202","YEM","Yemen, Rep.","Middle East & North Africa","Low income","2010",57
+"2203","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2020",66.9
+"2204","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2019",65.7
+"2205","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2018",64.2
+"2206","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2017",60.3
+"2207","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2016",60.5
+"2208","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2015",58.4
+"2209","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2014",60.3
+"2210","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2013",61.6
+"2211","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2012",58.1
+"2212","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2011",58.1
+"2213","ZMB","Zambia","Sub-Saharan Africa","Lower middle income","2010",58.2
+"2214","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2020",54.5
+"2215","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2019",50.5
+"2216","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2018",48.6
+"2217","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2017",47.8
+"2218","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2016",47.8
+"2219","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2015",44.4
+"2220","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2014",44.4
+"2221","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2013",45.1
+"2222","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2012",45.7
+"2223","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2011",42.7
+"2224","ZWE","Zimbabwe","Sub-Saharan Africa","Lower middle income","2010",43
