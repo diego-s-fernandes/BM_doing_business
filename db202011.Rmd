@@ -138,6 +138,38 @@ diego_theme <- theme(text = element_text(color = "gray20", size = 15),
 
 ```
 
+# box plot
+
+```{r}
+
+
+box <- eodb %>% 
+  filter(db_year == 2020) %>% 
+  ggplot(aes(x = reorder(income_group, pontuacao, FUN = median), y =pontuacao), color = income_group)+ 
+  geom_boxplot(aes(color = income_group))+
+  geom_jitter(aes(color = income_group), alpha = 0.5, width = 0.1, size = 4)+
+  geom_point(data = subset(eodb, eodb$economy == "Brazil" & db_year == 2020), color = "red", size = 5,)+
+  geom_text(data = subset(eodb, eodb$economy == "Brazil" & db_year == 2020),aes(label= economy), vjust = -0.4, color = "black", size = 6)+
+  
+  labs(
+    title = "Pontuação em facilidade em se fazer negócios - 2020",
+    subtitle = "The ease of doing business score", 
+    caption = "Fonte: Banco Mundial\nElaboração: CADE/DEE",
+    x = "",
+    y = "Pontuação"
+  )+
+ 
+    theme(legend.position = "none")+
+  theme(plot.title = element_text(color = "black", size = 25, face = "bold"),
+       axis.text=element_text(size=13, color = "black"),
+       axis.title=element_text(size=14,face="bold")) +
+ theme(plot.caption=element_text(size=14, hjust=0))
+  
+box
+
+ggsave(filename = "box.png", plot = box, width = 60, height = 30, units = "cm", dpi = "retina")
+
+```
 
 # Criando uma categoria de grupo Brics e OCDE
 
@@ -184,11 +216,11 @@ clev_ocde <- bbo %>%
   geom_point(color = "black", size = 2)+
   geom_point(data=subset(bbo, economy == "Brazil" & db_year == 2020),size=4, color = "red")+
   theme(axis.text.y = element_text(color = "black" ))+
-  geom_segment(aes(x =0, xend= pontuacao, yend=economy),color="black")+
-  geom_segment(data=subset(bbo, economy == "Brazil" & db_year == 2020), aes(x =0, xend= pontuacao, yend=economy),color="red", size = 1)+
+  geom_segment(aes(x =40, xend= pontuacao, yend=economy),color="black")+
+  geom_segment(data=subset(bbo, economy == "Brazil" & db_year == 2020), aes(x =40, xend= pontuacao, yend=economy),color="red", size = 1)+
   theme_cleveland() +
  scale_x_continuous(breaks = seq (0,100,25),
-                       limits = c(0,100))+
+                       limits = c(40,100))+
   labs(
     title = "Facilidade em se Fazer Negócios OCDE e Brasil - 2020",
     subtitle = "The ease of doing business score", 
@@ -306,20 +338,20 @@ publicado <-  data.frame("ano"     = c(2010:2020),
 
 gpub <- publicado %>% 
    ggplot (aes(x = ano, y = posicao, label  = posicao))+
-  geom_point(stat= "identity", fill = "black", size = 10)+
+  geom_point(stat= "identity", fill = "black", size = 10, color = "black")+
     geom_segment(aes( y = 0,
                     x= ano,
                     yend = posicao,
                     xend = ano),
-               color = "grey")+
+               color = "black")+
   scale_x_continuous(breaks = c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))+
   geom_text(color = "white", size = 4, fontface = "bold")+
   labs( title = "Posição no Brasil no ranking de Facilidade em se fazer Negócio",
   x = "",
   y = "Posição no Ranking",
-  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração Própria"
+  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração: CADE/DEE"
 )+ scale_y_reverse()+
-  theme_ft_rc()+
+  theme_cleveland()+
    theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))
 
   gpub
@@ -344,8 +376,48 @@ ggsave(filename = "ggbrics.png", width = 40, height = 20, units = "cm", dpi = "r
 
 rank_ind <- DB2020 %>% 
   filter(`DB Year` == 2020) %>% 
-  select(c(1:5), starts_with("Rank"))
+  select(c(1:5), starts_with("Rank")) %>% 
+  clean_names() %>% 
+  gather(6:15,key = "indicador",  value = "posicao")
 
+rank_ind$indicador[rank_ind$indicador == "rank_starting_a_business" ] <- "Abertura de Empresa" 
+rank_ind$indicador[rank_ind$indicador == "rank_getting_electricity" ] <- "Obtenção de Eletricidade"
+rank_ind$indicador[rank_ind$indicador == "rank_registering_property" ] <- "Registro de Propriedades"
+rank_ind$indicador[rank_ind$indicador == "rank_getting_credit" ] <- "Obtenção de Crédito"
+rank_ind$indicador[rank_ind$indicador == "rank_protecting_minority_investors" ] <- "Proteção dos Investidores Minoritários"
+rank_ind$indicador[rank_ind$indicador == "rank_trading_across_borders" ] <- "Comércio entre Fronteiras"
+rank_ind$indicador[rank_ind$indicador == "rank_resolving_insolvency" ] <- "Resolução de Insolvência"
+rank_ind$indicador[rank_ind$indicador == "rank_dealing_with_construction_permits" ] <- "Obtenção de alvarás de construção"
+rank_ind$indicador[rank_ind$indicador == "rank_enforcing_contracts" ] <- "Execução de Contratos"
+rank_ind$indicador[rank_ind$indicador == "rank_paying_taxes" ] <- "Pagamento de Impostos"
+
+colnames(rank_ind)
+
+g_ind_rank <- rank_ind %>% 
+  filter(economy == "Brazil", db_year == 2020 ) %>% 
+  ggplot (aes(x = indicador, y = posicao, label  = posicao))+
+  geom_point(stat= "identity", fill = "black", size = 10, color = "black")+
+    geom_segment(aes( y = 0,
+                    x= indicador,
+                    yend = posicao,
+                    xend = indicador),
+               color = "black")+
+  
+  geom_text(color = "white", size = 4, fontface = "bold")+
+  labs( title = "Posição do Brasil por Indicador",
+  x = "",
+  y = "Posição no Ranking",
+  caption = "As classificações são baseadas nas publicações oficais e suas correções feitas pelo próprio banco mundial.\nFonte:Banco Mundial\nElaboração: CADE/DEE"
+)+ scale_y_reverse()+
+  theme_cleveland()+
+   theme(legend.position="none",plot.caption=element_text(size=10, hjust= 0, vjust = 3))+
+    theme(legend.position="top",plot.caption=element_text(size=12, hjust=0, vjust = 3))+
+    theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12,angle = 45,  hjust = 1))
+ 
+ 
+ggsave(filename = "g_ind_rank.png", plot = g_ind_rank, width = 40, height = 30, units = "cm", dpi = "retina")
+  
 ```
 
 ## pontuação dos indicadores
@@ -453,12 +525,12 @@ bbo_ind <- bbo_ind %>%
 
 ```{r echo=TRUE}
 bbo_ind_spread <- bbo_ind %>% 
-  filter(db_year %in% c(2010:2020)) %>% 
+  filter(db_year %in% c(2015:2020)) %>% 
   spread( indicador,pontuacao) %>% 
   clean_names()
   
   ind_loop <- ggloop::ggloop(bbo_ind_spread,aes_loop(x= db_year,y = c(abertura_de_empresa:resolucao_de_insolvencia), fill = grupo_eco))%L+%
-           geom_bar(stat="identity", position=position_dodge(), color = "black")%L+%
+           geom_bar(stat="identity", position=position_dodge())%L+%
           ylim(0,100)%L+%
           scale_fill_manual(values=c("#CC6666", "#9999CC", "#66CC99"),
                       labels = c("Brasil", "Brics", "OCDE"))%L+%
@@ -467,8 +539,11 @@ bbo_ind_spread <- bbo_ind %>%
         y = "Pontuação",
         fill = "Grupo Econômico",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")%L+%
-    theme_minimal_hgrid()%L+%
-           theme(legend.position="top",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+    theme_minimal()%L+%
+           theme(legend.position="top",plot.caption=element_text(size=12, hjust=0, vjust = 3))%L+%
+    theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
+    
     
 
 
@@ -479,54 +554,64 @@ bbo_ind_spread <- bbo_ind %>%
 ```{r}
 
 empresa <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.abertura_de_empresa"]]
-empresa <- empresa + geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Abertura de Empresa")
+empresa <- empresa + geom_text(aes(label = abertura_de_empresa), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Abertura de Empresa")
 empresa
 ggsave(filename = "empresa.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "empresa.png", width = 40, height = 20, units = "cm", dpi = "retina")
  
 construcao <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_alvaras_de_construcao"]] 
-construcao <- construcao + geom_text(aes(label = obtencao_de_alvaras_de_construcao), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Alvará de Construção")
+construcao <- construcao + geom_text(aes(label = obtencao_de_alvaras_de_construcao), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Obtenção de Alvará de Construção")
 construcao
 ggsave(filename = "construcao.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "construcao.png", width = 40, height = 20, units = "cm", dpi = "retina")
  
 comercio <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.comercio_entre_fronteiras"]] 
-comercio <- comercio + geom_text(aes(label = comercio_entre_fronteiras), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Comércio Entre fronteiras")
+comercio <- comercio + geom_text(aes(label = comercio_entre_fronteiras), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Comércio Entre fronteiras")
 comercio
 ggsave(filename = "comercio.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "comercio.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 contratos <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.execucao_de_contratos"]]
-contratos <- contratos + geom_text(aes(label = execucao_de_contratos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Execução de Conttratos")
+contratos <- contratos + geom_text(aes(label = execucao_de_contratos), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Execução de Contratos")
 contratos
 ggsave(filename = "contratos.pdf", width = 40, height = 20, units = "cm", dpi = "retina") 
+ggsave(filename = "contratos.png", width = 40, height = 20, units = "cm", dpi = "retina") 
 
 credito <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_credito"]] 
-credito <- credito +geom_text(aes(label = obtencao_de_credito), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de crédito")
+credito <- credito +geom_text(aes(label = obtencao_de_credito), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Obtenção de crédito")
 credito
 ggsave(filename = "credito.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "credito.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 eletri <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.obtencao_de_eletricidade"]]
-eletri <- eletri + geom_text(aes(label = obtencao_de_eletricidade), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Obtenção de Eletricidade") 
+eletri <- eletri + geom_text(aes(label = obtencao_de_eletricidade), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Obtenção de Eletricidade") 
 eletri
 ggsave(filename = "eletri.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "eletri.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 impostos <-  ind_loop[["fill.grupo_eco"]][["x.db_year_y.pagamento_de_impostos"]]
-impostos <- impostos + geom_text(aes(label = pagamento_de_impostos), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Pagamento de Impostos")
+impostos <- impostos + geom_text(aes(label = pagamento_de_impostos), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Pagamento de Impostos")
 impostos
 ggsave(filename = "impostos.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "impostos.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 investidores <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.protecao_dos_investidores_minoritarios"]]
-investidores <- investidores  + geom_text(aes(label  = protecao_dos_investidores_minoritarios), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Proteção dos Investidores Minoritários")
+investidores <- investidores  + geom_text(aes(label  = protecao_dos_investidores_minoritarios), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Proteção dos Investidores Minoritários")
 investidores
 ggsave(filename = "investidores.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "investidores.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 propriedades <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.registro_de_propriedades"]]
-propriedades <- propriedades +  geom_text(aes(label  = registro_de_propriedades), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Registro de Propriedades")
+propriedades <- propriedades +  geom_text(aes(label  = registro_de_propriedades), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Registro de Propriedades")
 propriedades
 ggsave(filename = "propriedades.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "propriedades.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 insol <- ind_loop[["fill.grupo_eco"]][["x.db_year_y.resolucao_de_insolvencia"]]
-insol <- insol + geom_text(aes(label  = resolucao_de_insolvencia), position=position_dodge(width=0.9), vjust=-0.25, size = 3, color = "black") + ggtitle("Score Resolução de Insolvência")
+insol <- insol + geom_text(aes(label  = resolucao_de_insolvencia), position=position_dodge(width=0.9), vjust=-0.25, size = 4, color = "black") + ggtitle("Score Resolução de Insolvência")
 insol
 ggsave(filename = "insol.pdf", width = 40, height = 20, units = "cm", dpi = "retina")
+ggsave(filename = "insol.png", width = 40, height = 20, units = "cm", dpi = "retina")
 
 
 
@@ -598,7 +683,7 @@ g_ind1
 ```{r}
 # criandop uma tabela somente para os indicadores brasileiros
 bra_ind <- bra_ind %>% 
-  filter(db_year %in% c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020))
+  filter(db_year %in% c(2015,2016,2017,2018,2019,2020))
 
 # mudando o nome dos indicadores que agor anão são mais variáveis, e sim observações
 
@@ -610,7 +695,7 @@ bra_ind_list <- unique(bra_ind$indicador) # criando a lista de nome dos indicado
 f_ind_bra <- function(data){
 for (i in seq_along(bra_ind_list)) {
     a <- ggplot(subset(data,bra_ind$indicador == bra_ind_list[i]),
-                 aes(db_year,pontuacao,))+
+                 aes(db_year,pontuacao))+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
       ylim(0,100)+
       geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 5, color = "black")+
@@ -620,12 +705,14 @@ for (i in seq_along(bra_ind_list)) {
         y = "Pontuação",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
       theme_minimal()+
-           theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
+           theme(legend.position="bottom",plot.caption=element_text(size=12, hjust=0, vjust = 3))+
+    theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
     
    
     print(a)
-    ggsave(filename = paste0(bra_ind_list[i],".pdf"),plot = a, width = 40, height = 20, units = "cm", dpi = "retina")
-    ggsave(filename = paste0(bra_ind_list[i],".png"),plot = a, width = 40, height = 20, units = "cm", dpi = "retina")
+    ggsave(filename = paste0(bra_ind_list[i],".pdf"),plot = a, width = 30, height = 20, units = "cm", dpi = "retina")
+    ggsave(filename = paste0(bra_ind_list[i],".png"),plot = a, width = 30, height = 20, units = "cm", dpi = "retina")
     
 }
   
