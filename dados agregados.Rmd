@@ -1,0 +1,108 @@
+---
+title: "dados agregados"
+author: "Diego dos Santos Fernandes"
+date: "28/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##
+
+```{r}
+library(tidyverse)
+library(tidyverse)
+library(ggrepel)
+library(readxl)
+library(stargazer)
+library(gghighlight)
+library(ggpubr)
+library(ggthemes)
+library(gridExtra)
+library(corrplot)
+library(GGally)
+library(devtools)
+library(janitor)
+library(hablar)
+library(patchwork)
+library(dplyr)
+library(esquisse)
+library(rvest)
+library(openxlsx)
+library(gdata)
+library(ggimage)
+library(countrycode)
+library(ggloop)
+library(cowplot)
+library(hrbrthemes)
+library(wbstats)
+library(WDI)
+library(OECD)
+library(plm)
+```
+
+
+
+
+
+```{r}
+# 
+#  new_cache = WDIcache()
+#  WDIsearch('doing', cache=new_cache)
+# WDIsearch('doing')
+
+teste <- WDI(indicator= c("BX.KLT.DINV.WD.GD.ZS","BX.KLT.DINV.CD.WD","NY.GDP.PCAP.CD"), start=2000, end=2018, extra = TRUE)
+
+ teste <- teste %>% 
+   filter( region != "Aggregates") %>% 
+   mutate(year = factor(year)          )
+
+ fusao <- full_join(eodb, teste, by = c("economy" = "country", "db_year" = "year", "region") )
+ fusao <- fusao %>% 
+   filter(region == "Latin America & Caribbean") %>% 
+   drop_na() %>% 
+   mutate(fdi_p = BX.KLT.DINV.WD.GD.ZS,
+          fdi_c = BX.KLT.DINV.CD.WD,
+          gdp_pc = NY.GDP.PCAP.CD,
+          log_fdi_c = log(fdi_c +1))
+ 
+ 
+reg1 <- plm(log_fdi_c ~ lag(pontuacao) + lag(gdp_pc)   , data=fusao, index=c("economy", "db_year"), model= "within")
+
+summary(reg1)
+
+
+dif
+```
+
+
+
+```{r}
+
+
+ma <- read_excel("WIR19_tab17.xlsx")
+View(ma)
+
+ma_cb <- gather(ma,2:17, key = "db_year", value = "n_cb_ma" )
+
+fusao2 <- full_join(fusao,ma_cb,  by = c("economy", "db_year"))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

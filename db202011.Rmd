@@ -37,6 +37,7 @@ library(countrycode)
 library(ggloop)
 library(cowplot)
 library(hrbrthemes)
+library(xlsx)
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
 #rscodeio::install_theme()
@@ -112,7 +113,7 @@ eodb$db_year <- as_factor(eodb$db_year)
 eodb <- eodb %>% 
   mutate(pontuacao = round(pontuacao, 1))
 
-
+write_excel_csv2(eodb, "eodb.csv")
 
 ```
 
