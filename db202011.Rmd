@@ -37,13 +37,12 @@ library(countrycode)
 library(ggloop)
 library(cowplot)
 library(hrbrthemes)
-<<<<<<< HEAD:db2020.Rmd
-devtools::install_github('datarootsio/artyfarty')
+
+#devtools::install_github('datarootsio/artyfarty')
 
 
-=======
-library(xlsx)
->>>>>>> 156dcdbc1b5911c1b96eb324fc613bd66d269ab3:db202011.Rmd
+
+
 #remotes::install_github("anthonynorth/rscodeio")
 #https://github.com/anthonynorth/rscodeio
 #rscodeio::install_theme()
@@ -732,19 +731,17 @@ f_ind_bra <- function(data){
 for (i in seq_along(bra_ind_list)) {
     a <- ggplot(subset(data,bra_ind$indicador == bra_ind_list[i]),
                  aes(db_year,pontuacao))+
-<<<<<<< HEAD:db2020.Rmd
+
     geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB", color = "black")+
-=======
-    geom_bar(stat="identity", position=position_dodge(), fill= "#00AFBB")+
->>>>>>> 156dcdbc1b5911c1b96eb324fc613bd66d269ab3:db202011.Rmd
-      ylim(0,100)+
+
+         ylim(0,100)+
       geom_text(aes(label= pontuacao), position = "dodge",hjust=0.5,vjust= -1, size = 5, color = "black")+
       ggtitle (paste("Pontuação em:",bra_ind_list[i] ))+
       labs(
         x = "Ano",
         y = "Pontuação",
         caption = "O Gráfico apresenta um histórico de pontuação baseado em todas as mudanças metodológicas feita aos longo dos anos.\nFonte:Banco Mundial\nElaboração: CADE/DEE")+
-<<<<<<< HEAD:db2020.Rmd
+
       theme_minimal_hgrid()+
            theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
     
@@ -752,31 +749,21 @@ for (i in seq_along(bra_ind_list)) {
    ggsave(paste0(bra_ind_list[i],".pdf"),plot = a,width = 40, height = 20, units = "cm", dpi = "retina")
     
 
-=======
-      theme_minimal()+
-           theme(legend.position="bottom",plot.caption=element_text(size=12, hjust=0, vjust = 3))+
-    theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
-         axis.text.x = element_text(face = "bold", size = 12))
-    
-   
-    print(a)
-    ggsave(filename = paste0(bra_ind_list[i],".pdf"),plot = a, width = 30, height = 20, units = "cm", dpi = "retina")
-    ggsave(filename = paste0(bra_ind_list[i],".png"),plot = a, width = 30, height = 20, units = "cm", dpi = "retina")
-    
->>>>>>> 156dcdbc1b5911c1b96eb324fc613bd66d269ab3:db202011.Rmd
+
 }
+    
+
   
   
 }
 
 f_ind_bra(bra_ind)
 
-<<<<<<< HEAD:db2020.Rmd
 
 
 
-=======
->>>>>>> 156dcdbc1b5911c1b96eb324fc613bd66d269ab3:db202011.Rmd
+
+
 ```
 
 # Fazendo múltiplos gráficos com indicadores OCDE
