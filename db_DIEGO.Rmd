@@ -187,6 +187,37 @@ eodb <- eodb %>%
 
 ```
 
+# FAIXA DE RENDA
+
+```{r}
+t_renda <- eodb %>% 
+  filter(db_year == 2020) %>%
+  group_by(db_year, income_group, region) %>% 
+  summarise(pontuacao = round(mean(pontuacao),1))
+  g_renda <- t_renda %>% 
+  ggplot(aes(x = reorder(income_group,pontuacao), y =pontuacao, fill = income_group))+
+  geom_bar(stat = "identity", position = "dodge")+
+    geom_hline(yintercept=59.1, color = "red", size = 1)+
+    annotate("text", x = 1.2, y = 75,  label = " O Brasil apresenta a pontuação de 59.1\ncomo indicado na linha vermelha abaixo", size = 2)+
+  labs(
+    title = "Pontuação em facilidade em se fazer negócios - 2020",
+    subtitle = "The ease of doing business score", 
+    caption = "Fonte: Banco Mundial\nElaboração: CADE/DEE",
+    x = "",
+    y = "Pontuação"
+  )+
+ 
+    theme(legend.position = "none")+
+  theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+       axis.text=element_text(size=13, color = "black"),
+       axis.title=element_text(size=14,face="bold")) +
+ theme(plot.caption=element_text(size=10, hjust=0))  
+g_renda
+
+ggsave(filename = "g_renda.png", plot = g_renda, width = 30, height = 30, units = "cm", dpi = "retina")
+
+
+```
 
 
 
@@ -511,7 +542,7 @@ ind <- ind %>%
   mutate(score_dealing_with_construction =                                                                             coalesce(score_dealing_with_construction_permits_db16_20_methodology,score_dealing_with_construction_permits_db06_15_methodology),    
          score_getting_electricity = coalesce(score_getting_electricity_db16_20_methodology,score_getting_electricity_db10_15_methodology),
          score_registering_property = coalesce(score_registering_property_db17_20_methodology,score_registering_property_db05_15_methodology),
-         score_getting_credit = coalesce(score_getting_electricity_db16_20_methodology, score_getting_credit_db15_20_methodology),
+         score_getting_credit = coalesce(score_getting_credit_db15_20_methodology, score_getting_credit_db05_14_methodology),
          score_protecting_minority = coalesce(score_protecting_minority_investors_db15_20_methodology, score_protecting_minority_investors_db06_14_methodology),
          score_paying_taxes = coalesce(score_paying_taxes_db17_20_methodology,score_paying_taxes_db06_16_methodology),
          score_trading_across_borders = coalesce(score_trading_across_borders_db16_20_methodology, score_trading_across_borders_db06_15_methodology),
@@ -731,6 +762,23 @@ bbo_ind %>%
 # indicadore do brasil teste
 ```{r eval=FALSE, include=FALSE}
 
+theme_exemplo <- function(base_size = 11,
+                          base_family = "",
+                          base_line_size = base_size / 170,
+                          base_rect_size = base_size / 170) {
+  ggplot2::theme_minimal(base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size) %+replace%
+    ggplot2::theme(
+      plot.caption=element_text(size=12, hjust=0, vjust = 3),
+      plot.title = element_text(color = "black", size = 18, face = "bold"),
+      axis.text.x = element_text(face = "bold", size = 12),
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+}
+
 g_ind1 <- ind %>%
   filter(indicador == "Abertura de Empresa", economy == "Brazil") %>%
   ggplot(aes(x = db_year, y = pontuacao))+
@@ -743,8 +791,7 @@ g_ind1 <- ind %>%
     y = "Pontuação",
     caption = "O gráfico apresenta um histórico de pontuação baseado nas modificações metodológicas dos seguintes anos:\nDB2004-2014, DB2015, DB2016, DB2017-2019."
     ) +
-  theme_minimal()+
-  diego_theme +
+  theme_exemplo() +
   theme(legend.position="bottom",plot.caption=element_text(size=8, hjust=0, vjust = 3))
 
 g_ind1
