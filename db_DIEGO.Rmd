@@ -140,7 +140,7 @@ diego_theme <- theme(text = element_text(color = "gray20", size = 15),
         panel.grid.major = element_line(color = "gray60", size = 0.5),
         panel.grid.major.x = element_blank()
         )
-
+#
 ```
 
 # box plot
